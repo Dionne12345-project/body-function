@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="#ffffff" name="theme-color" />
-    <meta content="{{CMS:seo:seo_001}}" name="description" />
-    <title>{{CMS:seo:seo_002}}</title>
-    <link href="https://images.unsplash.com" rel="preconnect" />
-    <link href="style.css" rel="stylesheet" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="{{CMS:seo:seo_001}}" name="description"/>
+<title>{{CMS:seo:seo_002}}</title>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
         .cookie-banner {
             position: fixed;
             z-index: 9999;
@@ -163,615 +162,311 @@
             color: #fff;
             text-decoration: underline;
         }
+    
+/* Blog article reader */
+.art[hidden] { display:none!important; }
+.art { position:fixed; inset:0; z-index:10020; display:flex; align-items:center; justify-content:center; padding:16px; opacity:0; transition:opacity .25s ease; }
+.art.on { opacity:1; }
+.art-back { position:absolute; inset:0; background:rgba(25,15,30,.72); }
+.art-panel { position:relative; z-index:1; width:min(760px,100%); max-height:min(90vh,950px); overflow:hidden; border-radius:18px; background:#fff; color:#2b2530; box-shadow:0 20px 70px rgba(0,0,0,.3); outline:none; }
+.art-scroll { max-height:min(90vh,950px); overflow-y:auto; overscroll-behavior:contain; }
+.art-img { display:block; width:100%; height:260px; object-fit:cover; }
+.art-body { padding:clamp(22px,5vw,48px); line-height:1.75; }
+.art-meta { display:flex; justify-content:space-between; gap:12px; color:#795c83; font-size:.85rem; margin-bottom:12px; }
+.art-title { font-size:clamp(1.7rem,4vw,2.6rem); line-height:1.2; margin:0 0 20px; }
+.art-intro { font-size:1.08rem; }
+.art-body h3 { margin:28px 0 10px; font-size:1.35rem; }
+.art-body p { margin:0 0 15px; }
+.art-body ul { padding-left:22px; margin:12px 0 20px; }
+.art-body li { margin:7px 0; }
+.art-take, .art-note { margin-top:24px; padding:20px; background:#f9f4fa; border-radius:12px; }
+.art-note { background:#f7f7f7; }
+.art-disc { margin-top:22px!important; font-size:.85rem; color:#655d68; }
+.art-cta { display:flex; flex-wrap:wrap; align-items:center; gap:18px; margin:25px 0; }
+.art-next { width:100%; padding:18px; background:#fff; border:1px solid #e5dbe9; border-radius:10px; text-align:left; cursor:pointer; font:inherit; color:inherit; }
+.art-next small { display:block; color:#795c83; margin-bottom:4px; }
+.art-next span { display:block; font-weight:600; }
+.art-close { position:absolute; z-index:2; top:12px; right:12px; display:grid; place-items:center; width:40px; height:40px; border:0; border-radius:50%; background:white; color:#2b2530; font-size:28px; cursor:pointer; box-shadow:0 2px 12px #0002; }
+.jread { border:0; background:none; padding:0; cursor:pointer; font:inherit; text-align:left; color:inherit; }
+.jread:hover { color:#cd00fd; }
+.jmeta { display:block; margin:12px 0 8px; color:#6e6372; }
+@media(max-width:600px) { .art { padding:0; } .art-panel { width:100%; max-height:100dvh; height:100dvh; border-radius:0; } .art-scroll { max-height:100dvh; } .art-img { height:190px; } .art-body { padding:24px 20px 45px; } }
 
-        /* Blog article reader */
-        .art[hidden] {
-            display: none !important;
-        }
-
-        .art {
-            position: fixed;
-            inset: 0;
-            z-index: 10020;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-            opacity: 0;
-            transition: opacity .25s ease;
-        }
-
-        .art.on {
-            opacity: 1;
-        }
-
-        .art-back {
-            position: absolute;
-            inset: 0;
-            background: rgba(25, 15, 30, .72);
-        }
-
-        .art-panel {
-            position: relative;
-            z-index: 1;
-            width: min(760px, 100%);
-            max-height: min(90vh, 950px);
-            overflow: hidden;
-            border-radius: 18px;
-            background: #fff;
-            color: #2b2530;
-            box-shadow: 0 20px 70px rgba(0, 0, 0, .3);
-            outline: none;
-        }
-
-        .art-scroll {
-            max-height: min(90vh, 950px);
-            overflow-y: auto;
-            overscroll-behavior: contain;
-        }
-
-        .art-img {
-            display: block;
-            width: 100%;
-            height: 260px;
-            object-fit: cover;
-        }
-
-        .art-body {
-            padding: clamp(22px, 5vw, 48px);
-            line-height: 1.75;
-        }
-
-        .art-meta {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            color: #795c83;
-            font-size: .85rem;
-            margin-bottom: 12px;
-        }
-
-        .art-title {
-            font-size: clamp(1.7rem, 4vw, 2.6rem);
-            line-height: 1.2;
-            margin: 0 0 20px;
-        }
-
-        .art-intro {
-            font-size: 1.08rem;
-        }
-
-        .art-body h3 {
-            margin: 28px 0 10px;
-            font-size: 1.35rem;
-        }
-
-        .art-body p {
-            margin: 0 0 15px;
-        }
-
-        .art-body ul {
-            padding-left: 22px;
-            margin: 12px 0 20px;
-        }
-
-        .art-body li {
-            margin: 7px 0;
-        }
-
-        .art-take,
-        .art-note {
-            margin-top: 24px;
-            padding: 20px;
-            background: #f9f4fa;
-            border-radius: 12px;
-        }
-
-        .art-note {
-            background: #f7f7f7;
-        }
-
-        .art-disc {
-            margin-top: 22px !important;
-            font-size: .85rem;
-            color: #655d68;
-        }
-
-        .art-cta {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 18px;
-            margin: 25px 0;
-        }
-
-        .art-next {
-            width: 100%;
-            padding: 18px;
-            background: #fff;
-            border: 1px solid #e5dbe9;
-            border-radius: 10px;
-            text-align: left;
-            cursor: pointer;
-            font: inherit;
-            color: inherit;
-        }
-
-        .art-next small {
-            display: block;
-            color: #795c83;
-            margin-bottom: 4px;
-        }
-
-        .art-next span {
-            display: block;
-            font-weight: 600;
-        }
-
-        .art-close {
-            position: absolute;
-            z-index: 2;
-            top: 12px;
-            right: 12px;
-            display: grid;
-            place-items: center;
-            width: 40px;
-            height: 40px;
-            border: 0;
-            border-radius: 50%;
-            background: white;
-            color: #2b2530;
-            font-size: 28px;
-            cursor: pointer;
-            box-shadow: 0 2px 12px #0002;
-        }
-
-        .jread {
-            border: 0;
-            background: none;
-            padding: 0;
-            cursor: pointer;
-            font: inherit;
-            text-align: left;
-            color: inherit;
-        }
-
-        .jread:hover {
-            color: #cd00fd;
-        }
-
-        .jmeta {
-            display: block;
-            margin: 12px 0 8px;
-            color: #6e6372;
-        }
-
-        @media(max-width:600px) {
-            .art {
-                padding: 0;
-            }
-
-            .art-panel {
-                width: 100%;
-                max-height: 100dvh;
-                height: 100dvh;
-                border-radius: 0;
-            }
-
-            .art-scroll {
-                max-height: 100dvh;
-            }
-
-            .art-img {
-                height: 190px;
-            }
-
-            .art-body {
-                padding: 24px 20px 45px;
-            }
-        }
-    </style>
-    <link rel="canonical" href="https://bodyfunction.netlify.app/" />
-    <meta name="robots" content="index, follow" />
-    <script
-        type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Body Function","url":"https://bodyfunction.netlify.app/","description":"Physiotherapy, Clinical Pilates and rehabilitation in Bedfordshire and Milton Keynes.","areaServed":[{"@type":"AdministrativeArea","name":"Bedfordshire"},{"@type":"City","name":"Milton Keynes"}]}</script>
+</style>
+<link rel="canonical" href="https://bodyfunction.netlify.app/"/>
+<meta name="robots" content="index, follow"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Body Function","url":"https://bodyfunction.netlify.app/","description":"Physiotherapy, Clinical Pilates and rehabilitation in Bedfordshire and Milton Keynes.","areaServed":[{"@type":"AdministrativeArea","name":"Bedfordshire"},{"@type":"City","name":"Milton Keynes"}]}</script>
+<style>.jcard a.jlink{display:inline-block;position:relative;z-index:2;cursor:pointer}.jcard{cursor:pointer}</style>
 </head>
-
 <body>
-    <header class="nav"><a class="brand" href="#home"><span
-                class="brandmark">{{CMS:index:index_001}}<span>{{CMS:index:index_003}}</span>{{CMS:index:index_002}}</span><span>{{CMS:index:index_004}}<small>{{CMS:index:index_005}}</small></span></a>
-        <nav id="navlinks"><a href="#about">{{CMS:index:index_006}}</a><a href="#services">{{CMS:index:index_007}}</a><a
-                href="#pricing">{{CMS:index:index_008}}</a><a href="#journal">{{CMS:index:index_009}}</a><a
-                href="#contact">{{CMS:index:index_010}}</a><a href="faq.html">{{CMS:index:index_011}}</a><a
-                href="privacy.html">{{CMS:index:index_012}}</a><a href="cookies.html">{{CMS:index:index_013}}</a><a
-                href="terms.html">{{CMS:index:index_014}}</a></nav><a class="btn small navcta"
-            href="#booking">{{CMS:index:index_015}}</a><button aria-expanded="false" aria-label="Toggle menu"
-            class="menu" id="menu"><i></i><i></i><i></i></button>
-    </header>
-    <main id="home">
-        <section class="hero">
-            <div class="hero-copy">
-                <div class="eyebrow"><span></span> {{CMS:hero:hero_001}}</div>
-                <h1>{{CMS:hero:hero_002}}<br />{{CMS:hero:hero_003}}<br /><em>{{CMS:hero:hero_004}}</em></h1>
-                <p>{{CMS:hero:hero_005}}</p>
-                <div class="actions"><a class="btn" href="#booking">{{CMS:hero:hero_006}}</a><a class="textlink"
-                        href="#services">{{CMS:hero:hero_007}}</a></div>
-            </div>
-            <!-- Add your photo as images/hero.jpg (wide image, subject towards the right works best) -->
-            <img alt="Body Function physiotherapy session" class="hero-img" onerror="this.style.display='none'"
-                src="{{CMS:hero:hero_008}}" />
-            <div class="image-overlay"><span class="plus"></span>
-                <div>{{CMS:hero:hero_009}}<br /><strong>{{CMS:hero:hero_010}}</strong></div>
-            </div>
-        </section>
-        <section class="section intro" id="about">
-            <div>
-                <div class="section-label">{{CMS:about:about_001}}</div>
-                <h2>{{CMS:about:about_002}} <em>{{CMS:about:about_003}}</em></h2>
-            </div>
-            <div class="intro-right">
-                <p>{{CMS:about:about_004}}</p>
-                <p>{{CMS:about:about_005}}</p><a class="textlink dark" href="#contact">{{CMS:about:about_006}}</a>
-            </div>
-        </section>
-        <!-- Section 02: Dionne's profile -->
-        <section aria-labelledby="profile-heading" class="section profile-section" id="profile">
-            <div class="profile-layout">
-                <div class="profile-photo-wrap">
-                    <img alt="Portrait of Dionne Jules, physiotherapist" class="profile-photo" height="900"
-                        loading="lazy" src="{{CMS:profile:profile_001}}" width="720" />
-                    <div class="profile-photo-caption">{{CMS:profile:profile_002}}
-                        <span>{{CMS:profile:profile_003}}</span>
-                    </div>
-                </div>
-                <div class="profile-content">
-                    <div class="section-label">{{CMS:profile:profile_004}}</div>
-                    <h2 id="profile-heading">{{CMS:profile:profile_005}} <em>{{CMS:profile:profile_006}}</em></h2>
-                    <p class="profile-lead">{{CMS:profile:profile_007}}</p>
-                    <p>{{CMS:profile:profile_008}}</p>
-                    <p>{{CMS:profile:profile_009}}</p>
-                    <p>{{CMS:profile:profile_010}}</p>
-                    <p>{{CMS:profile:profile_011}}</p>
-                    <div class="profile-qualifications">
-                        <h3>{{CMS:profile:profile_012}}</h3>
-                        <ul>
-                            <li>{{CMS:profile:profile_013}}</li>
-                            <li>{{CMS:profile:profile_014}}</li>
-                            <li>{{CMS:profile:profile_015}}</li>
-                            <li>{{CMS:profile:profile_016}}</li>
-                            <li>{{CMS:profile:profile_017}}</li>
-                            <li>{{CMS:profile:profile_018}}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section area" id="area">
-            <div>
-                <div class="section-label">{{CMS:area:area_001}}</div>
-                <h2>{{CMS:area:area_002}} <em>{{CMS:area:area_003}}</em></h2>
-                <p>{{CMS:area:area_004}}</p>
-                <div class="chips">
-                    <span>{{CMS:area:area_005}}</span><span>{{CMS:area:area_006}}</span><span>{{CMS:area:area_007}}</span><span>{{CMS:area:area_008}}</span>
-                </div><a class="textlink dark" href="#contact">{{CMS:area:area_009}}</a>
-            </div><!-- Add your photo as images/area.jpg -->
-            <img alt="Body Function home visits across Bedfordshire and Milton Keynes"
-                onerror="this.style.display='none'" src="{{CMS:area:area_010}}" />
-        </section>
-        <section class="section services" id="services">
-            <div class="svc-layout">
-                <div class="svc-intro">
-                    <div class="section-label">{{CMS:services:services_001}}</div>
-                    <h2>{{CMS:services:services_002}} <em>{{CMS:services:services_003}}</em></h2>
-                    <p>{{CMS:services:services_004}}</p>
-                    <a class="btn" href="#booking">{{CMS:services:services_005}}</a>
-                </div>
-                <ul class="svc-list">
-                    <li><span class="n">{{CMS:services:services_006}}</span>
-                        <div>
-                            <h3>{{CMS:services:services_007}}</h3>
-                            <p>{{CMS:services:services_008}}</p>
-                            <div class="tags">
-                                <span>{{CMS:services:services_009}}</span><span>{{CMS:services:services_010}}</span>
-                            </div>
-                        </div><a aria-label="{{CMS:services:services_011}}" href="#booking"></a>
-                    </li>
-                    <li><span class="n">{{CMS:services:services_012}}</span>
-                        <div>
-                            <h3>{{CMS:services:services_013}}</h3>
-                            <p>{{CMS:services:services_014}}</p>
-                        </div><a aria-label="{{CMS:services:services_015}}" href="#booking"></a>
-                    </li>
-                    <li><span class="n">{{CMS:services:services_016}}</span>
-                        <div>
-                            <h3>{{CMS:services:services_017}}</h3>
-                            <p>{{CMS:services:services_018}}</p>
-                            <div class="tags"><span>{{CMS:services:services_019}}</span></div>
-                        </div><a aria-label="{{CMS:services:services_020}}" href="#booking"></a>
-                    </li>
-                    <li><span class="n">{{CMS:services:services_021}}</span>
-                        <div>
-                            <h3>{{CMS:services:services_022}}</h3>
-                            <p>{{CMS:services:services_023}}</p>
-                            <div class="tags"><span>{{CMS:services:services_024}}</span></div>
-                        </div><a aria-label="{{CMS:services:services_025}}" href="#booking"></a>
-                    </li>
-                    <li><span class="n">{{CMS:services:services_026}}</span>
-                        <div>
-                            <h3>{{CMS:services:services_027}}</h3>
-                            <p>{{CMS:services:services_028}}</p>
-                        </div><a aria-label="{{CMS:services:services_029}}" href="#booking"></a>
-                    </li>
-                    <li><span class="n">{{CMS:services:services_030}}</span>
-                        <div>
-                            <h3>{{CMS:services:services_031}}</h3>
-                            <p>{{CMS:services:services_032}}</p>
-                            <div class="tags">
-                                <span>{{CMS:services:services_033}}</span><span>{{CMS:services:services_034}}</span><span>{{CMS:services:services_035}}</span>
-                            </div>
-                        </div><a aria-label="{{CMS:services:services_036}}" href="#booking"></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="statement"><span>{{CMS:statement:statement_001}}</span>
-            <h2>{{CMS:statement:statement_002}} <em>{{CMS:statement:statement_003}}</em></h2><a class="btn"
-                href="#booking">{{CMS:statement:statement_004}}</a>
-        </section>
-        <section class="section pricing" id="pricing">
-            <div class="section-label">{{CMS:pricing:pricing_001}}</div>
-            <div class="section-top">
-                <h2>{{CMS:pricing:pricing_002}} <em>{{CMS:pricing:pricing_003}}</em></h2>
-                <p>{{CMS:pricing:pricing_004}}</p>
-            </div>
-            <div class="price-list">
-                <div><span>{{CMS:pricing:pricing_005}}
-                        <small>{{CMS:pricing:pricing_006}}</small></span><strong>{{CMS:pricing:pricing_007}}</strong>
-                </div>
-                <div><span>{{CMS:pricing:pricing_008}}
-                        <small>{{CMS:pricing:pricing_009}}</small></span><strong>{{CMS:pricing:pricing_010}}</strong>
-                </div>
-                <div><span>{{CMS:pricing:pricing_011}}
-                        <small>{{CMS:pricing:pricing_012}}</small></span><strong>{{CMS:pricing:pricing_013}}</strong>
-                </div>
-                <div><span>{{CMS:pricing:pricing_014}}
-                        <small>{{CMS:pricing:pricing_015}}</small></span><strong>{{CMS:pricing:pricing_016}}</strong>
-                </div>
-                <div><span>{{CMS:pricing:pricing_017}}
-                        <small>{{CMS:pricing:pricing_018}}</small></span><strong>{{CMS:pricing:pricing_019}}</strong>
-                </div>
-                <div><span>{{CMS:pricing:pricing_020}}
-                        <small>{{CMS:pricing:pricing_021}}</small></span><strong>{{CMS:pricing:pricing_022}}</strong>
-                </div>
-                <div><span>{{CMS:pricing:pricing_023}}
-                        <small>{{CMS:pricing:pricing_024}}</small></span><strong>{{CMS:pricing:pricing_025}}</strong>
-                </div>
-            </div>
-            <p class="fine">{{CMS:pricing:pricing_026}}</p>
-        </section>
-        <section class="section booking" id="booking">
-            <div>
-                <div class="section-label">{{CMS:booking:booking_001}}</div>
-                <h2>{{CMS:booking:booking_002}} <em>{{CMS:booking:booking_003}}</em></h2>
-                <p>{{CMS:booking:booking_004}}</p>
-                <p class="fine">{{CMS:booking:booking_005}}</p>
-            </div>
-            <!-- The email in this action is the ONLY place the recipient is set. script.js reads it from here. -->
-            <form action="{{CMS:booking:booking_006}}" method="POST" name="booking-enquiry">
-                <input name="_subject" type="hidden" value="New Body Function booking enquiry" />
-                <input name="_template" type="hidden" value="table" />
-                <input name="_captcha" type="hidden" value="false" />
-                <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text" />
-                <label>{{CMS:booking:booking_007}}<input name="name" placeholder="{{CMS:booking:booking_008}}"
-                        required="" /></label><label>{{CMS:booking:booking_009}}<input name="email"
-                        placeholder="{{CMS:booking:booking_010}}" required=""
-                        type="email" /></label><label>{{CMS:booking:booking_011}}<input name="phone"
-                        placeholder="{{CMS:booking:booking_012}}"
-                        required="" /></label><label>{{CMS:booking:booking_013}}<select name="service" required="">
-                        <option value="">Choose a service</option>
-                        <option>Initial physiotherapy assessment</option>
-                        <option>Physiotherapy follow-up</option>
-                        <option>One-to-one Clinical Pilates</option>
-                        <option>Exercise rehabilitation</option>
-                        <option>Headache / TMD assessment</option>
-                        <option>Clinical Mat Pilates enquiry</option>
-                    </select></label><label>{{CMS:booking:booking_014}}<input id="date" name="preferred-date"
-                        required="" type="date" /></label><label>{{CMS:booking:booking_015}}<input name="location"
-                        placeholder="{{CMS:booking:booking_016}}" required="" /></label><label
-                    class="wide">{{CMS:booking:booking_017}}<textarea name="message"
-                        placeholder="{{CMS:booking:booking_018}}" rows="3"></textarea></label><button class="btn"
-                    type="submit">{{CMS:booking:booking_019}}</button><small
-                    class="wide">{{CMS:booking:booking_020}}</small>
-            </form>
-        </section>
-        <!-- Replace these five placeholders with verified, approved patient reviews before publishing. -->
-        <section aria-labelledby="reviews-heading" class="section reviews-section" id="reviews">
-            <div class="reviews-heading">
-                <div>
-                    <div class="section-label">{{CMS:reviews:reviews_001}}</div>
-                    <h2 id="reviews-heading">{{CMS:reviews:reviews_002}} <em>{{CMS:reviews:reviews_003}}</em></h2>
-                </div>
-                <p>{{CMS:reviews:reviews_004}}</p>
-            </div>
-            <div aria-label="Patient feedback placeholders" aria-roledescription="carousel" class="reviews-carousel">
-                <div class="reviews-viewport" id="reviews-viewport">
-                    <div class="reviews-track" id="reviews-track">
-                        <article aria-label="Placeholder 1 of 5" class="review-card">
-                            <span class="review-placeholder">{{CMS:reviews:reviews_005}}</span>
-                            <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_006}}</div>
-                            <blockquote>{{CMS:reviews:reviews_007}}</blockquote>
-                            <div class="review-author">{{CMS:reviews:reviews_008}}
-                                <span>{{CMS:reviews:reviews_009}}</span>
-                            </div>
-                        </article>
-                        <article aria-label="Placeholder 2 of 5" class="review-card">
-                            <span class="review-placeholder">{{CMS:reviews:reviews_010}}</span>
-                            <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_011}}</div>
-                            <blockquote>{{CMS:reviews:reviews_012}}</blockquote>
-                            <div class="review-author">{{CMS:reviews:reviews_013}}
-                                <span>{{CMS:reviews:reviews_014}}</span>
-                            </div>
-                        </article>
-                        <article aria-label="Placeholder 3 of 5" class="review-card">
-                            <span class="review-placeholder">{{CMS:reviews:reviews_015}}</span>
-                            <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_016}}</div>
-                            <blockquote>{{CMS:reviews:reviews_017}}</blockquote>
-                            <div class="review-author">{{CMS:reviews:reviews_018}}
-                                <span>{{CMS:reviews:reviews_019}}</span>
-                            </div>
-                        </article>
-                        <article aria-label="Placeholder 4 of 5" class="review-card">
-                            <span class="review-placeholder">{{CMS:reviews:reviews_020}}</span>
-                            <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_021}}</div>
-                            <blockquote>{{CMS:reviews:reviews_022}}</blockquote>
-                            <div class="review-author">{{CMS:reviews:reviews_023}}
-                                <span>{{CMS:reviews:reviews_024}}</span>
-                            </div>
-                        </article>
-                        <article aria-label="Placeholder 5 of 5" class="review-card">
-                            <span class="review-placeholder">{{CMS:reviews:reviews_025}}</span>
-                            <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_026}}</div>
-                            <blockquote>{{CMS:reviews:reviews_027}}</blockquote>
-                            <div class="review-author">{{CMS:reviews:reviews_028}}
-                                <span>{{CMS:reviews:reviews_029}}</span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="reviews-controls">
-                    <div aria-label="Choose a review" class="reviews-dots" id="reviews-dots"></div>
-                    <div class="reviews-arrows">
-                        <button aria-label="Previous review" class="review-arrow" id="review-prev"
-                            type="button">{{CMS:reviews:reviews_030}}</button>
-                        <button aria-label="Next review" class="review-arrow" id="review-next"
-                            type="button">{{CMS:reviews:reviews_031}}</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <div>
-                <div class="section-label">{{CMS:contact:contact_001}}</div>
-                <h2>{{CMS:contact:contact_002}} <em>{{CMS:contact:contact_003}}</em></h2>
-                <p>{{CMS:contact:contact_004}}</p>
-            </div>
-            <div class="contact-links"><a href="{{CMS:contact:contact_005}}">{{CMS:contact:contact_006}}</a><a
-                    href="{{CMS:contact:contact_007}}">{{CMS:contact:contact_008}}</a><a
-                    href="{{CMS:contact:contact_009}}" rel="noopener" target="_blank">{{CMS:contact:contact_010}}</a>
-            </div>
-        </section>
-        <section class="section journal" id="journal">
-            <div class="section-top">
-                <div>
-                    <div class="section-label">{{CMS:journal:journal_001}}</div>
-                    <h2>{{CMS:journal:journal_002}} <em>{{CMS:journal:journal_003}}</em></h2>
-                </div>
-                <p>{{CMS:journal:journal_004}}</p>
-            </div>
-            <div aria-label="Filter articles" class="filters"><button class="filter active"
-                    data-category="all">{{CMS:journal:journal_005}}</button><button class="filter"
-                    data-category="physiotherapy">{{CMS:journal:journal_006}}</button><button class="filter"
-                    data-category="headache">{{CMS:journal:journal_007}}</button><button class="filter"
-                    data-category="pilates">{{CMS:journal:journal_008}}</button><button class="filter"
-                    data-category="rehabilitation">{{CMS:journal:journal_009}}</button></div>
-            <div class="articles">
-                <article class="jcard" data-category="rehabilitation"><img alt="Exercise and strength training"
-                        loading="lazy" src="{{CMS:journal:journal_010}}" />
-                    <div class="jbody"><span>{{CMS:journal:journal_011}}</span>
-                        <h3>{{CMS:journal:journal_012}}</h3>
-                        <p>{{CMS:journal:journal_013}}</p><a class="jlink"
-                            href="#contact">{{CMS:journal:journal_014}}</a>
-                    </div>
-                </article>
-                <article class="jcard" data-category="pilates"><img alt="Woman practising controlled exercise"
-                        loading="lazy" src="{{CMS:journal:journal_015}}" />
-                    <div class="jbody"><span>{{CMS:journal:journal_016}}</span>
-                        <h3>{{CMS:journal:journal_017}}</h3>
-                        <p>{{CMS:journal:journal_018}}</p><a class="jlink"
-                            href="#contact">{{CMS:journal:journal_019}}</a>
-                    </div>
-                </article>
-                <article class="jcard" data-category="headache"><img alt="Person resting peacefully outdoors"
-                        loading="lazy" src="{{CMS:journal:journal_020}}" />
-                    <div class="jbody"><span>{{CMS:journal:journal_021}}</span>
-                        <h3>{{CMS:journal:journal_022}}</h3>
-                        <p>{{CMS:journal:journal_023}}
-                        </p><a class="jlink" href="#contact">{{CMS:journal:journal_024}}</a>
-                    </div>
-                </article>
-                <article class="jcard" data-category="physiotherapy"><img
-                        alt="Healthcare professional in a consultation" loading="lazy"
-                        src="{{CMS:journal:journal_025}}" />
-                    <div class="jbody"><span>{{CMS:journal:journal_026}}</span>
-                        <h3>{{CMS:journal:journal_027}}</h3>
-                        <p>{{CMS:journal:journal_028}}</p>
-                        <a class="jlink" href="#contact">{{CMS:journal:journal_029}}</a>
-                    </div>
-                </article>
-                <article class="jcard" data-category="headache"><img alt="Healthcare consultation setting"
-                        loading="lazy" src="{{CMS:journal:journal_030}}" />
-                    <div class="jbody"><span>{{CMS:journal:journal_031}}</span>
-                        <h3>{{CMS:journal:journal_032}}</h3>
-                        <p>{{CMS:journal:journal_033}}
-                        </p><a class="jlink" href="#contact">{{CMS:journal:journal_034}}</a>
-                    </div>
-                </article>
-                <article class="jcard" data-category="rehabilitation"><img alt="Person exercising in a bright gym"
-                        loading="lazy" src="{{CMS:journal:journal_035}}" />
-                    <div class="jbody"><span>{{CMS:journal:journal_036}}</span>
-                        <h3>{{CMS:journal:journal_037}}</h3>
-                        <p>{{CMS:journal:journal_038}}</p><a class="jlink"
-                            href="#contact">{{CMS:journal:journal_039}}</a>
-                    </div>
-                </article>
-            </div>
-            <p class="fine">{{CMS:journal:journal_040}}</p>
-        </section>
-    </main>
-    <nav class="section" aria-label="Physiotherapy service areas" style="padding-top:35px;padding-bottom:35px">
-        <h2 style="font-size:clamp(1.5rem,3vw,2.3rem)">Physiotherapy in your area</h2>
-        <p>Explore our local physiotherapy information for Bedfordshire and Milton Keynes.</p>
-        <p><a href="/bedfordshire.html">Bedfordshire physiotherapy</a> · <a href="/central-bedfordshire.html">Central
-                Bedfordshire physiotherapy</a> · <a href="/milton-keynes.html">Milton Keynes physiotherapy</a></p>
-    </nav>
-    <footer>
-        <div class="brand"><span
-                class="brandmark">{{CMS:index:index_016}}<span>{{CMS:index:index_018}}</span>{{CMS:index:index_017}}</span><span>{{CMS:index:index_019}}<small>{{CMS:index:index_020}}</small></span>
-        </div>
-        <p>{{CMS:index:index_021}}</p>
-        <div><a href="#area">{{CMS:index:index_024}}</a> {{CMS:index:index_022}} <a
-                href="#area">{{CMS:index:index_025}}</a> {{CMS:index:index_023}} <a
-                href="#area">{{CMS:index:index_026}}</a></div><small>{{CMS:index:index_027}} <span id="year"></span>
-            {{CMS:index:index_028}}</small>
-        <nav aria-label="Information and policies" class="footer-pages">
-            <a href="faq.html">{{CMS:index:index_029}}</a>
-            <a href="privacy.html">{{CMS:index:index_030}}</a>
-            <a href="cookies.html">{{CMS:index:index_031}}</a>
-            <a href="terms.html">{{CMS:index:index_032}}</a>
-            <button class="cookie-manage" data-open-cookie-settings="" type="button">{{CMS:index:index_033}}</button>
-        </nav>
-    </footer>
-    <script src="script.js"></script>
-    <div aria-label="Cookie preferences" aria-modal="false" class="cookie-banner" hidden="" id="cookie-banner"
-        role="dialog">
-        <h2>{{CMS:index:index_034}}</h2>
-        <p>{{CMS:index:index_035}} <a href="privacy.html">{{CMS:index:index_038}}</a> {{CMS:index:index_036}} <a
-                href="cookies.html">{{CMS:index:index_039}}</a>{{CMS:index:index_037}}</p>
-        <div class="cookie-settings" hidden="" id="cookie-settings">
-            <label><input checked="" disabled="" type="checkbox" /> {{CMS:index:index_040}}</label>
-            <label><input id="cookie-analytics" type="checkbox" /> {{CMS:index:index_041}}</label>
-            <label><input id="cookie-marketing" type="checkbox" /> {{CMS:index:index_042}}</label>
-            <small>{{CMS:index:index_043}}</small>
-            <button class="cookie-primary" id="cookie-save" type="button">{{CMS:index:index_044}}</button>
-        </div>
-        <div class="cookie-actions">
-            <button class="cookie-primary" id="cookie-accept" type="button">{{CMS:index:index_045}}</button>
-            <button id="cookie-reject" type="button">{{CMS:index:index_046}}</button>
-            <button aria-controls="cookie-settings" aria-expanded="false" id="cookie-customise"
-                type="button">{{CMS:index:index_047}}</button>
-        </div>
-    </div>
-    <script>
+<header class="nav"><a class="brand" href="#home"><span class="brandmark">{{CMS:index:index_001}}<span>{{CMS:index:index_003}}</span>{{CMS:index:index_002}}</span><span>{{CMS:index:index_004}}<small>{{CMS:index:index_005}}</small></span></a>
+<nav id="navlinks"><a href="#about">{{CMS:index:index_006}}</a><a href="#services">{{CMS:index:index_007}}</a><a href="#pricing">{{CMS:index:index_008}}</a><a href="#journal">{{CMS:index:index_009}}</a><a href="#contact">{{CMS:index:index_010}}</a><a href="faq.html">{{CMS:index:index_011}}</a><a href="privacy.html">{{CMS:index:index_012}}</a><a href="cookies.html">{{CMS:index:index_013}}</a><a href="terms.html">{{CMS:index:index_014}}</a></nav><a class="btn small navcta" href="#booking">{{CMS:index:index_015}}</a><button aria-expanded="false" aria-label="Toggle menu" class="menu" id="menu"><i></i><i></i><i></i></button>
+</header>
+<main id="home">
+<section class="hero">
+<div class="hero-copy">
+<div class="eyebrow"><span></span> {{CMS:hero:hero_001}}</div>
+<h1>{{CMS:hero:hero_002}}<br/>{{CMS:hero:hero_003}}<br/><em>{{CMS:hero:hero_004}}</em></h1>
+<p>{{CMS:hero:hero_005}}</p>
+<div class="actions"><a class="btn" href="#booking">{{CMS:hero:hero_006}}</a><a class="textlink" href="#services">{{CMS:hero:hero_007}}</a></div>
+</div>
+<!-- Add your photo as images/hero.jpg (wide image, subject towards the right works best) -->
+<img alt="Body Function physiotherapy session" class="hero-img" onerror="this.style.display='none'" src="{{CMS:hero:hero_008}}"/>
+<div class="image-overlay"><span class="plus"></span>
+<div>{{CMS:hero:hero_009}}<br/><strong>{{CMS:hero:hero_010}}</strong></div>
+</div>
+</section>
+<section class="section intro" id="about">
+<div>
+<div class="section-label">{{CMS:about:about_001}}</div>
+<h2>{{CMS:about:about_002}} <em>{{CMS:about:about_003}}</em></h2>
+</div>
+<div class="intro-right">
+<p>{{CMS:about:about_004}}</p>
+<p>{{CMS:about:about_005}}</p><a class="textlink dark" href="#contact">{{CMS:about:about_006}}</a>
+</div>
+</section>
+<!-- Section 02: Dionne's profile -->
+<section aria-labelledby="profile-heading" class="section profile-section" id="profile">
+<div class="profile-layout">
+<div class="profile-photo-wrap">
+<img alt="Portrait of Dionne Jules, physiotherapist" class="profile-photo" height="900" loading="lazy" src="{{CMS:profile:profile_001}}" width="720"/>
+<div class="profile-photo-caption">{{CMS:profile:profile_002}} <span>{{CMS:profile:profile_003}}</span></div>
+</div>
+<div class="profile-content">
+<div class="section-label">{{CMS:profile:profile_004}}</div>
+<h2 id="profile-heading">{{CMS:profile:profile_005}} <em>{{CMS:profile:profile_006}}</em></h2>
+<p class="profile-lead">{{CMS:profile:profile_007}}</p>
+<p>{{CMS:profile:profile_008}}</p>
+<p>{{CMS:profile:profile_009}}</p>
+<p>{{CMS:profile:profile_010}}</p>
+<p>{{CMS:profile:profile_011}}</p>
+<div class="profile-qualifications">
+<h3>{{CMS:profile:profile_012}}</h3>
+<ul>
+<li>{{CMS:profile:profile_013}}</li>
+<li>{{CMS:profile:profile_014}}</li>
+<li>{{CMS:profile:profile_015}}</li>
+<li>{{CMS:profile:profile_016}}</li>
+<li>{{CMS:profile:profile_017}}</li>
+<li>{{CMS:profile:profile_018}}</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section area" id="area">
+<div>
+<div class="section-label">{{CMS:area:area_001}}</div>
+<h2>{{CMS:area:area_002}} <em>{{CMS:area:area_003}}</em></h2>
+<p>{{CMS:area:area_004}}</p>
+<div class="chips"><span>{{CMS:area:area_005}}</span><span>{{CMS:area:area_006}}</span><span>{{CMS:area:area_007}}</span><span>{{CMS:area:area_008}}</span></div><a class="textlink dark" href="#contact">{{CMS:area:area_009}}</a>
+</div><!-- Add your photo as images/area.jpg -->
+<img alt="Body Function home visits across Bedfordshire and Milton Keynes" onerror="this.style.display='none'" src="{{CMS:area:area_010}}"/>
+</section>
+<section class="section services" id="services">
+<div class="svc-layout">
+<div class="svc-intro">
+<div class="section-label">{{CMS:services:services_001}}</div>
+<h2>{{CMS:services:services_002}} <em>{{CMS:services:services_003}}</em></h2>
+<p>{{CMS:services:services_004}}</p>
+<a class="btn" href="#booking">{{CMS:services:services_005}}</a>
+</div>
+<ul class="svc-list">
+<li><span class="n">{{CMS:services:services_006}}</span>
+<div>
+<h3>{{CMS:services:services_007}}</h3>
+<p>{{CMS:services:services_008}}</p>
+<div class="tags"><span>{{CMS:services:services_009}}</span><span>{{CMS:services:services_010}}</span></div>
+</div><a aria-label="{{CMS:services:services_011}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_012}}</span>
+<div>
+<h3>{{CMS:services:services_013}}</h3>
+<p>{{CMS:services:services_014}}</p>
+</div><a aria-label="{{CMS:services:services_015}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_016}}</span>
+<div>
+<h3>{{CMS:services:services_017}}</h3>
+<p>{{CMS:services:services_018}}</p>
+<div class="tags"><span>{{CMS:services:services_019}}</span></div>
+</div><a aria-label="{{CMS:services:services_020}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_021}}</span>
+<div>
+<h3>{{CMS:services:services_022}}</h3>
+<p>{{CMS:services:services_023}}</p>
+<div class="tags"><span>{{CMS:services:services_024}}</span></div>
+</div><a aria-label="{{CMS:services:services_025}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_026}}</span>
+<div>
+<h3>{{CMS:services:services_027}}</h3>
+<p>{{CMS:services:services_028}}</p>
+</div><a aria-label="{{CMS:services:services_029}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_030}}</span>
+<div>
+<h3>{{CMS:services:services_031}}</h3>
+<p>{{CMS:services:services_032}}</p>
+<div class="tags"><span>{{CMS:services:services_033}}</span><span>{{CMS:services:services_034}}</span><span>{{CMS:services:services_035}}</span></div>
+</div><a aria-label="{{CMS:services:services_036}}" href="#booking"></a>
+</li>
+</ul>
+</div>
+</section>
+<section class="statement"><span>{{CMS:statement:statement_001}}</span>
+<h2>{{CMS:statement:statement_002}} <em>{{CMS:statement:statement_003}}</em></h2><a class="btn" href="#booking">{{CMS:statement:statement_004}}</a>
+</section>
+<section class="section pricing" id="pricing">
+<div class="section-label">{{CMS:pricing:pricing_001}}</div>
+<div class="section-top">
+<h2>{{CMS:pricing:pricing_002}} <em>{{CMS:pricing:pricing_003}}</em></h2>
+<p>{{CMS:pricing:pricing_004}}</p>
+</div>
+<div class="price-list">
+<div><span>{{CMS:pricing:pricing_005}} <small>{{CMS:pricing:pricing_006}}</small></span><strong>{{CMS:pricing:pricing_007}}</strong></div>
+<div><span>{{CMS:pricing:pricing_008}} <small>{{CMS:pricing:pricing_009}}</small></span><strong>{{CMS:pricing:pricing_010}}</strong></div>
+<div><span>{{CMS:pricing:pricing_011}} <small>{{CMS:pricing:pricing_012}}</small></span><strong>{{CMS:pricing:pricing_013}}</strong></div>
+<div><span>{{CMS:pricing:pricing_014}} <small>{{CMS:pricing:pricing_015}}</small></span><strong>{{CMS:pricing:pricing_016}}</strong></div>
+<div><span>{{CMS:pricing:pricing_017}} <small>{{CMS:pricing:pricing_018}}</small></span><strong>{{CMS:pricing:pricing_019}}</strong></div>
+<div><span>{{CMS:pricing:pricing_020}} <small>{{CMS:pricing:pricing_021}}</small></span><strong>{{CMS:pricing:pricing_022}}</strong></div>
+<div><span>{{CMS:pricing:pricing_023}} <small>{{CMS:pricing:pricing_024}}</small></span><strong>{{CMS:pricing:pricing_025}}</strong></div>
+</div>
+<p class="fine">{{CMS:pricing:pricing_026}}</p>
+</section>
+<section class="section booking" id="booking">
+<div>
+<div class="section-label">{{CMS:booking:booking_001}}</div>
+<h2>{{CMS:booking:booking_002}} <em>{{CMS:booking:booking_003}}</em></h2>
+<p>{{CMS:booking:booking_004}}</p>
+<p class="fine">{{CMS:booking:booking_005}}</p>
+</div>
+<!-- The email in this action is the ONLY place the recipient is set. script.js reads it from here. -->
+<form action="{{CMS:booking:booking_006}}" method="POST" name="booking-enquiry">
+<input name="_subject" type="hidden" value="New Body Function booking enquiry"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<label>{{CMS:booking:booking_007}}<input name="name" placeholder="{{CMS:booking:booking_008}}" required=""/></label><label>{{CMS:booking:booking_009}}<input name="email" placeholder="{{CMS:booking:booking_010}}" required="" type="email"/></label><label>{{CMS:booking:booking_011}}<input name="phone" placeholder="{{CMS:booking:booking_012}}" required=""/></label><label>{{CMS:booking:booking_013}}<select name="service" required="">
+<option value="">Choose a service</option>
+<option>Initial physiotherapy assessment</option>
+<option>Physiotherapy follow-up</option>
+<option>One-to-one Clinical Pilates</option>
+<option>Exercise rehabilitation</option>
+<option>Headache / TMD assessment</option>
+<option>Clinical Mat Pilates enquiry</option>
+</select></label><label>{{CMS:booking:booking_014}}<input id="date" name="preferred-date" required="" type="date"/></label><label>{{CMS:booking:booking_015}}<input name="location" placeholder="{{CMS:booking:booking_016}}" required=""/></label><label class="wide">{{CMS:booking:booking_017}}<textarea name="message" placeholder="{{CMS:booking:booking_018}}" rows="3"></textarea></label><button class="btn" type="submit">{{CMS:booking:booking_019}}</button><small class="wide">{{CMS:booking:booking_020}}</small>
+</form>
+</section>
+<!-- Replace these five placeholders with verified, approved patient reviews before publishing. -->
+<section aria-labelledby="reviews-heading" class="section reviews-section" id="reviews">
+<div class="reviews-heading">
+<div>
+<div class="section-label">{{CMS:reviews:reviews_001}}</div>
+<h2 id="reviews-heading">{{CMS:reviews:reviews_002}} <em>{{CMS:reviews:reviews_003}}</em></h2>
+</div>
+<p>{{CMS:reviews:reviews_004}}</p>
+</div>
+<div aria-label="Patient feedback placeholders" aria-roledescription="carousel" class="reviews-carousel">
+<div class="reviews-viewport" id="reviews-viewport">
+<div class="reviews-track" id="reviews-track">
+<article aria-label="Placeholder 1 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_005}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_006}}</div>
+<blockquote>{{CMS:reviews:reviews_007}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_008}} <span>{{CMS:reviews:reviews_009}}</span></div>
+</article>
+<article aria-label="Placeholder 2 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_010}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_011}}</div>
+<blockquote>{{CMS:reviews:reviews_012}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_013}} <span>{{CMS:reviews:reviews_014}}</span></div>
+</article>
+<article aria-label="Placeholder 3 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_015}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_016}}</div>
+<blockquote>{{CMS:reviews:reviews_017}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_018}} <span>{{CMS:reviews:reviews_019}}</span></div>
+</article>
+<article aria-label="Placeholder 4 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_020}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_021}}</div>
+<blockquote>{{CMS:reviews:reviews_022}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_023}} <span>{{CMS:reviews:reviews_024}}</span></div>
+</article>
+<article aria-label="Placeholder 5 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_025}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_026}}</div>
+<blockquote>{{CMS:reviews:reviews_027}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_028}} <span>{{CMS:reviews:reviews_029}}</span></div>
+</article>
+</div>
+</div>
+<div class="reviews-controls">
+<div aria-label="Choose a review" class="reviews-dots" id="reviews-dots"></div>
+<div class="reviews-arrows">
+<button aria-label="Previous review" class="review-arrow" id="review-prev" type="button">{{CMS:reviews:reviews_030}}</button>
+<button aria-label="Next review" class="review-arrow" id="review-next" type="button">{{CMS:reviews:reviews_031}}</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div>
+<div class="section-label">{{CMS:contact:contact_001}}</div>
+<h2>{{CMS:contact:contact_002}} <em>{{CMS:contact:contact_003}}</em></h2>
+<p>{{CMS:contact:contact_004}}</p>
+</div>
+<div class="contact-links"><a href="{{CMS:contact:contact_005}}">{{CMS:contact:contact_006}}</a><a href="{{CMS:contact:contact_007}}">{{CMS:contact:contact_008}}</a><a href="{{CMS:contact:contact_009}}" rel="noopener" target="_blank">{{CMS:contact:contact_010}}</a></div>
+</section>
+<section class="section journal" id="journal">
+<div class="section-top">
+<div>
+<div class="section-label">{{CMS:journal:journal_001}}</div>
+<h2>{{CMS:journal:journal_002}} <em>{{CMS:journal:journal_003}}</em></h2>
+</div>
+<p>{{CMS:journal:journal_004}}</p>
+</div>
+<div aria-label="Filter articles" class="filters"><button class="filter active" data-category="all">{{CMS:journal:journal_005}}</button><button class="filter" data-category="physiotherapy">{{CMS:journal:journal_006}}</button><button class="filter" data-category="headache">{{CMS:journal:journal_007}}</button><button class="filter" data-category="pilates">{{CMS:journal:journal_008}}</button><button class="filter" data-category="rehabilitation">{{CMS:journal:journal_009}}</button></div>
+<div class="articles">
+<!--BLOG_CARDS-->
+</div>
+<p class="fine">{{CMS:journal:journal_040}}</p>
+</section>
+</main>
+<nav class="section" aria-label="Physiotherapy service areas" style="padding-top:35px;padding-bottom:35px"><h2 style="font-size:clamp(1.5rem,3vw,2.3rem)">Physiotherapy in your area</h2><p>Explore our local physiotherapy information for Bedfordshire and Milton Keynes.</p><p><a href="/bedfordshire.html">Bedfordshire physiotherapy</a> · <a href="/central-bedfordshire.html">Central Bedfordshire physiotherapy</a> · <a href="/milton-keynes.html">Milton Keynes physiotherapy</a></p></nav>
+<footer>
+<div class="brand"><span class="brandmark">{{CMS:index:index_016}}<span>{{CMS:index:index_018}}</span>{{CMS:index:index_017}}</span><span>{{CMS:index:index_019}}<small>{{CMS:index:index_020}}</small></span></div>
+<p>{{CMS:index:index_021}}</p>
+<div><a href="#area">{{CMS:index:index_024}}</a> {{CMS:index:index_022}} <a href="#area">{{CMS:index:index_025}}</a> {{CMS:index:index_023}} <a href="#area">{{CMS:index:index_026}}</a></div><small>{{CMS:index:index_027}} <span id="year"></span> {{CMS:index:index_028}}</small>
+<nav aria-label="Information and policies" class="footer-pages">
+<a href="faq.html">{{CMS:index:index_029}}</a>
+<a href="privacy.html">{{CMS:index:index_030}}</a>
+<a href="cookies.html">{{CMS:index:index_031}}</a>
+<a href="terms.html">{{CMS:index:index_032}}</a>
+<button class="cookie-manage" data-open-cookie-settings="" type="button">{{CMS:index:index_033}}</button>
+</nav>
+</footer>
+<script src="script.js"></script>
+<div aria-label="Cookie preferences" aria-modal="false" class="cookie-banner" hidden="" id="cookie-banner" role="dialog">
+<h2>{{CMS:index:index_034}}</h2>
+<p>{{CMS:index:index_035}} <a href="privacy.html">{{CMS:index:index_038}}</a> {{CMS:index:index_036}} <a href="cookies.html">{{CMS:index:index_039}}</a>{{CMS:index:index_037}}</p>
+<div class="cookie-settings" hidden="" id="cookie-settings">
+<label><input checked="" disabled="" type="checkbox"/> {{CMS:index:index_040}}</label>
+<label><input id="cookie-analytics" type="checkbox"/> {{CMS:index:index_041}}</label>
+<label><input id="cookie-marketing" type="checkbox"/> {{CMS:index:index_042}}</label>
+<small>{{CMS:index:index_043}}</small>
+<button class="cookie-primary" id="cookie-save" type="button">{{CMS:index:index_044}}</button>
+</div>
+<div class="cookie-actions">
+<button class="cookie-primary" id="cookie-accept" type="button">{{CMS:index:index_045}}</button>
+<button id="cookie-reject" type="button">{{CMS:index:index_046}}</button>
+<button aria-controls="cookie-settings" aria-expanded="false" id="cookie-customise" type="button">{{CMS:index:index_047}}</button>
+</div>
+</div>
+<script>
         (function () {
             const key = 'bodyfunction_cookie_preferences_v1';
             const banner = document.getElementById('cookie-banner');
@@ -803,199 +498,6 @@
             }));
         })();
     </script>
-    <script>
-        /* Body Function journal: opens each article on the homepage (no separate page).
-       Articles open directly from the homepage cards. */
-        (() => {
-            const ARTICLES = [
-                {
-                    title: 'Why gradual progress matters in rehabilitation', slug: 'gradual-progress',
-                    intro: 'When you are recovering from an injury or a long-standing problem, it is natural to want to get back to normal as quickly as possible. But recovery rarely follows a straight line, and the way you build things back up matters as much as how hard you work.',
-                    s: [
-                        { h: 'Why your body needs time to adapt', p: ['Muscles, tendons, joints and bones respond to the demands we place on them. When those demands increase steadily, tissues tend to adapt and become more capable. When they jump suddenly, whether that is a first run after weeks off or a full gym session after an injury, the body can struggle to keep up and symptoms often flare.', 'At the other extreme, avoiding movement for too long can leave you stiffer, weaker and less confident. Good rehabilitation sits between the two: enough challenge to move you forward, not so much that you take a step back.'] },
-                        { h: 'What gradual progression looks like', p: ['Progressive loading simply means increasing what you ask of your body in small, planned steps. That might be more repetitions, a little more weight, a longer walk, or a more demanding position. Usually only one thing changes at a time, so you can see what your body is responding to.'], l: ['Start at a level you can repeat comfortably, not your best day', 'Change one thing at a time: how much, how often or how hard', 'Notice how you feel during the activity and over the following day', 'Keep a simple note of what you did and how it felt'] },
-                        { h: 'Good days, bad days and flare-ups', p: ['Progress is rarely smooth. Symptoms can vary with sleep, stress, workload and activity, and a sore day does not automatically mean you have done damage. A sensible response is usually to ease back slightly, keep gently moving, and build up again rather than stopping altogether.', 'If your symptoms keep getting worse, or you are unsure how much to do, that is a good moment to have your plan reviewed.'] },
-                        { h: 'Confidence is part of recovery', p: ['After an injury or a long period of pain, many people become cautious about movement. Small, achievable wins rebuild trust in your body. Completing a manageable session, then repeating it, then adding a little more, often does more for confidence than a single big effort.'] }
-                    ],
-                    take: ['Recovery is rarely a straight line, and that is normal', 'Small, planned increases usually work better than big jumps', 'A flare-up is a signal to adjust, not necessarily to stop'],
-                    note: 'Seek advice promptly if you develop new numbness or weakness, severe or worsening pain, pain that wakes you at night, or if you feel generally unwell.'
-                },
-                {
-                    title: 'What makes Clinical Pilates different?', slug: 'clinical-pilates',
-                    intro: 'Pilates is widely known as a way to improve posture, control and core strength. Clinical Pilates takes those same principles and applies them with a healthcare focus, shaped around your body, your history and your goals.',
-                    s: [
-                        { h: 'Pilates and Clinical Pilates', p: ['Traditional Pilates is built around controlled movement, breathing, alignment and awareness of how you move. Clinical Pilates uses these ideas within a rehabilitation approach. It is usually led by a physiotherapist or a suitably trained instructor and begins with an assessment, so the exercises are chosen for you rather than for a general group.'] },
-                        { h: 'How it is tailored', p: ['Your first session looks at how you move, where you feel restricted or unstable, and what you want to achieve. From there, exercises are adapted so they are challenging but manageable, and progressed as your control and strength improve.'], l: ['Exercises are chosen and modified around your needs', 'Movement quality and control are coached closely', 'Sessions progress as you improve', 'It can be combined with other parts of your rehabilitation'] },
-                        { h: 'What a session involves', p: ['Clinical Pilates is typically done on a mat, using your own body weight and sometimes simple equipment. The emphasis is on slow, precise movement and breathing rather than speed or intensity. One-to-one sessions give time to adjust positions and cues to suit you.'] },
-                        { h: 'Who might find it helpful', p: ['Clinical Pilates may suit people who want to build strength and control after an injury, manage ongoing musculoskeletal aches, or move with more confidence in everyday life. It is one tool among many, and whether it is the right one for you is best decided after an assessment.'] }
-                    ],
-                    take: ['Clinical Pilates starts with an individual assessment', 'Exercises are adapted to your body and goals', 'It works best as part of a wider plan'],
-                    note: 'If you are pregnant, recovering from surgery or managing a medical condition, mention this when you enquire so sessions can be planned appropriately.'
-                },
-                {
-                    title: 'Can neck problems contribute to headaches?', slug: 'neck-headaches',
-                    intro: 'Headaches have many causes, and for some people the neck plays a part. Understanding the difference matters, because the right approach depends on what is driving your symptoms.',
-                    s: [
-                        { h: 'Not every headache is the same', p: ['Common headache types include tension-type headaches, migraine and headaches that seem linked to the neck, sometimes called cervicogenic headaches. They can overlap, and it is not always obvious which one you are dealing with, which is why a careful assessment is useful.'] },
-                        { h: 'Signs the neck may be involved', p: ['A neck contribution is more likely when headaches are felt together with neck stiffness or discomfort, and when certain movements or sustained positions seem to bring them on.'], l: ['Headaches that start at the back of the head or neck', 'Symptoms that change with neck movement or posture', 'Stiffness or reduced movement in the neck', 'Headaches after long periods at a desk or screen'] },
-                        { h: 'What an assessment looks at', p: ['A physiotherapy assessment usually involves talking through your headache pattern, then looking at how your neck and upper back move, how the surrounding muscles feel and how your posture and daily habits may play a role. The aim is to work out whether musculoskeletal factors are contributing and what could help.'] },
-                        { h: 'What can help', p: ['Where the neck is involved, a plan may include advice on positions and habits, targeted exercises for mobility and strength, and other treatment where appropriate. Many people also benefit from looking at sleep, stress and screen breaks. If your assessment suggests another cause, you can be advised to speak to your GP.'] }
-                    ],
-                    take: ['Some headaches are linked to the neck, but not all', 'Assessment helps separate the causes', 'Exercise and habit changes are often part of the plan'],
-                    note: 'Seek urgent medical help for a sudden, severe headache that feels unlike any before, or a headache with fever and a stiff neck, confusion, weakness, vision changes, or after a head injury. Call 999 or NHS 111.'
-                },
-                {
-                    title: 'What to expect at your first physiotherapy appointment', slug: 'first-appointment',
-                    intro: 'Starting physiotherapy can feel uncertain if you have not done it before. Knowing what happens in the first session makes it easier to prepare and to get the most from your time.',
-                    s: [
-                        { h: 'Before you come', p: ['A little preparation helps. Think about what you would like to achieve, whether that is walking further, returning to a sport or simply sleeping comfortably. It also helps to wear clothes you can move in.'], l: ['Wear comfortable, loose clothing', 'Have a list of any medication you take', 'Bring any scan results or letters you have', 'Write down your main questions and goals'] },
-                        { h: 'The conversation', p: ['The first part of an initial assessment is mostly talking. You will be asked about your symptoms, how they started, what makes them better or worse, your general health and what matters most to you. There is no need to prepare a perfect summary; the questions guide you.'] },
-                        { h: 'The physical assessment', p: ['Next comes an assessment of how you move. This may include watching simple movements, checking strength and range of motion, and gently examining the area. You will be told what is being done and can stop or ask questions at any point.'] },
-                        { h: 'Explanation and plan', p: ['You should leave understanding what is likely to be going on, what the next steps are and what you can do yourself. That often includes a few exercises to start, advice on activity, and a suggestion for follow-up sessions. Initial assessments at Body Function last 50 minutes, with follow-ups of 30 minutes.'] },
-                        { h: 'Home visits', p: ['If your appointment is at home, it helps to have a clear space with room to move and, if possible, a chair and a floor area. Availability and travel coverage are confirmed before booking.'] }
-                    ],
-                    take: ['The first session is mostly listening, assessing and explaining', 'You are encouraged to ask questions at any point', 'You should leave with a clear next step'],
-                    note: 'If your symptoms are severe, sudden or rapidly worsening, or you are worried about your health, contact your GP, call NHS 111 or seek emergency care instead of waiting for an appointment.'
-                },
-                {
-                    title: 'Jaw pain and TMD: when to seek assessment', slug: 'jaw-pain-tmd',
-                    intro: 'Jaw pain is common and often settles, but it can also become persistent and interfere with eating, talking and sleep. Temporomandibular disorders, usually shortened to TMD, are a group of problems affecting the jaw joint and the muscles around it.',
-                    s: [
-                        { h: 'What TMD can feel like', p: ['Symptoms vary from person to person and may come and go.'], l: ['Aching or tenderness in the jaw, face or near the ear', 'Clicking, popping or grinding when opening the mouth', 'Difficulty opening wide or chewing comfortably', 'Jaw feeling stuck, tight or tired', 'Headaches or neck tension alongside jaw symptoms'] },
-                        { h: 'Why it happens', p: ['There is rarely a single cause. Clenching or grinding, stress, previous injury, changes in how the teeth meet and tension in the surrounding muscles can all contribute. The neck and jaw are closely connected, so the two often influence each other.'] },
-                        { h: 'When an assessment is worth having', p: ['Mild, short-lived jaw soreness often eases on its own. It is worth getting assessed if symptoms continue for more than a few weeks, keep returning, restrict how widely you can open, or affect eating, sleep or work.'] },
-                        { h: 'What assessment and management involve', p: ['A physiotherapy assessment looks at how the jaw opens and closes, the muscles around it, the neck and posture, and habits that may be adding strain. Management may include advice, relaxation and movement exercises, and neck or posture work where relevant. Sometimes a dentist or GP is also needed, and you can be guided on that.'] },
-                        { h: 'Things that may help in the meantime', p: ['These are general tips and not a replacement for assessment.'], l: ['Choose softer foods while it is sore', 'Avoid very wide yawning, gum chewing and nail biting', 'Try resting with lips together and teeth slightly apart', 'Notice whether you clench during stress or concentration'] }
-                    ],
-                    take: ['TMD affects the jaw joint and surrounding muscles', 'Many cases improve, but persistent symptoms deserve assessment', 'The neck, stress and habits often play a part'],
-                    note: 'Seek urgent help if your jaw will not close or open, if you have swelling with fever, or if you suspect a fracture after an injury.'
-                },
-                {
-                    title: 'Exercise and persistent lower back pain', slug: 'lower-back-pain',
-                    intro: 'Lower back pain is very common, and for many people it becomes a long-standing problem. The encouraging news is that, for most people, staying active and exercising in a sensible way is a key part of getting better.',
-                    s: [
-                        { h: 'What persistent means', p: ['Back pain is usually described as persistent or chronic when it lasts longer than around three months. By this stage, pain is often influenced by more than the original tissue irritation, including how much you move, sleep, stress and your confidence in your back.'] },
-                        { h: 'Why movement helps', p: ['Current UK guidance recommends staying active and using exercise-based approaches for lower back pain rather than prolonged rest. Exercise helps maintain strength and mobility, supports confidence, and can reduce how threatening the pain feels. It does not need to be extreme to be effective.'] },
-                        { h: 'Tailored rather than one-size-fits-all', p: ['There is no single best exercise. A plan usually combines several elements, chosen around what you can do now and what you want to return to.'], l: ['Walking or another form of regular, gentle activity', 'Strength work for the legs, hips, back and trunk', 'Mobility exercises where movement feels restricted', 'Control and stability work, such as Clinical Pilates', 'Gradual progress with a clear structure'] },
-                        { h: 'Is some discomfort acceptable?', p: ['Mild or moderate discomfort during exercise is common and is not always a sign of harm, particularly if it settles soon afterwards. Pain that sharply increases, lingers for a long time, or comes with new symptoms is worth discussing. This is where guidance helps you judge what is appropriate for you.'] },
-                        { h: 'Beyond exercise', p: ['Sleep, stress, work habits and pacing also affect back pain. A good plan considers these alongside the exercises, and Dionne holds a Level 4 Lower Back Pain Specialist qualification.'] }
-                    ],
-                    take: ['Staying active is generally better than prolonged rest', 'Exercise works best when it is tailored and progressive', 'Lifestyle factors matter as well as exercises'],
-                    note: 'Seek urgent medical help for loss of bladder or bowel control, numbness around the groin or inner thighs, leg weakness that is getting worse, back pain after a significant injury, or back pain with fever or unexplained weight loss.'
-                }
-            ];
 
-            const cards = Array.from(document.querySelectorAll('.jcard'));
-            if (!cards.length) return;
-
-            const words = a => (a.intro + a.s.map(x => x.h + x.p.join(' ') + (x.l || []).join(' ')).join(' ') + a.take.join(' ')).split(/\s+/).length;
-            ARTICLES.forEach(a => { a.mins = Math.max(2, Math.ceil(words(a) / 200)); });
-
-            // Modal shell
-            const art = document.createElement('div');
-            art.className = 'art';
-            art.hidden = true;
-            art.innerHTML = '<div class="art-back" data-close></div>' +
-                '<article class="art-panel" role="dialog" aria-modal="true" aria-labelledby="art-title" tabindex="-1">' +
-                '<button type="button" class="art-close" data-close aria-label="Close article">&times;</button>' +
-                '<div class="art-scroll" id="art-scroll"></div></article>';
-            document.body.appendChild(art);
-            const panel = art.querySelector('.art-panel');
-            const scroll = art.querySelector('#art-scroll');
-            let current = -1, lastFocus = null;
-
-            const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-
-            function render(i) {
-                const a = ARTICLES[i], card = cards[a.cardIndex], img = card.querySelector('img');
-                const cat = card.querySelector('.jbody > span').textContent;
-                const next = ARTICLES[(i + 1) % ARTICLES.length];
-                scroll.innerHTML =
-                    (img ? '<img class="art-img" src="' + esc(img.src) + '" alt="' + esc(img.alt) + '">' : '') +
-                    '<div class="art-body">' +
-                    '<div class="art-meta"><span>' + cat + '</span><span>' + a.mins + ' min read</span></div>' +
-                    '<h2 class="art-title" id="art-title">' + esc(a.title) + '</h2>' +
-                    '<p class="art-intro">' + esc(a.intro) + '</p>' +
-                    a.s.map(x => '<h3>' + esc(x.h) + '</h3>' + x.p.map(p => '<p>' + esc(p) + '</p>').join('') +
-                        (x.l ? '<ul>' + x.l.map(l => '<li>' + esc(l) + '</li>').join('') + '</ul>' : '')).join('') +
-                    '<div class="art-take"><strong>Key points</strong><ul>' + a.take.map(t => '<li>' + esc(t) + '</li>').join('') + '</ul></div>' +
-                    '<div class="art-note"><strong>When to seek help</strong><p>' + esc(a.note) + '</p></div>' +
-                    '<p class="art-disc">This article is general information and is not a substitute for an individual assessment or medical advice.</p>' +
-                    '<div class="art-cta"><a class="btn" href="#booking" data-go>Book an appointment</a><a class="textlink dark" href="#contact" data-go>Ask a question</a></div>' +
-                    '<button type="button" class="art-next" data-next><small>Next article</small><span>' + esc(next.title) + '</span></button>' +
-                    '</div>';
-                scroll.scrollTop = 0;
-            }
-
-            function open(i, fromHash) {
-                if (current === -1) lastFocus = document.activeElement;
-                current = i;
-                render(i);
-                art.hidden = false;
-                document.body.style.overflow = 'hidden';
-                requestAnimationFrame(() => art.classList.add('on'));
-                panel.focus({ preventScroll: true });
-                if (!fromHash) history.replaceState(null, '', '#article-' + ARTICLES[i].slug);
-            }
-
-            function close(skipFocus) {
-                if (current === -1) return;
-                current = -1;
-                art.classList.remove('on');
-                document.body.style.overflow = '';
-                history.replaceState(null, '', location.pathname + location.search);
-                setTimeout(() => { art.hidden = true; }, 280);
-                if (!skipFocus && lastFocus) lastFocus.focus({ preventScroll: true });
-            }
-
-            // Wire up cards
-            ARTICLES.forEach((a, i) => {
-                a.cardIndex = i; // Use card order: CMS titles may change
-                if (a.cardIndex < 0) return;
-                const card = cards[a.cardIndex], body = card.querySelector('.jbody');
-                const old = body.querySelector('.jlink');
-                const meta = document.createElement('small');
-                meta.className = 'jmeta';
-                meta.textContent = a.mins + ' min read';
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.className = 'jlink jread';
-                btn.textContent = 'Read more';
-                if (old) { old.replaceWith(meta); meta.after(btn); } else { body.append(meta, btn); }
-                card.style.cursor = 'pointer';
-                card.addEventListener('click', e => { if (!e.target.closest('button')) open(i); });
-                btn.addEventListener('click', () => open(i));
-            });
-
-            art.addEventListener('click', e => {
-                if (e.target.closest('[data-close]')) return close();
-                if (e.target.closest('[data-next]')) return open((current + 1) % ARTICLES.length);
-                const go = e.target.closest('[data-go]');
-                if (go) {
-                    e.preventDefault();
-                    const id = go.getAttribute('href').slice(1);
-                    close(true);
-                    setTimeout(() => { const t = document.getElementById(id); if (t) t.scrollIntoView(); }, 60);
-                }
-            });
-
-            document.addEventListener('keydown', e => {
-                if (current === -1) return;
-                if (e.key === 'Escape') return close();
-                if (e.key === 'Tab') {
-                    const f = Array.from(panel.querySelectorAll('button, a[href]')).filter(x => x.offsetParent !== null);
-                    if (!f.length) return;
-                    const first = f[0], last = f[f.length - 1];
-                    if (e.shiftKey && (document.activeElement === first || document.activeElement === panel)) { e.preventDefault(); last.focus(); }
-                    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-                }
-            });
-
-            // Open directly from a shared link, e.g. index.html#article-neck-headaches
-            const m = location.hash.match(/^#article-(.+)$/);
-            if (m) { const i = ARTICLES.findIndex(a => a.slug === m[1]); if (i > -1) open(i, true); }
-        })();
-    </script>
 </body>
-
 </html>
