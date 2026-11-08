@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "about_001",
+      "label": "DIV: 01 / OUR APPROACH",
+      "value": "01 / OUR APPROACH"
+    },
+    {
+      "id": "about_002",
+      "label": "H2: Care that sees",
+      "value": "Care that sees"
+    },
+    {
+      "id": "about_003",
+      "label": "EM: the whole you.",
+      "value": "the whole you."
+    },
+    {
+      "id": "about_004",
+      "label": "P: At Body Function, we believe good physiotherapy goes beyond treating symptoms. We take ",
+      "value": "At Body Function, we believe good physiotherapy goes beyond treating symptoms. We take time to\n                    understand your goals, how you move and what matters most to your everyday life."
+    },
+    {
+      "id": "about_005",
+      "label": "P: Led by Dionne Jules, our approach brings together individual assessment, evidence-infor",
+      "value": "Led by Dionne Jules, our approach brings together individual assessment, evidence-informed treatment\n                    and progressive rehabilitation, delivered in the comfort of your home across our service area."
+    },
+    {
+      "id": "about_006",
+      "label": "A: Get to know Body Function",
+      "value": "Get to know Body Function"
+    }
+  ]
+}

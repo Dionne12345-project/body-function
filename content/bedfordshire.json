@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "bedfordshire_001",
+      "label": "SPAN: b",
+      "value": "b"
+    },
+    {
+      "id": "bedfordshire_002",
+      "label": "SPAN: .",
+      "value": "."
+    },
+    {
+      "id": "bedfordshire_003",
+      "label": "SPAN: f",
+      "value": "f"
+    },
+    {
+      "id": "bedfordshire_004",
+      "label": "SPAN: BODY FUNCTION",
+      "value": "BODY FUNCTION"
+    },
+    {
+      "id": "bedfordshire_005",
+      "label": "SMALL: PHYSIOTHERAPY & REHABILITATION",
+      "value": "PHYSIOTHERAPY & REHABILITATION"
+    },
+    {
+      "id": "bedfordshire_006",
+      "label": "A: Enquire about an appointment ↗",
+      "value": "Enquire about an appointment ↗"
+    },
+    {
+      "id": "bedfordshire_007",
+      "label": "DIV: LOCAL PHYSIOTHERAPY",
+      "value": "LOCAL PHYSIOTHERAPY"
+    },
+    {
+      "id": "bedfordshire_008",
+      "label": "H1: Physiotherapy in",
+      "value": "Physiotherapy in"
+    },
+    {
+      "id": "bedfordshire_009",
+      "label": "SPAN: Bedfordshire.",
+      "value": "Bedfordshire."
+    },
+    {
+      "id": "bedfordshire_010",
+      "label": "P: Body Function is planning personalised home visit physiotherapy and rehabilitation serv",
+      "value": "Body Function is planning personalised home visit physiotherapy and rehabilitation services across Bedfordshire. We offer individualised assessment for musculoskeletal concerns, specialist headache and jaw pain assessment, Clinical Pilates and exercise rehabilitation. Contact us to confirm local availability and discuss your goals."
+    },
+    {
+      "id": "bedfordshire_011",
+      "label": "A: Request an appointment ↗",
+      "value": "Request an appointment ↗"
+    },
+    {
+      "id": "bedfordshire_012",
+      "label": "DIV: PERSONALISED SUPPORT",
+      "value": "PERSONALISED SUPPORT"
+    },
+    {
+      "id": "bedfordshire_013",
+      "label": "H2: Care that fits",
+      "value": "Care that fits"
+    },
+    {
+      "id": "bedfordshire_014",
+      "label": "EM: your life.",
+      "value": "your life."
+    },
+    {
+      "id": "bedfordshire_015",
+      "label": "P: Initial physiotherapy assessments are £65 for 50 minutes, follow-ups £45 for 30 minutes",
+      "value": "Initial physiotherapy assessments are £65 for 50 minutes, follow-ups £45 for 30 minutes, and one-to-one Clinical Pilates and exercise rehabilitation sessions £50 for 40 minutes. Availability is subject to confirmation."
+    },
+    {
+      "id": "bedfordshire_016",
+      "label": "A: Explore our services ↗",
+      "value": "Explore our services ↗"
+    },
+    {
+      "id": "bedfordshire_017",
+      "label": "A: Body Function · Home",
+      "value": "Body Function · Home"
+    },
+    {
+      "id": "bedfordshire_018",
+      "label": "SMALL: Local appointment coverage is subject to confirmation.",
+      "value": "Local appointment coverage is subject to confirmation."
+    }
+  ]
+}

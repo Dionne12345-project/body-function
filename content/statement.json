@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "statement_001",
+      "label": "SPAN: Better movement starts here",
+      "value": "Better movement starts here"
+    },
+    {
+      "id": "statement_002",
+      "label": "H2: Your goals. Your pace.",
+      "value": "Your goals. Your pace."
+    },
+    {
+      "id": "statement_003",
+      "label": "EM: Your progress.",
+      "value": "Your progress."
+    },
+    {
+      "id": "statement_004",
+      "label": "A: Start your journey",
+      "value": "Start your\n                journey"
+    }
+  ]
+}

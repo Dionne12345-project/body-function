@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "id": "area_001",
+      "label": "DIV: 03 / WHERE WE WORK",
+      "value": "03 / WHERE WE WORK"
+    },
+    {
+      "id": "area_002",
+      "label": "H2: Care that comes",
+      "value": "Care that comes"
+    },
+    {
+      "id": "area_003",
+      "label": "EM: to you.",
+      "value": "to you."
+    },
+    {
+      "id": "area_004",
+      "label": "P: Body Function is planning home-based appointments throughout Bedfordshire, Central Bedf",
+      "value": "Body Function is planning home-based appointments throughout Bedfordshire, Central Bedfordshire and\n                    Milton Keynes, with a Cranfield base. Contact us to discuss availability in your area."
+    },
+    {
+      "id": "area_005",
+      "label": "SPAN: Bedford",
+      "value": "Bedford"
+    },
+    {
+      "id": "area_006",
+      "label": "SPAN: Central Bedfordshire",
+      "value": "Central Bedfordshire"
+    },
+    {
+      "id": "area_007",
+      "label": "SPAN: Milton Keynes",
+      "value": "Milton\n                        Keynes"
+    },
+    {
+      "id": "area_008",
+      "label": "SPAN: Cranfield",
+      "value": "Cranfield"
+    },
+    {
+      "id": "area_009",
+      "label": "A: Check your area",
+      "value": "Check your\n                    area"
+    },
+    {
+      "id": "area_010",
+      "label": "Image: Body Function home visits across Bedfordshire and Milton Keynes",
+      "value": "images/area.jpg"
+    }
+  ]
+}

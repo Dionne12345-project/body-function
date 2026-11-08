@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="{{CMS:seo:seo_001}}" name="description"/>
+<title>{{CMS:seo:seo_002}}</title>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+        .cookie-banner {
+            position: fixed;
+            z-index: 9999;
+            bottom: 18px;
+            left: 18px;
+            right: 18px;
+            max-width: 940px;
+            margin: auto;
+            background: #fff;
+            color: #2b2530;
+            border: 1px solid #e8e1ea;
+            border-radius: 16px;
+            box-shadow: 0 12px 45px #24132930;
+            padding: 22px 24px;
+            font: inherit
+        }
+
+        .cookie-banner[hidden],
+        .cookie-settings[hidden] {
+            display: none !important
+        }
+
+        .cookie-banner h2 {
+            font-size: 19px;
+            line-height: 1.3;
+            margin: 0 0 8px;
+            color: #2b2530
+        }
+
+        .cookie-banner p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 0 15px;
+            color: #4c4450
+        }
+
+        .cookie-banner a {
+            color: #71128b;
+            text-decoration: underline
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 9px;
+            flex-wrap: wrap
+        }
+
+        .cookie-actions button,
+        .cookie-settings button {
+            font: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid #cd00fd;
+            border-radius: 7px;
+            padding: 11px 15px;
+            cursor: pointer;
+            background: #fff;
+            color: #2b2530
+        }
+
+        .cookie-actions .cookie-primary,
+        .cookie-settings .cookie-primary {
+            background: #cd00fd;
+            color: #fff
+        }
+
+        .cookie-settings {
+            margin: 12px 0 16px;
+            padding: 14px;
+            background: #f9f5fa;
+            border-radius: 9px;
+            font-size: 14px
+        }
+
+        .cookie-settings label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0
+        }
+
+        .cookie-settings input {
+            accent-color: #9e00c5
+        }
+
+        .cookie-settings small {
+            display: block;
+            margin-top: 5px;
+            color: #635a66
+        }
+
+        .cookie-manage {
+            background: none;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+            color: inherit;
+            font: inherit
+        }
+
+        @media(max-width:600px) {
+            .cookie-banner {
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                padding: 17px
+            }
+
+            .cookie-actions button {
+                flex: 1 1 100%
+            }
+        }
+
+        /* Slightly enlarge and raise the hero location label. */
+        .hero .eyebrow {
+            font-size: 14px;
+            position: relative;
+            top: -4px;
+        }
+
+        /* Footer links match the descriptive text and stack vertically. */
+        footer .footer-pages {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: inherit;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #bdb4c4;
+        }
+
+        footer .footer-pages a,
+        footer .footer-pages .cookie-manage {
+            display: block;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            text-decoration: none;
+            background: none;
+            border: 0;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        footer .footer-pages a:hover,
+        footer .footer-pages .cookie-manage:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header class="nav"><a class="brand" href="#home"><span class="brandmark">{{CMS:index:index_001}}<span>{{CMS:index:index_003}}</span>{{CMS:index:index_002}}</span><span>{{CMS:index:index_004}}<small>{{CMS:index:index_005}}</small></span></a>
+<nav id="navlinks"><a href="#about">{{CMS:index:index_006}}</a><a href="#services">{{CMS:index:index_007}}</a><a href="#pricing">{{CMS:index:index_008}}</a><a href="#journal">{{CMS:index:index_009}}</a><a href="#contact">{{CMS:index:index_010}}</a><a href="faq.html">{{CMS:index:index_011}}</a><a href="privacy.html">{{CMS:index:index_012}}</a><a href="cookies.html">{{CMS:index:index_013}}</a><a href="terms.html">{{CMS:index:index_014}}</a></nav><a class="btn small navcta" href="#booking">{{CMS:index:index_015}}</a><button aria-expanded="false" aria-label="Toggle menu" class="menu" id="menu"><i></i><i></i><i></i></button>
+</header>
+<main id="home">
+<section class="hero">
+<div class="hero-copy">
+<div class="eyebrow"><span></span> {{CMS:hero:hero_001}}</div>
+<h1>{{CMS:hero:hero_002}}<br/>{{CMS:hero:hero_003}}<br/><em>{{CMS:hero:hero_004}}</em></h1>
+<p>{{CMS:hero:hero_005}}</p>
+<div class="actions"><a class="btn" href="#booking">{{CMS:hero:hero_006}}</a><a class="textlink" href="#services">{{CMS:hero:hero_007}}</a></div>
+</div>
+<!-- Add your photo as images/hero.jpg (wide image, subject towards the right works best) -->
+<img alt="Body Function physiotherapy session" class="hero-img" onerror="this.style.display='none'" src="{{CMS:hero:hero_008}}"/>
+<div class="image-overlay"><span class="plus"></span>
+<div>{{CMS:hero:hero_009}}<br/><strong>{{CMS:hero:hero_010}}</strong></div>
+</div>
+</section>
+<section class="section intro" id="about">
+<div>
+<div class="section-label">{{CMS:about:about_001}}</div>
+<h2>{{CMS:about:about_002}} <em>{{CMS:about:about_003}}</em></h2>
+</div>
+<div class="intro-right">
+<p>{{CMS:about:about_004}}</p>
+<p>{{CMS:about:about_005}}</p><a class="textlink dark" href="#contact">{{CMS:about:about_006}}</a>
+</div>
+</section>
+<!-- Section 02: Dionne's profile -->
+<section aria-labelledby="profile-heading" class="section profile-section" id="profile">
+<div class="profile-layout">
+<div class="profile-photo-wrap">
+<img alt="Portrait of Dionne Jules, physiotherapist" class="profile-photo" height="900" loading="lazy" src="{{CMS:profile:profile_001}}" width="720"/>
+<div class="profile-photo-caption">{{CMS:profile:profile_002}} <span>{{CMS:profile:profile_003}}</span></div>
+</div>
+<div class="profile-content">
+<div class="section-label">{{CMS:profile:profile_004}}</div>
+<h2 id="profile-heading">{{CMS:profile:profile_005}} <em>{{CMS:profile:profile_006}}</em></h2>
+<p class="profile-lead">{{CMS:profile:profile_007}}</p>
+<p>{{CMS:profile:profile_008}}</p>
+<p>{{CMS:profile:profile_009}}</p>
+<p>{{CMS:profile:profile_010}}</p>
+<p>{{CMS:profile:profile_011}}</p>
+<div class="profile-qualifications">
+<h3>{{CMS:profile:profile_012}}</h3>
+<ul>
+<li>{{CMS:profile:profile_013}}</li>
+<li>{{CMS:profile:profile_014}}</li>
+<li>{{CMS:profile:profile_015}}</li>
+<li>{{CMS:profile:profile_016}}</li>
+<li>{{CMS:profile:profile_017}}</li>
+<li>{{CMS:profile:profile_018}}</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section area" id="area">
+<div>
+<div class="section-label">{{CMS:area:area_001}}</div>
+<h2>{{CMS:area:area_002}} <em>{{CMS:area:area_003}}</em></h2>
+<p>{{CMS:area:area_004}}</p>
+<div class="chips"><span>{{CMS:area:area_005}}</span><span>{{CMS:area:area_006}}</span><span>{{CMS:area:area_007}}</span><span>{{CMS:area:area_008}}</span></div><a class="textlink dark" href="#contact">{{CMS:area:area_009}}</a>
+</div><!-- Add your photo as images/area.jpg -->
+<img alt="Body Function home visits across Bedfordshire and Milton Keynes" onerror="this.style.display='none'" src="{{CMS:area:area_010}}"/>
+</section>
+<section class="section services" id="services">
+<div class="svc-layout">
+<div class="svc-intro">
+<div class="section-label">{{CMS:services:services_001}}</div>
+<h2>{{CMS:services:services_002}} <em>{{CMS:services:services_003}}</em></h2>
+<p>{{CMS:services:services_004}}</p>
+<a class="btn" href="#booking">{{CMS:services:services_005}}</a>
+</div>
+<ul class="svc-list">
+<li><span class="n">{{CMS:services:services_006}}</span>
+<div>
+<h3>{{CMS:services:services_007}}</h3>
+<p>{{CMS:services:services_008}}</p>
+<div class="tags"><span>{{CMS:services:services_009}}</span><span>{{CMS:services:services_010}}</span></div>
+</div><a aria-label="{{CMS:services:services_011}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_012}}</span>
+<div>
+<h3>{{CMS:services:services_013}}</h3>
+<p>{{CMS:services:services_014}}</p>
+</div><a aria-label="{{CMS:services:services_015}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_016}}</span>
+<div>
+<h3>{{CMS:services:services_017}}</h3>
+<p>{{CMS:services:services_018}}</p>
+<div class="tags"><span>{{CMS:services:services_019}}</span></div>
+</div><a aria-label="{{CMS:services:services_020}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_021}}</span>
+<div>
+<h3>{{CMS:services:services_022}}</h3>
+<p>{{CMS:services:services_023}}</p>
+<div class="tags"><span>{{CMS:services:services_024}}</span></div>
+</div><a aria-label="{{CMS:services:services_025}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_026}}</span>
+<div>
+<h3>{{CMS:services:services_027}}</h3>
+<p>{{CMS:services:services_028}}</p>
+</div><a aria-label="{{CMS:services:services_029}}" href="#booking"></a>
+</li>
+<li><span class="n">{{CMS:services:services_030}}</span>
+<div>
+<h3>{{CMS:services:services_031}}</h3>
+<p>{{CMS:services:services_032}}</p>
+<div class="tags"><span>{{CMS:services:services_033}}</span><span>{{CMS:services:services_034}}</span><span>{{CMS:services:services_035}}</span></div>
+</div><a aria-label="{{CMS:services:services_036}}" href="#booking"></a>
+</li>
+</ul>
+</div>
+</section>
+<section class="statement"><span>{{CMS:statement:statement_001}}</span>
+<h2>{{CMS:statement:statement_002}} <em>{{CMS:statement:statement_003}}</em></h2><a class="btn" href="#booking">{{CMS:statement:statement_004}}</a>
+</section>
+<section class="section pricing" id="pricing">
+<div class="section-label">{{CMS:pricing:pricing_001}}</div>
+<div class="section-top">
+<h2>{{CMS:pricing:pricing_002}} <em>{{CMS:pricing:pricing_003}}</em></h2>
+<p>{{CMS:pricing:pricing_004}}</p>
+</div>
+<div class="price-list">
+<div><span>{{CMS:pricing:pricing_005}} <small>{{CMS:pricing:pricing_006}}</small></span><strong>{{CMS:pricing:pricing_007}}</strong></div>
+<div><span>{{CMS:pricing:pricing_008}} <small>{{CMS:pricing:pricing_009}}</small></span><strong>{{CMS:pricing:pricing_010}}</strong></div>
+<div><span>{{CMS:pricing:pricing_011}} <small>{{CMS:pricing:pricing_012}}</small></span><strong>{{CMS:pricing:pricing_013}}</strong></div>
+<div><span>{{CMS:pricing:pricing_014}} <small>{{CMS:pricing:pricing_015}}</small></span><strong>{{CMS:pricing:pricing_016}}</strong></div>
+<div><span>{{CMS:pricing:pricing_017}} <small>{{CMS:pricing:pricing_018}}</small></span><strong>{{CMS:pricing:pricing_019}}</strong></div>
+<div><span>{{CMS:pricing:pricing_020}} <small>{{CMS:pricing:pricing_021}}</small></span><strong>{{CMS:pricing:pricing_022}}</strong></div>
+<div><span>{{CMS:pricing:pricing_023}} <small>{{CMS:pricing:pricing_024}}</small></span><strong>{{CMS:pricing:pricing_025}}</strong></div>
+</div>
+<p class="fine">{{CMS:pricing:pricing_026}}</p>
+</section>
+<section class="section booking" id="booking">
+<div>
+<div class="section-label">{{CMS:booking:booking_001}}</div>
+<h2>{{CMS:booking:booking_002}} <em>{{CMS:booking:booking_003}}</em></h2>
+<p>{{CMS:booking:booking_004}}</p>
+<p class="fine">{{CMS:booking:booking_005}}</p>
+</div>
+<!-- The email in this action is the ONLY place the recipient is set. script.js reads it from here. -->
+<form action="{{CMS:booking:booking_006}}" method="POST" name="booking-enquiry">
+<input name="_subject" type="hidden" value="New Body Function booking enquiry"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<label>{{CMS:booking:booking_007}}<input name="name" placeholder="{{CMS:booking:booking_008}}" required=""/></label><label>{{CMS:booking:booking_009}}<input name="email" placeholder="{{CMS:booking:booking_010}}" required="" type="email"/></label><label>{{CMS:booking:booking_011}}<input name="phone" placeholder="{{CMS:booking:booking_012}}" required=""/></label><label>{{CMS:booking:booking_013}}<select name="service" required="">
+<option value="">Choose a service</option>
+<option>Initial physiotherapy assessment</option>
+<option>Physiotherapy follow-up</option>
+<option>One-to-one Clinical Pilates</option>
+<option>Exercise rehabilitation</option>
+<option>Headache / TMD assessment</option>
+<option>Clinical Mat Pilates enquiry</option>
+</select></label><label>{{CMS:booking:booking_014}}<input id="date" name="preferred-date" required="" type="date"/></label><label>{{CMS:booking:booking_015}}<input name="location" placeholder="{{CMS:booking:booking_016}}" required=""/></label><label class="wide">{{CMS:booking:booking_017}}<textarea name="message" placeholder="{{CMS:booking:booking_018}}" rows="3"></textarea></label><button class="btn" type="submit">{{CMS:booking:booking_019}}</button><small class="wide">{{CMS:booking:booking_020}}</small>
+</form>
+</section>
+<!-- Replace these five placeholders with verified, approved patient reviews before publishing. -->
+<section aria-labelledby="reviews-heading" class="section reviews-section" id="reviews">
+<div class="reviews-heading">
+<div>
+<div class="section-label">{{CMS:reviews:reviews_001}}</div>
+<h2 id="reviews-heading">{{CMS:reviews:reviews_002}} <em>{{CMS:reviews:reviews_003}}</em></h2>
+</div>
+<p>{{CMS:reviews:reviews_004}}</p>
+</div>
+<div aria-label="Patient feedback placeholders" aria-roledescription="carousel" class="reviews-carousel">
+<div class="reviews-viewport" id="reviews-viewport">
+<div class="reviews-track" id="reviews-track">
+<article aria-label="Placeholder 1 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_005}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_006}}</div>
+<blockquote>{{CMS:reviews:reviews_007}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_008}} <span>{{CMS:reviews:reviews_009}}</span></div>
+</article>
+<article aria-label="Placeholder 2 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_010}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_011}}</div>
+<blockquote>{{CMS:reviews:reviews_012}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_013}} <span>{{CMS:reviews:reviews_014}}</span></div>
+</article>
+<article aria-label="Placeholder 3 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_015}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_016}}</div>
+<blockquote>{{CMS:reviews:reviews_017}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_018}} <span>{{CMS:reviews:reviews_019}}</span></div>
+</article>
+<article aria-label="Placeholder 4 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_020}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_021}}</div>
+<blockquote>{{CMS:reviews:reviews_022}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_023}} <span>{{CMS:reviews:reviews_024}}</span></div>
+</article>
+<article aria-label="Placeholder 5 of 5" class="review-card">
+<span class="review-placeholder">{{CMS:reviews:reviews_025}}</span>
+<div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_026}}</div>
+<blockquote>{{CMS:reviews:reviews_027}}</blockquote>
+<div class="review-author">{{CMS:reviews:reviews_028}} <span>{{CMS:reviews:reviews_029}}</span></div>
+</article>
+</div>
+</div>
+<div class="reviews-controls">
+<div aria-label="Choose a review" class="reviews-dots" id="reviews-dots"></div>
+<div class="reviews-arrows">
+<button aria-label="Previous review" class="review-arrow" id="review-prev" type="button">{{CMS:reviews:reviews_030}}</button>
+<button aria-label="Next review" class="review-arrow" id="review-next" type="button">{{CMS:reviews:reviews_031}}</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div>
+<div class="section-label">{{CMS:contact:contact_001}}</div>
+<h2>{{CMS:contact:contact_002}} <em>{{CMS:contact:contact_003}}</em></h2>
+<p>{{CMS:contact:contact_004}}</p>
+</div>
+<div class="contact-links"><a href="{{CMS:contact:contact_005}}">{{CMS:contact:contact_006}}</a><a href="{{CMS:contact:contact_007}}">{{CMS:contact:contact_008}}</a><a href="{{CMS:contact:contact_009}}" rel="noopener" target="_blank">{{CMS:contact:contact_010}}</a></div>
+</section>
+<section class="section journal" id="journal">
+<div class="section-top">
+<div>
+<div class="section-label">{{CMS:journal:journal_001}}</div>
+<h2>{{CMS:journal:journal_002}} <em>{{CMS:journal:journal_003}}</em></h2>
+</div>
+<p>{{CMS:journal:journal_004}}</p>
+</div>
+<div aria-label="Filter articles" class="filters"><button class="filter active" data-category="all">{{CMS:journal:journal_005}}</button><button class="filter" data-category="physiotherapy">{{CMS:journal:journal_006}}</button><button class="filter" data-category="headache">{{CMS:journal:journal_007}}</button><button class="filter" data-category="pilates">{{CMS:journal:journal_008}}</button><button class="filter" data-category="rehabilitation">{{CMS:journal:journal_009}}</button></div>
+<div class="articles">
+<article class="jcard" data-category="rehabilitation"><img alt="Exercise and strength training" loading="lazy" src="{{CMS:journal:journal_010}}"/>
+<div class="jbody"><span>{{CMS:journal:journal_011}}</span>
+<h3>{{CMS:journal:journal_012}}</h3>
+<p>{{CMS:journal:journal_013}}</p><a class="jlink" href="#contact">{{CMS:journal:journal_014}}</a>
+</div>
+</article>
+<article class="jcard" data-category="pilates"><img alt="Woman practising controlled exercise" loading="lazy" src="{{CMS:journal:journal_015}}"/>
+<div class="jbody"><span>{{CMS:journal:journal_016}}</span>
+<h3>{{CMS:journal:journal_017}}</h3>
+<p>{{CMS:journal:journal_018}}</p><a class="jlink" href="#contact">{{CMS:journal:journal_019}}</a>
+</div>
+</article>
+<article class="jcard" data-category="headache"><img alt="Person resting peacefully outdoors" loading="lazy" src="{{CMS:journal:journal_020}}"/>
+<div class="jbody"><span>{{CMS:journal:journal_021}}</span>
+<h3>{{CMS:journal:journal_022}}</h3>
+<p>{{CMS:journal:journal_023}}
+                        </p><a class="jlink" href="#contact">{{CMS:journal:journal_024}}</a>
+</div>
+</article>
+<article class="jcard" data-category="physiotherapy"><img alt="Healthcare professional in a consultation" loading="lazy" src="{{CMS:journal:journal_025}}"/>
+<div class="jbody"><span>{{CMS:journal:journal_026}}</span>
+<h3>{{CMS:journal:journal_027}}</h3>
+<p>{{CMS:journal:journal_028}}</p>
+<a class="jlink" href="#contact">{{CMS:journal:journal_029}}</a>
+</div>
+</article>
+<article class="jcard" data-category="headache"><img alt="Healthcare consultation setting" loading="lazy" src="{{CMS:journal:journal_030}}"/>
+<div class="jbody"><span>{{CMS:journal:journal_031}}</span>
+<h3>{{CMS:journal:journal_032}}</h3>
+<p>{{CMS:journal:journal_033}}
+                        </p><a class="jlink" href="#contact">{{CMS:journal:journal_034}}</a>
+</div>
+</article>
+<article class="jcard" data-category="rehabilitation"><img alt="Person exercising in a bright gym" loading="lazy" src="{{CMS:journal:journal_035}}"/>
+<div class="jbody"><span>{{CMS:journal:journal_036}}</span>
+<h3>{{CMS:journal:journal_037}}</h3>
+<p>{{CMS:journal:journal_038}}</p><a class="jlink" href="#contact">{{CMS:journal:journal_039}}</a>
+</div>
+</article>
+</div>
+<p class="fine">{{CMS:journal:journal_040}}</p>
+</section>
+</main>
+<footer>
+<div class="brand"><span class="brandmark">{{CMS:index:index_016}}<span>{{CMS:index:index_018}}</span>{{CMS:index:index_017}}</span><span>{{CMS:index:index_019}}<small>{{CMS:index:index_020}}</small></span></div>
+<p>{{CMS:index:index_021}}</p>
+<div><a href="#area">{{CMS:index:index_024}}</a> {{CMS:index:index_022}} <a href="#area">{{CMS:index:index_025}}</a> {{CMS:index:index_023}} <a href="#area">{{CMS:index:index_026}}</a></div><small>{{CMS:index:index_027}} <span id="year"></span> {{CMS:index:index_028}}</small>
+<nav aria-label="Information and policies" class="footer-pages">
+<a href="faq.html">{{CMS:index:index_029}}</a>
+<a href="privacy.html">{{CMS:index:index_030}}</a>
+<a href="cookies.html">{{CMS:index:index_031}}</a>
+<a href="terms.html">{{CMS:index:index_032}}</a>
+<button class="cookie-manage" data-open-cookie-settings="" type="button">{{CMS:index:index_033}}</button>
+</nav>
+</footer>
+<script src="script.js"></script>
+<div aria-label="Cookie preferences" aria-modal="false" class="cookie-banner" hidden="" id="cookie-banner" role="dialog">
+<h2>{{CMS:index:index_034}}</h2>
+<p>{{CMS:index:index_035}} <a href="privacy.html">{{CMS:index:index_038}}</a> {{CMS:index:index_036}} <a href="cookies.html">{{CMS:index:index_039}}</a>{{CMS:index:index_037}}</p>
+<div class="cookie-settings" hidden="" id="cookie-settings">
+<label><input checked="" disabled="" type="checkbox"/> {{CMS:index:index_040}}</label>
+<label><input id="cookie-analytics" type="checkbox"/> {{CMS:index:index_041}}</label>
+<label><input id="cookie-marketing" type="checkbox"/> {{CMS:index:index_042}}</label>
+<small>{{CMS:index:index_043}}</small>
+<button class="cookie-primary" id="cookie-save" type="button">{{CMS:index:index_044}}</button>
+</div>
+<div class="cookie-actions">
+<button class="cookie-primary" id="cookie-accept" type="button">{{CMS:index:index_045}}</button>
+<button id="cookie-reject" type="button">{{CMS:index:index_046}}</button>
+<button aria-controls="cookie-settings" aria-expanded="false" id="cookie-customise" type="button">{{CMS:index:index_047}}</button>
+</div>
+</div>
+<script>
+        (function () {
+            const key = 'bodyfunction_cookie_preferences_v1';
+            const banner = document.getElementById('cookie-banner');
+            const settings = document.getElementById('cookie-settings');
+            const toggle = document.getElementById('cookie-customise');
+            const analytics = document.getElementById('cookie-analytics');
+            const marketing = document.getElementById('cookie-marketing');
+            function read() { try { return JSON.parse(localStorage.getItem(key)) } catch (e) { return null } }
+            function save(a, m) {
+                const prefs = { essential: true, analytics: !!a, marketing: !!m, updatedAt: new Date().toISOString() };
+                try { localStorage.setItem(key, JSON.stringify(prefs)) } catch (e) { }
+                window.bodyFunctionCookiePreferences = prefs;
+                window.dispatchEvent(new CustomEvent('bodyfunction:cookie-consent', { detail: prefs }));
+                banner.hidden = true;
+            }
+            const existing = read();
+            if (existing && typeof existing.analytics === 'boolean' && typeof existing.marketing === 'boolean') {
+                window.bodyFunctionCookiePreferences = existing;
+                analytics.checked = existing.analytics;
+                marketing.checked = existing.marketing;
+            } else { banner.hidden = false }
+            document.getElementById('cookie-accept').addEventListener('click', () => save(true, true));
+            document.getElementById('cookie-reject').addEventListener('click', () => save(false, false));
+            document.getElementById('cookie-save').addEventListener('click', () => save(analytics.checked, marketing.checked));
+            toggle.addEventListener('click', () => { settings.hidden = !settings.hidden; toggle.setAttribute('aria-expanded', String(!settings.hidden)) });
+            document.querySelectorAll('[data-open-cookie-settings]').forEach(btn => btn.addEventListener('click', () => {
+                const current = read(); analytics.checked = !!current?.analytics; marketing.checked = !!current?.marketing;
+                settings.hidden = false; toggle.setAttribute('aria-expanded', 'true'); banner.hidden = false;
+            }));
+        })();
+    </script>
+</body>
+</html>

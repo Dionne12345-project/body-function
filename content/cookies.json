@@ -1,0 +1,23 @@
+{
+  "title": "Cookie Policy",
+  "heading": "Your choices and website cookies",
+  "intro": "Cookie policy placeholder. Review the website’s actual cookies and storage before publishing.",
+  "sections": [
+    {
+      "heading": "Essential storage",
+      "body": "[Describe essential storage used by the website, including cookie consent preferences.]"
+    },
+    {
+      "heading": "Optional analytics",
+      "body": "[List analytics tools and cookies, if any. Explain their purpose and duration.]"
+    },
+    {
+      "heading": "Optional marketing",
+      "body": "[List marketing tools and cookies, if any. Explain their purpose and duration.]"
+    },
+    {
+      "heading": "Managing preferences",
+      "body": "[Explain how visitors can change consent and manage cookies in their browser.]"
+    }
+  ]
+}

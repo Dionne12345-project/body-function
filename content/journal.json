@@ -1,0 +1,204 @@
+{
+  "items": [
+    {
+      "id": "journal_001",
+      "label": "DIV: 07 / THE JOURNAL",
+      "value": "07 / THE JOURNAL"
+    },
+    {
+      "id": "journal_002",
+      "label": "H2: Knowledge for",
+      "value": "Knowledge for"
+    },
+    {
+      "id": "journal_003",
+      "label": "EM: better movement.",
+      "value": "better movement."
+    },
+    {
+      "id": "journal_004",
+      "label": "P: Helpful, accessible information about movement, recovery and everyday wellbeing.",
+      "value": "Helpful, accessible information about movement, recovery and everyday wellbeing."
+    },
+    {
+      "id": "journal_005",
+      "label": "BUTTON: All",
+      "value": "All"
+    },
+    {
+      "id": "journal_006",
+      "label": "BUTTON: Physiotherapy",
+      "value": "Physiotherapy"
+    },
+    {
+      "id": "journal_007",
+      "label": "BUTTON: Headache & TMD",
+      "value": "Headache & TMD"
+    },
+    {
+      "id": "journal_008",
+      "label": "BUTTON: Clinical Pilates",
+      "value": "Clinical Pilates"
+    },
+    {
+      "id": "journal_009",
+      "label": "BUTTON: Rehabilitation",
+      "value": "Rehabilitation"
+    },
+    {
+      "id": "journal_010",
+      "label": "Image: Exercise and strength training",
+      "value": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "journal_011",
+      "label": "SPAN: Rehabilitation",
+      "value": "Rehabilitation"
+    },
+    {
+      "id": "journal_012",
+      "label": "H3: Why gradual progress matters in rehabilitation",
+      "value": "Why gradual progress matters in rehabilitation"
+    },
+    {
+      "id": "journal_013",
+      "label": "P: Recovering movement and confidence often starts with manageable steps, not doing everyt",
+      "value": "Recovering movement and confidence often starts with manageable steps, not doing everything\n                            at once."
+    },
+    {
+      "id": "journal_014",
+      "label": "A: Ask us about this topic",
+      "value": "Ask us about this topic"
+    },
+    {
+      "id": "journal_015",
+      "label": "Image: Woman practising controlled exercise",
+      "value": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "journal_016",
+      "label": "SPAN: Clinical Pilates",
+      "value": "Clinical Pilates"
+    },
+    {
+      "id": "journal_017",
+      "label": "H3: What makes Clinical Pilates different?",
+      "value": "What makes Clinical Pilates different?"
+    },
+    {
+      "id": "journal_018",
+      "label": "P: An introduction to individualised Pilates sessions and how they may support movement co",
+      "value": "An introduction to individualised Pilates sessions and how they may support movement control\n                            and strength."
+    },
+    {
+      "id": "journal_019",
+      "label": "A: Ask us about this topic",
+      "value": "Ask us about this topic"
+    },
+    {
+      "id": "journal_020",
+      "label": "Image: Person resting peacefully outdoors",
+      "value": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "journal_021",
+      "label": "SPAN: Headache & TMD",
+      "value": "Headache & TMD"
+    },
+    {
+      "id": "journal_022",
+      "label": "H3: Can neck problems contribute to headaches?",
+      "value": "Can neck problems contribute to headaches?"
+    },
+    {
+      "id": "journal_023",
+      "label": "P: A look at why a careful assessment matters when headaches and neck symptoms occur toget",
+      "value": "A look at why a careful assessment matters when headaches and neck symptoms occur together."
+    },
+    {
+      "id": "journal_024",
+      "label": "A: Ask us about this topic",
+      "value": "Ask us about this topic"
+    },
+    {
+      "id": "journal_025",
+      "label": "Image: Healthcare professional in a consultation",
+      "value": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "journal_026",
+      "label": "SPAN: Physiotherapy",
+      "value": "Physiotherapy"
+    },
+    {
+      "id": "journal_027",
+      "label": "H3: What to expect at your first physiotherapy appointment",
+      "value": "What to expect at your first physiotherapy appointment"
+    },
+    {
+      "id": "journal_028",
+      "label": "P: Learn about the assessment process, discussing your goals and planning your next steps.",
+      "value": "Learn about the assessment process, discussing your goals and planning your next steps."
+    },
+    {
+      "id": "journal_029",
+      "label": "A: Ask us about this topic",
+      "value": "Ask us about this topic"
+    },
+    {
+      "id": "journal_030",
+      "label": "Image: Healthcare consultation setting",
+      "value": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "journal_031",
+      "label": "SPAN: Headache & TMD",
+      "value": "Headache & TMD"
+    },
+    {
+      "id": "journal_032",
+      "label": "H3: Jaw pain and TMD: when to seek assessment",
+      "value": "Jaw pain and TMD: when to seek assessment"
+    },
+    {
+      "id": "journal_033",
+      "label": "P: Understand common jaw-related symptoms and why appropriate clinical assessment is impor",
+      "value": "Understand common jaw-related symptoms and why appropriate clinical assessment is important."
+    },
+    {
+      "id": "journal_034",
+      "label": "A: Ask us about this topic",
+      "value": "Ask us about this topic"
+    },
+    {
+      "id": "journal_035",
+      "label": "Image: Person exercising in a bright gym",
+      "value": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "journal_036",
+      "label": "SPAN: Rehabilitation",
+      "value": "Rehabilitation"
+    },
+    {
+      "id": "journal_037",
+      "label": "H3: Exercise and persistent lower back pain",
+      "value": "Exercise and persistent lower back pain"
+    },
+    {
+      "id": "journal_038",
+      "label": "P: Explore how tailored and progressive activity may form part of an individual rehabilita",
+      "value": "Explore how tailored and progressive activity may form part of an individual rehabilitation\n                            plan."
+    },
+    {
+      "id": "journal_039",
+      "label": "A: Ask us about this topic",
+      "value": "Ask us about this topic"
+    },
+    {
+      "id": "journal_040",
+      "label": "P: These are article previews, not published clinical guidance. Full articles should be wr",
+      "value": "These are article previews, not published clinical guidance. Full articles should be written\n                and reviewed by the clinician before publication."
+    }
+  ]
+}

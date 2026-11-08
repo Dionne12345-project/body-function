@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": "thank_you_001",
+      "label": "DIV: BODY FUNCTION",
+      "value": "BODY FUNCTION"
+    },
+    {
+      "id": "thank_you_002",
+      "label": "H2: Thank you for",
+      "value": "Thank you for"
+    },
+    {
+      "id": "thank_you_003",
+      "label": "EM: getting in touch.",
+      "value": "getting in touch."
+    },
+    {
+      "id": "thank_you_004",
+      "label": "P: Your enquiry has been sent. We will contact you to discuss availability and next steps.",
+      "value": "Your enquiry has been sent. We will contact you to discuss availability and next steps. This is not a confirmed\n        booking."
+    },
+    {
+      "id": "thank_you_005",
+      "label": "A: Back to homepage ↗",
+      "value": "Back to homepage ↗"
+    }
+  ]
+}

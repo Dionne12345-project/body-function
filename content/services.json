@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "id": "services_001",
+      "label": "DIV: 04 / WHAT WE DO",
+      "value": "04 / WHAT WE DO"
+    },
+    {
+      "id": "services_002",
+      "label": "H2: Find your way",
+      "value": "Find your way"
+    },
+    {
+      "id": "services_003",
+      "label": "EM: forward.",
+      "value": "forward."
+    },
+    {
+      "id": "services_004",
+      "label": "P: Support for recovery, strength and confident movement, wherever you're starting from.",
+      "value": "Support for recovery, strength and confident movement, wherever you're starting from."
+    },
+    {
+      "id": "services_005",
+      "label": "A: Book an appointment",
+      "value": "Book an appointment"
+    },
+    {
+      "id": "services_006",
+      "label": "SPAN: 01",
+      "value": "01"
+    },
+    {
+      "id": "services_007",
+      "label": "H3: Physiotherapy",
+      "value": "Physiotherapy"
+    },
+    {
+      "id": "services_008",
+      "label": "P: Individual assessment and care for muscle and joint pain, injuries, mobility and recove",
+      "value": "Individual assessment and care for muscle and joint pain, injuries, mobility and\n                                recovery."
+    },
+    {
+      "id": "services_009",
+      "label": "SPAN: Initial assessment · 50 min",
+      "value": "Initial assessment · 50 min"
+    },
+    {
+      "id": "services_010",
+      "label": "SPAN: Follow-up · 30 min",
+      "value": "Follow-up · 30\n                                    min"
+    },
+    {
+      "id": "services_011",
+      "label": "Accessible service label: Enquire about physiotherapy",
+      "value": "Enquire about physiotherapy"
+    },
+    {
+      "id": "services_012",
+      "label": "SPAN: 02",
+      "value": "02"
+    },
+    {
+      "id": "services_013",
+      "label": "H3: Headache & Jaw Pain (TMD)",
+      "value": "Headache & Jaw Pain (TMD)"
+    },
+    {
+      "id": "services_014",
+      "label": "P: Assessment of headache-related musculoskeletal factors and temporomandibular disorders ",
+      "value": "Assessment of headache-related musculoskeletal factors and temporomandibular disorders\n                                (TMD)."
+    },
+    {
+      "id": "services_015",
+      "label": "Accessible service label: Enquire about headache and jaw pain assessment",
+      "value": "Enquire about headache and jaw pain assessment"
+    },
+    {
+      "id": "services_016",
+      "label": "SPAN: 03",
+      "value": "03"
+    },
+    {
+      "id": "services_017",
+      "label": "H3: One-to-one Clinical Pilates",
+      "value": "One-to-one Clinical Pilates"
+    },
+    {
+      "id": "services_018",
+      "label": "P: One-to-one sessions tailored to improve movement, stability and physical confidence.",
+      "value": "One-to-one sessions tailored to improve movement, stability and physical confidence."
+    },
+    {
+      "id": "services_019",
+      "label": "SPAN: Assessment or session · 40 min",
+      "value": "Assessment or session · 40 min"
+    },
+    {
+      "id": "services_020",
+      "label": "Accessible service label: Enquire about one-to-one Clinical Pilates",
+      "value": "Enquire about one-to-one Clinical Pilates"
+    },
+    {
+      "id": "services_021",
+      "label": "SPAN: 04",
+      "value": "04"
+    },
+    {
+      "id": "services_022",
+      "label": "H3: Exercise Rehabilitation",
+      "value": "Exercise Rehabilitation"
+    },
+    {
+      "id": "services_023",
+      "label": "P: Progressive exercise plans for ongoing musculoskeletal conditions and recovery.",
+      "value": "Progressive exercise plans for ongoing musculoskeletal conditions and recovery."
+    },
+    {
+      "id": "services_024",
+      "label": "SPAN: Session · 40 min",
+      "value": "Session · 40 min"
+    },
+    {
+      "id": "services_025",
+      "label": "Accessible service label: Enquire about exercise rehabilitation",
+      "value": "Enquire about exercise rehabilitation"
+    },
+    {
+      "id": "services_026",
+      "label": "SPAN: 05",
+      "value": "05"
+    },
+    {
+      "id": "services_027",
+      "label": "H3: Home Visits",
+      "value": "Home Visits"
+    },
+    {
+      "id": "services_028",
+      "label": "P: Appointments at your home across Bedfordshire, Central Bedfordshire and Milton Keynes. ",
+      "value": "Appointments at your home across Bedfordshire, Central Bedfordshire and Milton Keynes.\n                                Availability and travel coverage are confirmed before booking."
+    },
+    {
+      "id": "services_029",
+      "label": "Accessible service label: Enquire about home visits",
+      "value": "Enquire about home visits"
+    },
+    {
+      "id": "services_030",
+      "label": "SPAN: 06",
+      "value": "06"
+    },
+    {
+      "id": "services_031",
+      "label": "H3: Clinical Mat Pilates",
+      "value": "Clinical Mat Pilates"
+    },
+    {
+      "id": "services_032",
+      "label": "P: Group classes are planned, subject to venue and scheduling confirmation. A one-to-one a",
+      "value": "Group classes are planned, subject to venue and scheduling confirmation. A one-to-one\n                                assessment is required before joining a class."
+    },
+    {
+      "id": "services_033",
+      "label": "SPAN: Assessment · 40 min",
+      "value": "Assessment · 40 min"
+    },
+    {
+      "id": "services_034",
+      "label": "SPAN: Group class · 50 min",
+      "value": "Group class · 50\n                                    min"
+    },
+    {
+      "id": "services_035",
+      "label": "SPAN: Six-class block",
+      "value": "Six-class block"
+    },
+    {
+      "id": "services_036",
+      "label": "Accessible service label: Enquire about Clinical Mat Pilates",
+      "value": "Enquire about Clinical Mat Pilates"
+    }
+  ]
+}

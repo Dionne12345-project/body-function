@@ -1,0 +1,134 @@
+{
+  "items": [
+    {
+      "id": "pricing_001",
+      "label": "DIV: 05 / SIMPLE, TRANSPARENT PRICING",
+      "value": "05 / SIMPLE, TRANSPARENT PRICING"
+    },
+    {
+      "id": "pricing_002",
+      "label": "H2: Invest in",
+      "value": "Invest in"
+    },
+    {
+      "id": "pricing_003",
+      "label": "EM: your wellbeing.",
+      "value": "your wellbeing."
+    },
+    {
+      "id": "pricing_004",
+      "label": "P: Clear appointment fees, with individual attention at the heart of every session.",
+      "value": "Clear appointment fees, with individual attention at the heart of every session."
+    },
+    {
+      "id": "pricing_005",
+      "label": "SPAN: Initial physiotherapy assessment",
+      "value": "Initial physiotherapy assessment"
+    },
+    {
+      "id": "pricing_006",
+      "label": "SMALL: 50 minutes",
+      "value": "50 minutes"
+    },
+    {
+      "id": "pricing_007",
+      "label": "STRONG: £65",
+      "value": "£65"
+    },
+    {
+      "id": "pricing_008",
+      "label": "SPAN: Physiotherapy follow-up",
+      "value": "Physiotherapy follow-up"
+    },
+    {
+      "id": "pricing_009",
+      "label": "SMALL: 30 minutes",
+      "value": "30 minutes"
+    },
+    {
+      "id": "pricing_010",
+      "label": "STRONG: £45",
+      "value": "£45"
+    },
+    {
+      "id": "pricing_011",
+      "label": "SPAN: One-to-one Clinical Pilates",
+      "value": "One-to-one Clinical Pilates"
+    },
+    {
+      "id": "pricing_012",
+      "label": "SMALL: 40 minutes · assessment or session",
+      "value": "40 minutes · assessment or\n                            session"
+    },
+    {
+      "id": "pricing_013",
+      "label": "STRONG: £50",
+      "value": "£50"
+    },
+    {
+      "id": "pricing_014",
+      "label": "SPAN: Exercise rehabilitation",
+      "value": "Exercise rehabilitation"
+    },
+    {
+      "id": "pricing_015",
+      "label": "SMALL: 40 minutes",
+      "value": "40 minutes"
+    },
+    {
+      "id": "pricing_016",
+      "label": "STRONG: £50",
+      "value": "£50"
+    },
+    {
+      "id": "pricing_017",
+      "label": "SPAN: Clinical Mat Pilates assessment",
+      "value": "Clinical Mat Pilates assessment"
+    },
+    {
+      "id": "pricing_018",
+      "label": "SMALL: 40 minutes · required before group classes",
+      "value": "40 minutes · required before group\n                            classes"
+    },
+    {
+      "id": "pricing_019",
+      "label": "STRONG: £50",
+      "value": "£50"
+    },
+    {
+      "id": "pricing_020",
+      "label": "SPAN: Clinical Mat Pilates group class",
+      "value": "Clinical Mat Pilates group class"
+    },
+    {
+      "id": "pricing_021",
+      "label": "SMALL: 50 minutes · subject to launch confirmation",
+      "value": "50 minutes · subject to launch\n                            confirmation"
+    },
+    {
+      "id": "pricing_022",
+      "label": "STRONG: £17",
+      "value": "£17"
+    },
+    {
+      "id": "pricing_023",
+      "label": "SPAN: Clinical Mat Pilates six-class block",
+      "value": "Clinical Mat Pilates six-class block"
+    },
+    {
+      "id": "pricing_024",
+      "label": "SMALL: £15 per class · subject to launch confirmation",
+      "value": "£15 per class · subject to launch\n                            confirmation"
+    },
+    {
+      "id": "pricing_025",
+      "label": "STRONG: £90",
+      "value": "£90"
+    },
+    {
+      "id": "pricing_026",
+      "label": "P: Home visits are planned at standard appointment rates during the initial launch phase. ",
+      "value": "Home visits are planned at standard appointment rates during the initial launch phase.\n                Availability and travel coverage will be confirmed before booking."
+    }
+  ]
+}

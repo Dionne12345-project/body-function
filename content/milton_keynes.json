@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "milton_keynes_001",
+      "label": "SPAN: b",
+      "value": "b"
+    },
+    {
+      "id": "milton_keynes_002",
+      "label": "SPAN: .",
+      "value": "."
+    },
+    {
+      "id": "milton_keynes_003",
+      "label": "SPAN: f",
+      "value": "f"
+    },
+    {
+      "id": "milton_keynes_004",
+      "label": "SPAN: BODY FUNCTION",
+      "value": "BODY\n                FUNCTION"
+    },
+    {
+      "id": "milton_keynes_005",
+      "label": "SMALL: PHYSIOTHERAPY & REHABILITATION",
+      "value": "PHYSIOTHERAPY & REHABILITATION"
+    },
+    {
+      "id": "milton_keynes_006",
+      "label": "A: Enquire about an appointment ↗",
+      "value": "Enquire about an appointment ↗"
+    },
+    {
+      "id": "milton_keynes_007",
+      "label": "DIV: LOCAL PHYSIOTHERAPY",
+      "value": "LOCAL PHYSIOTHERAPY"
+    },
+    {
+      "id": "milton_keynes_008",
+      "label": "H1: Physiotherapy in",
+      "value": "Physiotherapy in"
+    },
+    {
+      "id": "milton_keynes_009",
+      "label": "SPAN: Milton Keynes.",
+      "value": "Milton Keynes."
+    },
+    {
+      "id": "milton_keynes_010",
+      "label": "P: Body Function is planning personalised home visit physiotherapy and rehabilitation serv",
+      "value": "Body Function is planning personalised home visit\n                physiotherapy and rehabilitation services across Milton Keynes. We offer individualised assessment for\n                musculoskeletal concerns, specialist headache and jaw pain assessment, Clinical Pilates and exercise\n                rehabilitation. Contact us to confirm local availability and discuss your goals."
+    },
+    {
+      "id": "milton_keynes_011",
+      "label": "A: Request an appointment ↗",
+      "value": "Request an appointment ↗"
+    },
+    {
+      "id": "milton_keynes_012",
+      "label": "DIV: PERSONALISED SUPPORT",
+      "value": "PERSONALISED SUPPORT"
+    },
+    {
+      "id": "milton_keynes_013",
+      "label": "H2: Care that fits",
+      "value": "Care that fits"
+    },
+    {
+      "id": "milton_keynes_014",
+      "label": "EM: your life.",
+      "value": "your life."
+    },
+    {
+      "id": "milton_keynes_015",
+      "label": "P: Initial physiotherapy assessments are £65 for 50 minutes, follow-ups £45 for 30 minutes",
+      "value": "Initial physiotherapy assessments are £65 for 50 minutes, follow-ups £45 for 30 minutes, and one-to-one\n                Clinical Pilates and exercise rehabilitation sessions £50 for 40 minutes. Availability is subject to\n                confirmation."
+    },
+    {
+      "id": "milton_keynes_016",
+      "label": "A: Explore our services ↗",
+      "value": "Explore our services ↗"
+    },
+    {
+      "id": "milton_keynes_017",
+      "label": "A: Body Function · Home",
+      "value": "Body Function · Home"
+    },
+    {
+      "id": "milton_keynes_018",
+      "label": "SMALL: Local appointment coverage is subject to confirmation.",
+      "value": "Local appointment coverage is subject to confirmation."
+    }
+  ]
+}

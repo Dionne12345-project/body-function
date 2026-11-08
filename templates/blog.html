@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#111015" name="theme-color"/>
+<meta content="{{CMS:seo:seo_003}}" name="description"/>
+<title>{{CMS:seo:seo_004}}</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+        .blog-hero {
+            background: #17151b;
+            color: white;
+            padding: 110px 7% 90px
+        }
+
+        .blog-hero h1 {
+            font-size: clamp(3.6rem, 8vw, 7rem);
+            line-height: 1.04;
+            letter-spacing: -.065em;
+            margin: 20px 0
+        }
+
+        .blog-hero em {
+            color: #be03fd;
+            font-style: normal
+        }
+
+        .blog-hero p {
+            max-width: 590px;
+            color: #c8c4cd;
+            font-size: 1.12rem
+        }
+
+        .blog-wrap {
+            padding: 80px 7%;
+            background: #f8f7f8
+        }
+
+        .blog-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 36px
+        }
+
+        .filter {
+            border: 1px solid #d9d5dc;
+            background: white;
+            border-radius: 100px;
+            padding: 12px 19px;
+            cursor: pointer;
+            font: inherit
+        }
+
+        .filter.active,
+        .filter:hover {
+            background: #be03fd;
+            color: white;
+            border-color: #be03fd
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 26px
+        }
+
+        .blog-card {
+            background: white;
+            border: 1px solid #e7e3e9;
+            overflow: hidden;
+            border-radius: 12px
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 235px;
+            object-fit: cover
+        }
+
+        .blog-card-content {
+            padding: 26px
+        }
+
+        .blog-card .tag {
+            font-size: .72rem;
+            letter-spacing: .12em;
+            font-weight: 700;
+            color: #8d00bd
+        }
+
+        .blog-card h2 {
+            font-size: 1.5rem;
+            letter-spacing: -.035em;
+            line-height: 1.2;
+            margin: 13px 0
+        }
+
+        .blog-card p {
+            color: #605d64;
+            line-height: 1.7
+        }
+
+        .blog-card a {
+            color: #8000ac;
+            font-weight: 700;
+            text-decoration: none
+        }
+
+        .blog-cta {
+            background: #17151b;
+            color: white;
+            padding: 75px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px
+        }
+
+        .blog-cta h2 {
+            font-size: clamp(2rem, 4vw, 3.7rem);
+            letter-spacing: -.05em;
+            margin: 0
+        }
+
+        .blog-cta a {
+            background: #be03fd;
+            color: white;
+            padding: 18px 26px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        @media(max-width:850px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .blog-cta {
+                display: block
+            }
+
+            .blog-cta a {
+                display: inline-block;
+                margin-top: 25px
+            }
+        }
+
+        @media(max-width:580px) {
+            .blog-grid {
+                grid-template-columns: 1fr
+            }
+
+            .blog-hero {
+                padding: 80px 6%
+            }
+
+            .blog-wrap {
+                padding: 55px 6%
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="nav"><a class="brand" href="/index.html"><span class="brandmark">{{CMS:blog:blog_001}}<span>{{CMS:blog:blog_003}}</span>{{CMS:blog:blog_002}}</span><span>{{CMS:blog:blog_004}}<small>{{CMS:blog:blog_005}}</small></span></a>
+<nav id="navlinks"><a href="/index.html#about">{{CMS:blog:blog_006}}</a><a href="/index.html#services">{{CMS:blog:blog_007}}</a><a href="/index.html#pricing">{{CMS:blog:blog_008}}</a><a aria-current="page" href="/blog.html">{{CMS:blog:blog_009}}</a><a href="/index.html#contact">{{CMS:blog:blog_010}}</a></nav><a class="btn small navcta" href="/index.html#booking">{{CMS:blog:blog_011}}</a><button aria-label="Toggle menu" class="menu" id="menu">{{CMS:blog:blog_012}}</button>
+</header>
+<main>
+<section class="blog-hero">
+<div class="section-label">{{CMS:blog:blog_013}}</div>
+<h1>{{CMS:blog:blog_014}}<br/><em>{{CMS:blog:blog_015}}</em></h1>
+<p>{{CMS:blog:blog_016}}</p>
+</section>
+<section class="blog-wrap">
+<div aria-label="Filter articles" class="blog-toolbar"><button class="filter active" data-category="all">{{CMS:blog:blog_017}}</button><button class="filter" data-category="physiotherapy">{{CMS:blog:blog_018}}</button><button class="filter" data-category="headache">{{CMS:blog:blog_019}}</button><button class="filter" data-category="pilates">{{CMS:blog:blog_020}}</button><button class="filter" data-category="rehabilitation">{{CMS:blog:blog_021}}</button></div>
+<div class="blog-grid">
+<article class="blog-card" data-category="rehabilitation"><img alt="Health and movement editorial photograph" loading="lazy" src="{{CMS:blog:blog_022}}"/>
+<div class="blog-card-content"><span class="tag">{{CMS:blog:blog_023}}</span>
+<h2>{{CMS:blog:blog_024}}</h2>
+<p>{{CMS:blog:blog_025}}</p><a href="/index.html#contact">{{CMS:blog:blog_026}}</a>
+</div>
+</article>
+<article class="blog-card" data-category="pilates"><img alt="Health and movement editorial photograph" loading="lazy" src="{{CMS:blog:blog_027}}"/>
+<div class="blog-card-content"><span class="tag">{{CMS:blog:blog_028}}</span>
+<h2>{{CMS:blog:blog_029}}</h2>
+<p>{{CMS:blog:blog_030}}</p><a href="/index.html#contact">{{CMS:blog:blog_031}}</a>
+</div>
+</article>
+<article class="blog-card" data-category="headache"><img alt="Health and movement editorial photograph" loading="lazy" src="{{CMS:blog:blog_032}}"/>
+<div class="blog-card-content"><span class="tag">{{CMS:blog:blog_033}}</span>
+<h2>{{CMS:blog:blog_034}}</h2>
+<p>{{CMS:blog:blog_035}}
+                        </p><a href="/index.html#contact">{{CMS:blog:blog_036}}</a>
+</div>
+</article>
+<article class="blog-card" data-category="physiotherapy"><img alt="Health and movement editorial photograph" loading="lazy" src="{{CMS:blog:blog_037}}"/>
+<div class="blog-card-content"><span class="tag">{{CMS:blog:blog_038}}</span>
+<h2>{{CMS:blog:blog_039}}</h2>
+<p>{{CMS:blog:blog_040}}</p><a href="/index.html#contact">{{CMS:blog:blog_041}}</a>
+</div>
+</article>
+<article class="blog-card" data-category="headache"><img alt="Health and movement editorial photograph" loading="lazy" src="{{CMS:blog:blog_042}}"/>
+<div class="blog-card-content"><span class="tag">{{CMS:blog:blog_043}}</span>
+<h2>{{CMS:blog:blog_044}}</h2>
+<p>{{CMS:blog:blog_045}}
+                        </p><a href="/index.html#contact">{{CMS:blog:blog_046}}</a>
+</div>
+</article>
+<article class="blog-card" data-category="rehabilitation"><img alt="Health and movement editorial photograph" loading="lazy" src="{{CMS:blog:blog_047}}"/>
+<div class="blog-card-content"><span class="tag">{{CMS:blog:blog_048}}</span>
+<h2>{{CMS:blog:blog_049}}</h2>
+<p>{{CMS:blog:blog_050}}</p><a href="/index.html#contact">{{CMS:blog:blog_051}}</a>
+</div>
+</article>
+</div>
+<p style="margin-top:35px;color:#68616c;font-size:.9rem">{{CMS:blog:blog_052}}</p>
+</section>
+<section class="blog-cta">
+<div>
+<div class="section-label">{{CMS:blog:blog_053}}</div>
+<h2>{{CMS:blog:blog_054}}</h2>
+</div><a href="/index.html#booking">{{CMS:blog:blog_055}}</a>
+</section>
+</main>
+<footer>
+<div class="brand"><span class="brandmark">{{CMS:blog:blog_056}}<span>{{CMS:blog:blog_058}}</span>{{CMS:blog:blog_057}}</span><span>{{CMS:blog:blog_059}}<small>{{CMS:blog:blog_060}}</small></span></div>
+<p>{{CMS:blog:blog_061}}</p>
+<div><a href="/index.html">{{CMS:blog:blog_063}}</a> {{CMS:blog:blog_062}} <a href="/index.html#contact">{{CMS:blog:blog_064}}</a></div><small>{{CMS:blog:blog_065}} <span id="year"></span> {{CMS:blog:blog_066}}</small>
+</footer>
+<script src="script.js"></script>
+<script>document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.filter').forEach(x => x.classList.remove('active')); b.classList.add('active'); document.querySelectorAll('.blog-card').forEach(c => c.hidden = b.dataset.category !== 'all' && c.dataset.category !== b.dataset.category) }));</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+{
+  "items": [
+    {
+      "id": "index_001",
+      "label": "SPAN: b",
+      "value": "b"
+    },
+    {
+      "id": "index_002",
+      "label": "SPAN: .",
+      "value": "."
+    },
+    {
+      "id": "index_003",
+      "label": "SPAN: f",
+      "value": "f"
+    },
+    {
+      "id": "index_004",
+      "label": "SPAN: BODY FUNCTION",
+      "value": "BODY\n                FUNCTION"
+    },
+    {
+      "id": "index_005",
+      "label": "SMALL: PHYSIOTHERAPY & REHABILITATION",
+      "value": "PHYSIOTHERAPY & REHABILITATION"
+    },
+    {
+      "id": "index_006",
+      "label": "A: About",
+      "value": "About"
+    },
+    {
+      "id": "index_007",
+      "label": "A: Services",
+      "value": "Services"
+    },
+    {
+      "id": "index_008",
+      "label": "A: Pricing",
+      "value": "Pricing"
+    },
+    {
+      "id": "index_009",
+      "label": "A: Journal",
+      "value": "Journal"
+    },
+    {
+      "id": "index_010",
+      "label": "A: Contact",
+      "value": "Contact"
+    },
+    {
+      "id": "index_011",
+      "label": "A: FAQ",
+      "value": "FAQ"
+    },
+    {
+      "id": "index_012",
+      "label": "A: Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "id": "index_013",
+      "label": "A: Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "id": "index_014",
+      "label": "A: Terms of Service",
+      "value": "Terms\n                of Service"
+    },
+    {
+      "id": "index_015",
+      "label": "A: Book an appointment",
+      "value": "Book an appointment"
+    },
+    {
+      "id": "index_016",
+      "label": "SPAN: b",
+      "value": "b"
+    },
+    {
+      "id": "index_017",
+      "label": "SPAN: .",
+      "value": "."
+    },
+    {
+      "id": "index_018",
+      "label": "SPAN: f",
+      "value": "f"
+    },
+    {
+      "id": "index_019",
+      "label": "SPAN: BODY FUNCTION",
+      "value": "BODY FUNCTION"
+    },
+    {
+      "id": "index_020",
+      "label": "SMALL: PHYSIOTHERAPY & REHABILITATION",
+      "value": "PHYSIOTHERAPY &\n                    REHABILITATION"
+    },
+    {
+      "id": "index_021",
+      "label": "P: Helping you manage pain, move with confidence and improve physical function.",
+      "value": "Helping you manage pain, move with confidence and improve physical function."
+    },
+    {
+      "id": "index_022",
+      "label": "DIV: ·",
+      "value": "·"
+    },
+    {
+      "id": "index_023",
+      "label": "DIV: ·",
+      "value": "·"
+    },
+    {
+      "id": "index_024",
+      "label": "A: Bedfordshire",
+      "value": "Bedfordshire"
+    },
+    {
+      "id": "index_025",
+      "label": "A: Central Bedfordshire",
+      "value": "Central Bedfordshire"
+    },
+    {
+      "id": "index_026",
+      "label": "A: Milton Keynes",
+      "value": "Milton\n                Keynes"
+    },
+    {
+      "id": "index_027",
+      "label": "SMALL: ©",
+      "value": "©"
+    },
+    {
+      "id": "index_028",
+      "label": "SMALL: Body Function. Website preview. Professional credentials, privacy policy and bookin",
+      "value": "Body Function. Website preview. Professional\n            credentials, privacy policy and booking system to be verified before launch."
+    },
+    {
+      "id": "index_029",
+      "label": "A: FAQ",
+      "value": "FAQ"
+    },
+    {
+      "id": "index_030",
+      "label": "A: Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "id": "index_031",
+      "label": "A: Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "id": "index_032",
+      "label": "A: Terms of Service",
+      "value": "Terms of Service"
+    },
+    {
+      "id": "index_033",
+      "label": "BUTTON: Cookie preferences",
+      "value": "Cookie preferences"
+    },
+    {
+      "id": "index_034",
+      "label": "H2: Your privacy matters",
+      "value": "Your privacy matters"
+    },
+    {
+      "id": "index_035",
+      "label": "P: We use essential storage to make this website work. With your permission, we may also u",
+      "value": "We use essential storage to make this website work. With your permission, we may also use optional analytics\n            or marketing cookies if these services are enabled. You can accept, reject or customise your preferences.\n            Read our"
+    },
+    {
+      "id": "index_036",
+      "label": "P: and",
+      "value": "and"
+    },
+    {
+      "id": "index_037",
+      "label": "P: .",
+      "value": "."
+    },
+    {
+      "id": "index_038",
+      "label": "A: Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "id": "index_039",
+      "label": "A: Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "id": "index_040",
+      "label": "LABEL: Essential storage (always active)",
+      "value": "Essential storage (always active)"
+    },
+    {
+      "id": "index_041",
+      "label": "LABEL: Analytics cookies",
+      "value": "Analytics cookies"
+    },
+    {
+      "id": "index_042",
+      "label": "LABEL: Marketing cookies",
+      "value": "Marketing cookies"
+    },
+    {
+      "id": "index_043",
+      "label": "SMALL: Optional services must only be loaded after consent. These controls do not activate",
+      "value": "Optional services must only be loaded after consent. These controls do not activate any tracking by\n                themselves."
+    },
+    {
+      "id": "index_044",
+      "label": "BUTTON: Save preferences",
+      "value": "Save preferences"
+    },
+    {
+      "id": "index_045",
+      "label": "BUTTON: Accept all",
+      "value": "Accept all"
+    },
+    {
+      "id": "index_046",
+      "label": "BUTTON: Reject optional cookies",
+      "value": "Reject optional cookies"
+    },
+    {
+      "id": "index_047",
+      "label": "BUTTON: Cookie settings",
+      "value": "Cookie\n                settings"
+    }
+  ]
+}

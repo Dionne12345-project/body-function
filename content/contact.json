@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "id": "contact_001",
+      "label": "DIV: LET'S CONNECT",
+      "value": "LET'S CONNECT"
+    },
+    {
+      "id": "contact_002",
+      "label": "H2: Let's get you",
+      "value": "Let's get you"
+    },
+    {
+      "id": "contact_003",
+      "label": "EM: moving.",
+      "value": "moving."
+    },
+    {
+      "id": "contact_004",
+      "label": "P: Have a question or want to discuss the right service? Get in touch.",
+      "value": "Have a question or want to discuss the right service? Get in touch."
+    },
+    {
+      "id": "contact_005",
+      "label": "Link URL: dionnejules@gmail.com",
+      "value": "mailto:dionnejules@gmail.com"
+    },
+    {
+      "id": "contact_006",
+      "label": "A: dionnejules@gmail.com",
+      "value": "dionnejules@gmail.com"
+    },
+    {
+      "id": "contact_007",
+      "label": "Link URL: 07946 234379",
+      "value": "tel:+447946234379"
+    },
+    {
+      "id": "contact_008",
+      "label": "A: 07946 234379",
+      "value": "07946 234379"
+    },
+    {
+      "id": "contact_009",
+      "label": "Link URL: Message on WhatsApp",
+      "value": "https://wa.me/447946234379"
+    },
+    {
+      "id": "contact_010",
+      "label": "A: Message on WhatsApp",
+      "value": "Message on WhatsApp"
+    }
+  ]
+}

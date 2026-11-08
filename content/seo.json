@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "id": "seo_001",
+      "label": "SEO description: index.html",
+      "value": "Body Function provides home-based physiotherapy, headache and TMD care, Clinical Pilates and rehabilitation across Bedfordshire and Milton Keynes."
+    },
+    {
+      "id": "seo_002",
+      "label": "Browser title: index.html",
+      "value": "Body Function | Physiotherapy & Rehabilitation"
+    },
+    {
+      "id": "seo_003",
+      "label": "SEO description: blog.html",
+      "value": "Body Function journal: accessible guides to physiotherapy, headache and jaw pain, Clinical Pilates and exercise rehabilitation."
+    },
+    {
+      "id": "seo_004",
+      "label": "Browser title: blog.html",
+      "value": "Journal | Body Function Physiotherapy"
+    },
+    {
+      "id": "seo_005",
+      "label": "SEO description: bedfordshire.html",
+      "value": "Body Function home visit physiotherapy, Clinical Pilates and rehabilitation enquiries in Bedfordshire."
+    },
+    {
+      "id": "seo_006",
+      "label": "Browser title: bedfordshire.html",
+      "value": "Physiotherapy in Bedfordshire | Body Function"
+    },
+    {
+      "id": "seo_007",
+      "label": "SEO description: central-bedfordshire.html",
+      "value": "Body Function home visit physiotherapy, Clinical Pilates and rehabilitation enquiries in Central Bedfordshire."
+    },
+    {
+      "id": "seo_008",
+      "label": "Browser title: central-bedfordshire.html",
+      "value": "Physiotherapy in Central Bedfordshire | Body Function"
+    },
+    {
+      "id": "seo_009",
+      "label": "SEO description: milton-keynes.html",
+      "value": "Body Function home visit physiotherapy, Clinical Pilates and rehabilitation enquiries in Milton Keynes."
+    },
+    {
+      "id": "seo_010",
+      "label": "Browser title: milton-keynes.html",
+      "value": "Physiotherapy in Milton Keynes | Body Function"
+    },
+    {
+      "id": "seo_011",
+      "label": "Browser title: thank-you.html",
+      "value": "Thank you | Body Function"
+    }
+  ]
+}
