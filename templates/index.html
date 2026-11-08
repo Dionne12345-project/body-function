@@ -421,7 +421,8 @@
                     <img alt="Portrait of Dionne Jules, physiotherapist" class="profile-photo" height="900"
                         loading="lazy" src="{{CMS:profile:profile_001}}" width="720" />
                     <div class="profile-photo-caption">{{CMS:profile:profile_002}}
-                        <span>{{CMS:profile:profile_003}}</span></div>
+                        <span>{{CMS:profile:profile_003}}</span>
+                    </div>
                 </div>
                 <div class="profile-content">
                     <div class="section-label">{{CMS:profile:profile_004}}</div>
@@ -600,35 +601,40 @@
                             <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_006}}</div>
                             <blockquote>{{CMS:reviews:reviews_007}}</blockquote>
                             <div class="review-author">{{CMS:reviews:reviews_008}}
-                                <span>{{CMS:reviews:reviews_009}}</span></div>
+                                <span>{{CMS:reviews:reviews_009}}</span>
+                            </div>
                         </article>
                         <article aria-label="Placeholder 2 of 5" class="review-card">
                             <span class="review-placeholder">{{CMS:reviews:reviews_010}}</span>
                             <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_011}}</div>
                             <blockquote>{{CMS:reviews:reviews_012}}</blockquote>
                             <div class="review-author">{{CMS:reviews:reviews_013}}
-                                <span>{{CMS:reviews:reviews_014}}</span></div>
+                                <span>{{CMS:reviews:reviews_014}}</span>
+                            </div>
                         </article>
                         <article aria-label="Placeholder 3 of 5" class="review-card">
                             <span class="review-placeholder">{{CMS:reviews:reviews_015}}</span>
                             <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_016}}</div>
                             <blockquote>{{CMS:reviews:reviews_017}}</blockquote>
                             <div class="review-author">{{CMS:reviews:reviews_018}}
-                                <span>{{CMS:reviews:reviews_019}}</span></div>
+                                <span>{{CMS:reviews:reviews_019}}</span>
+                            </div>
                         </article>
                         <article aria-label="Placeholder 4 of 5" class="review-card">
                             <span class="review-placeholder">{{CMS:reviews:reviews_020}}</span>
                             <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_021}}</div>
                             <blockquote>{{CMS:reviews:reviews_022}}</blockquote>
                             <div class="review-author">{{CMS:reviews:reviews_023}}
-                                <span>{{CMS:reviews:reviews_024}}</span></div>
+                                <span>{{CMS:reviews:reviews_024}}</span>
+                            </div>
                         </article>
                         <article aria-label="Placeholder 5 of 5" class="review-card">
                             <span class="review-placeholder">{{CMS:reviews:reviews_025}}</span>
                             <div aria-hidden="true" class="review-stars">{{CMS:reviews:reviews_026}}</div>
                             <blockquote>{{CMS:reviews:reviews_027}}</blockquote>
                             <div class="review-author">{{CMS:reviews:reviews_028}}
-                                <span>{{CMS:reviews:reviews_029}}</span></div>
+                                <span>{{CMS:reviews:reviews_029}}</span>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -944,7 +950,7 @@
 
             // Wire up cards
             ARTICLES.forEach((a, i) => {
-                a.cardIndex = cards.findIndex(c => c.querySelector('h3').textContent.trim() === a.title);
+                a.cardIndex = i; // Use card order: CMS titles may change
                 if (a.cardIndex < 0) return;
                 const card = cards[a.cardIndex], body = card.querySelector('.jbody');
                 const old = body.querySelector('.jlink');
@@ -956,6 +962,7 @@
                 btn.className = 'jlink jread';
                 btn.textContent = 'Read more';
                 if (old) { old.replaceWith(meta); meta.after(btn); } else { body.append(meta, btn); }
+                card.style.cursor = 'pointer';
                 card.addEventListener('click', e => { if (!e.target.closest('button')) open(i); });
                 btn.addEventListener('click', () => open(i));
             });
