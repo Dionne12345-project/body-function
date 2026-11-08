@@ -897,3 +897,103 @@ content:
   - name: blog_066
     label: Small supporting text · Body Function. Website preview.
     type: string
+- name: privacy
+  label: Privacy Policy
+  type: file
+  path: content/privacy.json
+  fields:
+  - name: title
+    label: Browser Tab Title
+    type: string
+  - name: heading
+    label: Page Heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: sections
+    label: Page Sections
+    type: object
+    list: true
+    fields:
+    - name: heading
+      label: Section Heading
+      type: string
+    - name: body
+      label: Section Text
+      type: text
+- name: terms
+  label: Terms & Conditions
+  type: file
+  path: content/terms.json
+  fields:
+  - name: title
+    label: Browser Tab Title
+    type: string
+  - name: heading
+    label: Page Heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: sections
+    label: Page Sections
+    type: object
+    list: true
+    fields:
+    - name: heading
+      label: Section Heading
+      type: string
+    - name: body
+      label: Section Text
+      type: text
+- name: faq
+  label: Frequently Asked Questions
+  type: file
+  path: content/faq.json
+  fields:
+  - name: title
+    label: Browser Tab Title
+    type: string
+  - name: heading
+    label: Page Heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: sections
+    label: Questions and Answers
+    type: object
+    list: true
+    fields:
+    - name: heading
+      label: Question
+      type: string
+    - name: body
+      label: Answer
+      type: text
+- name: cookies
+  label: Cookie Policy
+  type: file
+  path: content/cookies.json
+  fields:
+  - name: title
+    label: Browser Tab Title
+    type: string
+  - name: heading
+    label: Page Heading
+    type: string
+  - name: intro
+    label: Introduction
+    type: text
+  - name: sections
+    label: Page Sections
+    type: object
+    list: true
+    fields:
+    - name: heading
+      label: Section Heading
+      type: string
+    - name: body
+      label: Section Text
+      type: text
