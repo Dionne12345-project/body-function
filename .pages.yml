@@ -2,463 +2,95 @@ media:
   input: images
   output: /images
 content:
-- name: seo
-  label: Search Engine Titles & Descriptions
-  type: file
-  path: content/seo.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
 - name: index
-  label: Index
+  label: Homepage Settings
   type: file
   path: content/index.json
   fields:
   - name: items
-    label: Editable content
+    label: Website text and settings
     type: object
     list: true
     fields:
     - name: id
-      label: Internal reference (do not change)
+      label: Reference code (leave unchanged)
       type: string
       required: true
     - name: label
-      label: What this controls
+      label: Description of this item
       type: string
     - name: value
-      label: Text, URL or image path
+      label: Edit text or link here
       type: text
 - name: hero
-  label: 'Homepage: Hero'
+  label: Main Heading & Photo
   type: file
   path: content/hero.json
   fields:
   - name: items
-    label: Editable content
+    label: Website text and settings
     type: object
     list: true
     fields:
     - name: id
-      label: Internal reference (do not change)
+      label: Reference code (leave unchanged)
       type: string
       required: true
     - name: label
-      label: What this controls
+      label: Description of this item
       type: string
     - name: value
-      label: Text, URL or image path
+      label: Edit text or link here
       type: text
 - name: about
-  label: 'Homepage: Our Approach'
+  label: My Approach
   type: file
   path: content/about.json
   fields:
   - name: items
-    label: Editable content
+    label: Website text and settings
     type: object
     list: true
     fields:
     - name: id
-      label: Internal reference (do not change)
+      label: Reference code (leave unchanged)
       type: string
       required: true
     - name: label
-      label: What this controls
+      label: Description of this item
       type: string
     - name: value
-      label: Text, URL or image path
+      label: Edit text or link here
       type: text
 - name: profile
-  label: Profile & Qualifications
+  label: About Me & Qualifications
   type: file
   path: content/profile.json
   fields:
   - name: items
-    label: Editable content
+    label: Website text and settings
     type: object
     list: true
     fields:
     - name: id
-      label: Internal reference (do not change)
+      label: Reference code (leave unchanged)
       type: string
       required: true
     - name: label
-      label: What this controls
+      label: Description of this item
       type: string
     - name: value
-      label: Text, URL or image path
+      label: Edit text or link here
       type: text
 - name: area
-  label: Service Areas
+  label: Areas I Cover
   type: file
   path: content/area.json
   fields:
   - name: items
-    label: Editable content
+    label: Website text and settings
     type: object
     list: true
     fields:
     - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: services
-  label: Physiotherapy Services
-  type: file
-  path: content/services.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: statement
-  label: 'Homepage: Call to Action'
-  type: file
-  path: content/statement.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: pricing
-  label: Pricing & Fees
-  type: file
-  path: content/pricing.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: booking
-  label: Booking Form & Text
-  type: file
-  path: content/booking.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: reviews
-  label: Patient Reviews
-  type: file
-  path: content/reviews.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: contact
-  label: Contact
-  type: file
-  path: content/contact.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: journal
-  label: 'Homepage: Journal'
-  type: file
-  path: content/journal.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: blog
-  label: Blog Page
-  type: file
-  path: content/blog.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: bedfordshire
-  label: Bedfordshire Page
-  type: file
-  path: content/bedfordshire.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: central_bedfordshire
-  label: Central Bedfordshire Page
-  type: file
-  path: content/central_bedfordshire.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: milton_keynes
-  label: Milton Keynes Page
-  type: file
-  path: content/milton_keynes.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: thank_you
-  label: Thank You Page
-  type: file
-  path: content/thank_you.json
-  fields:
-  - name: items
-    label: Editable content
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Internal reference (do not change)
-      type: string
-      required: true
-    - name: label
-      label: What this controls
-      type: string
-    - name: value
-      label: Text, URL or image path
-      type: text
-- name: privacy
-  label: Privacy Policy
-  type: file
-  path: content/privacy.json
-  fields:
-  - name: title
-    label: Browser title
-    type: string
-  - name: heading
-    label: Page heading
-    type: string
-  - name: intro
-    label: Introductory text
-    type: text
-  - name: sections
-    label: Content sections
-    type: object
-    list: true
-    fields:
-    - name: heading
-      label: Section heading
-      type: string
-    - name: body
-      label: Section text
-      type: text
-- name: cookies
-  label: Cookie Policy
-  type: file
-  path: content/cookies.json
-  fields:
-  - name: title
-    label: Browser title
-    type: string
-  - name: heading
-    label: Page heading
-    type: string
-  - name: intro
-    label: Introductory text
-    type: text
-  - name: sections
-    label: Content sections
-    type: object
-    list: true
-    fields:
-    - name: heading
-      label: Section heading
-      type: string
-    - name: body
-      label: Section text
-      type: text
-- name: terms
-  label: Terms of Service
-  type: file
-  path: content/terms.json
-  fields:
-  - name: title
-    label: Browser title
-    type: string
-  - name: heading
-    label: Page heading
-    type: string
-  - name: intro
-    label: Introductory text
-    type: text
-  - name: sections
-    label: Content sections
-    type: object
-    list: true
-    fields:
-    - name: heading
-      label: Section heading
-      type: string
-    - name: body
-      label: Section text
-      type: text
-- name: faq
-  label: Frequently Asked Questions
-  type: file
-  path: content/faq.json
-  fields:
-  - name: title
-    label: Browser title
-    type: string
-  - name: heading
-    label: Page heading
-    type: string
-  - name: intro
-    label: Introductory text
-    type: text
-  - name: sections
-    label: Content sections
-    type: object
-    list: true
-    fields:
-    - name: heading
-      label: Section heading
-      type: string
-    - name: body
-      label: Section text
-      type: text
+      label: Reference code (leave unchanged)
