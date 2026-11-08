@@ -1,0 +1,1 @@
+The four legal/FAQ sections are added to Pages CMS. Existing content/privacy.json, content/terms.json, content/faq.json and content/cookies.json are already in your project and are not overwritten. Replace .pages.yml with the one in this ZIP. Other files are unchanged from the previous 11-section CMS package.
