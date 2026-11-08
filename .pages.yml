@@ -94,3 +94,131 @@ content:
     fields:
     - name: id
       label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
+- name: services
+  label: Services
+  type: file
+  path: content/services.json
+  fields:
+  - name: items
+    label: Website text and settings
+    type: object
+    list: true
+    fields:
+    - name: id
+      label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
+- name: pricing
+  label: Prices
+  type: file
+  path: content/pricing.json
+  fields:
+  - name: items
+    label: Website text and settings
+    type: object
+    list: true
+    fields:
+    - name: id
+      label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
+- name: booking
+  label: Book an Appointment
+  type: file
+  path: content/booking.json
+  fields:
+  - name: items
+    label: Website text and settings
+    type: object
+    list: true
+    fields:
+    - name: id
+      label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
+- name: reviews
+  label: Reviews
+  type: file
+  path: content/reviews.json
+  fields:
+  - name: items
+    label: Website text and settings
+    type: object
+    list: true
+    fields:
+    - name: id
+      label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
+- name: contact
+  label: Contact Details
+  type: file
+  path: content/contact.json
+  fields:
+  - name: items
+    label: Website text and settings
+    type: object
+    list: true
+    fields:
+    - name: id
+      label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
+- name: blog
+  label: Blog
+  type: file
+  path: content/blog.json
+  fields:
+  - name: items
+    label: Website text and settings
+    type: object
+    list: true
+    fields:
+    - name: id
+      label: Reference code (leave unchanged)
+      type: string
+      required: true
+    - name: label
+      label: Description of this item
+      type: string
+    - name: value
+      label: Edit text or link here
+      type: text
