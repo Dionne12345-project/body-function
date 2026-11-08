@@ -1,54 +1,12 @@
 {
-  "items": [
-    {
-      "id": "hero_001",
-      "label": "DIV: Personalised physiotherapy · Bedfordshire & Milton Keynes",
-      "value": "Personalised physiotherapy · Bedfordshire & Milton\n                    Keynes"
-    },
-    {
-      "id": "hero_002",
-      "label": "H1: Move better.",
-      "value": "Move better."
-    },
-    {
-      "id": "hero_003",
-      "label": "H1: Feel stronger.",
-      "value": "Feel stronger."
-    },
-    {
-      "id": "hero_004",
-      "label": "EM: Live fully.",
-      "value": "Live fully."
-    },
-    {
-      "id": "hero_005",
-      "label": "P: Expert-led physiotherapy, Clinical Pilates and rehabilitation tailored to you. Thoughtf",
-      "value": "Expert-led physiotherapy, Clinical Pilates and rehabilitation tailored to you. Thoughtful care,\n                    practical support and a clear path towards better movement."
-    },
-    {
-      "id": "hero_006",
-      "label": "A: Book your appointment",
-      "value": "Book your appointment"
-    },
-    {
-      "id": "hero_007",
-      "label": "A: Explore our services",
-      "value": "Explore our services"
-    },
-    {
-      "id": "hero_008",
-      "label": "Image: Body Function physiotherapy session",
-      "value": "hero.jpg"
-    },
-    {
-      "id": "hero_009",
-      "label": "DIV: Movement is personal.",
-      "value": "Movement is personal."
-    },
-    {
-      "id": "hero_010",
-      "label": "STRONG: So is your care.",
-      "value": "So is your care."
-    }
-  ]
+  "hero_001": "Personalised physiotherapy · Bedfordshire & Milton\n                    Keynes",
+  "hero_002": "Move better.",
+  "hero_003": "Feel stronger.",
+  "hero_004": "Live fully.",
+  "hero_005": "Expert-led physiotherapy, Clinical Pilates and rehabilitation tailored to you. Thoughtful care,\n                    practical support and a clear path towards better movement.",
+  "hero_006": "Book your appointment",
+  "hero_007": "Explore our services",
+  "hero_008": "hero.jpg",
+  "hero_009": "Movement is personal.",
+  "hero_010": "So is your care."
 }

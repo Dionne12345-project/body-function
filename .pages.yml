@@ -27,21 +27,36 @@ content:
   type: file
   path: content/hero.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: hero_001
+    label: Location text
+    type: string
+  - name: hero_002
+    label: 'Main heading: first line'
+    type: string
+  - name: hero_003
+    label: 'Main heading: second line'
+    type: string
+  - name: hero_004
+    label: Highlighted heading
+    type: string
+  - name: hero_005
+    label: Introduction paragraph
+    type: text
+  - name: hero_006
+    label: Booking button text
+    type: string
+  - name: hero_007
+    label: Services button text
+    type: string
+  - name: hero_008
+    label: Homepage photo
+    type: image
+  - name: hero_009
+    label: Photo caption
+    type: string
+  - name: hero_010
+    label: 'Photo caption: bold text'
+    type: string
 - name: about
   label: My Approach
   type: file
