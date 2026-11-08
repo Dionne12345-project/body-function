@@ -1,0 +1,152 @@
+:root {
+    --legal-ink: #2b2530;
+    --legal-purple: #cd00fd
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: var(--legal-ink);
+    font-family: Inter, Arial, sans-serif
+}
+
+.legal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    padding: 22px max(5vw, 20px);
+    border-bottom: 1px solid #ece7ed
+}
+
+.legal-brand {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: .07em;
+    font-size: 14px
+}
+
+.legal-brand small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: .08em;
+    font-weight: 500;
+    margin-top: 5px
+}
+
+.legal-brand .brandmark {
+    font-size: 36px;
+    letter-spacing: -.12em;
+    font-weight: 500
+}
+
+.legal-brand .brandmark span {
+    color: var(--legal-purple)
+}
+
+.legal-back,
+.legal-footer a {
+    color: inherit;
+    text-decoration: none
+}
+
+.legal-back:hover,
+.legal-footer a:hover {
+    color: var(--legal-purple)
+}
+
+.legal-main {
+    max-width: 830px;
+    margin: auto;
+    padding: 78px 24px 100px
+}
+
+.legal-kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .17em;
+    color: #7c5d82
+}
+
+.legal-main h1 {
+    font-size: clamp(38px, 6vw, 70px);
+    line-height: 1.1;
+    letter-spacing: -.05em;
+    margin: 20px 0 22px
+}
+
+.legal-intro {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #645b68;
+    max-width: 700px
+}
+
+.legal-notice {
+    background: #faf4fb;
+    border-left: 3px solid var(--legal-purple);
+    padding: 14px 18px;
+    margin: 34px 0;
+    color: #59495f;
+    font-size: 13px
+}
+
+.legal-section {
+    padding: 29px 0;
+    border-bottom: 1px solid #ece7ed
+}
+
+.legal-section h2 {
+    font-size: 23px;
+    letter-spacing: -.025em;
+    margin: 0 0 12px
+}
+
+.legal-section p {
+    white-space: pre-wrap;
+    line-height: 1.8;
+    color: #655e67;
+    margin: 0
+}
+
+.legal-footer {
+    border-top: 1px solid #ece7ed;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px max(5vw, 20px);
+    font-size: 13px
+}
+
+.legal-footer nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap
+}
+
+@media(max-width:560px) {
+    .legal-header {
+        padding: 17px 20px
+    }
+
+    .legal-back {
+        font-size: 12px
+    }
+
+    .legal-brand {
+        font-size: 11px
+    }
+
+    .legal-brand .brandmark {
+        font-size: 30px
+    }
+
+    .legal-main {
+        padding: 55px 20px 75px
+    }
+}

@@ -1,0 +1,104 @@
+media:
+  input: images
+  output: /images
+content:
+  - name: privacy
+    label: Privacy Policy
+    type: file
+    path: content/privacy.json
+    fields:
+      - name: title
+        label: Browser title
+        type: string
+      - name: heading
+        label: Page heading
+        type: string
+      - name: intro
+        label: Introductory text
+        type: text
+      - name: sections
+        label: Content sections
+        type: object
+        list: true
+        fields:
+          - name: heading
+            label: Section heading
+            type: string
+          - name: body
+            label: Section text
+            type: text
+  - name: cookies
+    label: Cookie Policy
+    type: file
+    path: content/cookies.json
+    fields:
+      - name: title
+        label: Browser title
+        type: string
+      - name: heading
+        label: Page heading
+        type: string
+      - name: intro
+        label: Introductory text
+        type: text
+      - name: sections
+        label: Content sections
+        type: object
+        list: true
+        fields:
+          - name: heading
+            label: Section heading
+            type: string
+          - name: body
+            label: Section text
+            type: text
+  - name: terms
+    label: Terms of Service
+    type: file
+    path: content/terms.json
+    fields:
+      - name: title
+        label: Browser title
+        type: string
+      - name: heading
+        label: Page heading
+        type: string
+      - name: intro
+        label: Introductory text
+        type: text
+      - name: sections
+        label: Content sections
+        type: object
+        list: true
+        fields:
+          - name: heading
+            label: Section heading
+            type: string
+          - name: body
+            label: Section text
+            type: text
+  - name: faq
+    label: Frequently Asked Questions
+    type: file
+    path: content/faq.json
+    fields:
+      - name: title
+        label: Browser title
+        type: string
+      - name: heading
+        label: Page heading
+        type: string
+      - name: intro
+        label: Introductory text
+        type: text
+      - name: sections
+        label: Content sections
+        type: object
+        list: true
+        fields:
+          - name: heading
+            label: Section heading
+            type: string
+          - name: body
+            label: Section text
+            type: text

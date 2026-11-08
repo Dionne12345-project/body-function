@@ -1,0 +1,23 @@
+{
+  "title": "Privacy Policy",
+  "heading": "How we handle your information",
+  "intro": "Privacy policy placeholder. Replace every section with accurate information before publishing.",
+  "sections": [
+    {
+      "heading": "Information we collect",
+      "body": "[Explain which personal information is collected through booking enquiries and other forms.]"
+    },
+    {
+      "heading": "How we use information",
+      "body": "[Explain why information is collected and the legal basis for processing.]"
+    },
+    {
+      "heading": "Sharing and storage",
+      "body": "[Explain third-party services, data retention, and security arrangements.]"
+    },
+    {
+      "heading": "Your rights and contact",
+      "body": "[Explain data protection rights and provide the correct privacy contact details.]"
+    }
+  ]
+}

@@ -1,0 +1,1796 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --ink: #2b2530;
+    --muted: #716a77;
+    --purple: #cd00fd;
+    --purple-d: #a900d1;
+    --tint: #f9f4fc;
+    --tint2: #f1e6f8;
+    --line: #ece6f0;
+    --serif: 'Inter', Arial, sans-serif;
+    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E")
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 92px;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit
+}
+
+[hidden] {
+    display: none !important
+}
+
+.btn::after,
+.textlink::after,
+.jlink::after,
+.contact-links a::after,
+.svc-list li>a::after {
+    content: "";
+    flex: none;
+    width: 16px;
+    height: 16px;
+    background: currentColor;
+    -webkit-mask: var(--arrow) center/contain no-repeat;
+    mask: var(--arrow) center/contain no-repeat
+}
+
+/* Header */
+.nav {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    gap: 30px;
+    background: rgba(255, 255, 255, .96);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid var(--line)
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    white-space: nowrap
+}
+
+.brandmark {
+    font-family: var(--serif);
+    font-size: 34px;
+    letter-spacing: -.12em;
+    font-weight: 500;
+    line-height: 1
+}
+
+.brandmark span {
+    color: var(--purple)
+}
+
+.brand small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: .13em;
+    margin-top: 4px;
+    font-weight: 500
+}
+
+.nav nav {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a4350
+}
+
+.nav nav a:hover,
+.textlink:hover,
+.jlink:hover {
+    color: var(--purple)
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: var(--purple);
+    color: #fff;
+    padding: 16px 26px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 8px 20px rgba(190, 3, 253, .16)
+}
+
+.btn:hover {
+    background: var(--purple-d);
+    transform: translateY(-1px)
+}
+
+.btn.small {
+    padding: 13px 20px;
+    gap: 12px;
+    box-shadow: none
+}
+
+.menu {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: none;
+    border: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer
+}
+
+.menu i {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px
+}
+
+/* Hero: text over a soft light fade, image is the focal point */
+.hero {
+    position: relative;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #fcf8fe, var(--tint2))
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+    z-index: 0
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(43, 37, 48, 0) 55%, rgba(43, 37, 48, .2) 100%)
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 2;
+    margin: 80px 0 80px 7%;
+    padding: 52px 56px;
+    max-width: 660px;
+    background: rgba(255, 255, 255, .82);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 24px;
+    box-shadow: 0 24px 70px rgba(43, 37, 48, .16)
+}
+
+.image-overlay {
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 24px;
+    background: rgba(255, 255, 255, .88);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    font-size: 16px;
+    color: var(--ink);
+    box-shadow: 0 10px 30px rgba(43, 37, 48, .08)
+}
+
+.plus {
+    flex: none;
+    width: 3px;
+    height: 38px;
+    border-radius: 2px;
+    background: var(--purple)
+}
+
+.eyebrow,
+.section-label {
+    font-size: 12px;
+    letter-spacing: .12em;
+    font-weight: 600
+}
+
+.eyebrow {
+    color: var(--muted)
+}
+
+.section-label {
+    color: var(--purple);
+    margin-bottom: 22px;
+    text-transform: uppercase
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--purple);
+    border-radius: 50%;
+    margin-right: 9px
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--serif);
+    font-weight: 400
+}
+
+.hero h1 {
+    font-size: clamp(46px, 5.6vw, 84px);
+    line-height: 0.9;
+    letter-spacing: -.02em;
+    margin: 28px 0 22px
+}
+
+h2 {
+    font-size: clamp(36px, 4.2vw, 60px);
+    line-height: 1.12;
+    letter-spacing: -.015em;
+    margin: 0 0 22px
+}
+
+h1 em,
+h2 em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--purple)
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5d5663;
+    max-width: 520px
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 30px;
+    flex-wrap: wrap
+}
+
+.textlink,
+.jlink {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 6px
+}
+
+.textlink::after,
+.jlink::after {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: -3px
+}
+
+.textlink.dark {
+    margin-top: 20px
+}
+
+/* Sections */
+.section {
+    padding: 110px 7%
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%
+}
+
+.intro-right {
+    padding-top: 30px
+}
+
+.intro-right p,
+.section-top p,
+.area p,
+.booking p,
+.svc-intro p,
+.contact p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--muted)
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 40px
+}
+
+.section-top p {
+    max-width: 360px
+}
+
+.fine {
+    font-size: 12.5px !important;
+    color: #8a838f !important;
+    line-height: 1.7
+}
+
+/* Services: an index list, not cards */
+.services {
+    background: var(--tint)
+}
+
+.svc-layout {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 8%;
+    align-items: start
+}
+
+.svc-intro {
+    position: sticky;
+    top: 120px
+}
+
+.svc-intro .btn {
+    margin-top: 12px
+}
+
+.svc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--line)
+}
+
+.svc-list li {
+    display: grid;
+    grid-template-columns: 56px 1fr 46px;
+    gap: 18px;
+    align-items: start;
+    padding: 30px 0;
+    border-top: 1px solid var(--line)
+}
+
+.svc-list .n {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+    color: var(--purple);
+    padding-top: 6px
+}
+
+.svc-list h3 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin: 0 0 8px
+}
+
+.svc-list p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--muted);
+    max-width: 520px
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px
+}
+
+.tags span {
+    background: #fff;
+    border: 1px solid var(--tint2);
+    color: #6a3a85;
+    border-radius: 99px;
+    padding: 6px 13px;
+    font-size: 12px;
+    font-weight: 500
+}
+
+.svc-list li>a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd0e6;
+    border-radius: 50%;
+    color: var(--purple);
+    transition: .2s
+}
+
+.svc-list li>a::after {
+    width: 17px;
+    height: 17px
+}
+
+.svc-list li>a:hover {
+    background: var(--purple);
+    border-color: var(--purple);
+    color: #fff
+}
+
+.statement {
+    padding: 100px 7%;
+    background: linear-gradient(135deg, var(--tint2), #f8eefc);
+    text-align: center
+}
+
+.statement>span {
+    font-size: 12px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500
+}
+
+.statement h2 {
+    font-size: clamp(38px, 5.6vw, 82px);
+    max-width: 1000px;
+    margin: 26px auto 34px
+}
+
+.price-list {
+    border-top: 1px solid var(--line)
+}
+
+.price-list>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--line);
+    padding: 22px 8px;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.price-list small {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: #8a838f;
+    margin-top: 5px
+}
+
+.price-list strong {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--purple)
+}
+
+.area {
+    background: var(--tint);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8%
+}
+
+.area img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 18px
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px
+}
+
+.chips span {
+    border: 1px solid #ddd0e6;
+    background: #fff;
+    border-radius: 40px;
+    padding: 9px 16px;
+    font-size: 13px
+}
+
+.booking {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 8%;
+    background: #fff
+}
+
+.booking form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: var(--tint);
+    padding: 34px;
+    border-radius: 18px
+}
+
+.booking label {
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+    border: 1px solid #e3d9ea;
+    background: #fff;
+    padding: 14px 15px;
+    width: 100%;
+    min-width: 0;
+    border-radius: 10px;
+    color: var(--ink)
+}
+
+.booking input:focus,
+.booking select:focus,
+.booking textarea:focus {
+    outline: 2px solid #e2b3f7;
+    outline-offset: 1px;
+    border-color: var(--purple)
+}
+
+.booking .wide {
+    grid-column: 1/-1
+}
+
+.booking form button {
+    justify-self: start
+}
+
+.booking form small {
+    font-size: 12px;
+    color: #8a838f
+}
+
+.contact {
+    padding: 90px 7%;
+    background: linear-gradient(135deg, var(--tint2), #f8eefc);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
+}
+
+.contact p {
+    max-width: 390px
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    font-family: var(--serif);
+    font-size: clamp(19px, 2vw, 28px);
+    min-width: min(100%, 420px)
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #d9c5e6;
+    padding-bottom: 14px;
+    transition: .2s
+}
+
+.contact-links a:hover {
+    color: var(--purple)
+}
+
+.contact-links a::after {
+    width: 20px;
+    height: 20px
+}
+
+/* Journal */
+.journal {
+    background: #fff
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px
+}
+
+.filter {
+    border: 1px solid #e3d9ea;
+    background: #fff;
+    border-radius: 99px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #5d5663;
+    cursor: pointer
+}
+
+.filter:hover,
+.filter.active {
+    background: var(--purple);
+    border-color: var(--purple);
+    color: #fff
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px
+}
+
+.jcard {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden
+}
+
+.jcard img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block
+}
+
+.jbody {
+    padding: 24px
+}
+
+.jbody>span {
+    font-size: 11.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--purple);
+    font-weight: 600
+}
+
+.jbody h3 {
+    font-size: 23px;
+    line-height: 1.3;
+    margin: 12px 0 10px
+}
+
+.jbody p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin: 0 0 18px
+}
+
+.jlink {
+    color: var(--purple);
+    font-size: 13.5px
+}
+
+.journal .fine {
+    margin-top: 30px
+}
+
+footer {
+    padding: 55px 7%;
+    background: #2a2330;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+footer p {
+    color: #bdb4c4;
+    margin: 0
+}
+
+footer>small {
+    color: #a89fb0;
+    font-size: 12px
+}
+
+footer>div:nth-of-type(2) {
+    font-size: 13px;
+    color: #ddd5e3
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+@media(max-width:1050px) {
+    .nav nav {
+        gap: 16px
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .svc-layout {
+        grid-template-columns: 1fr;
+        gap: 36px
+    }
+
+    .svc-intro {
+        position: static
+    }
+
+    .hero {
+        min-height: 640px
+    }
+}
+
+@media(max-width:760px) {
+    html {
+        scroll-padding-top: 75px
+    }
+
+    .nav {
+        height: 75px;
+        padding: 0 5%
+    }
+
+    .nav nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 24px 20px;
+        box-shadow: 0 15px 25px rgba(43, 37, 48, .1)
+    }
+
+    .nav nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 15px
+    }
+
+    .nav nav.open {
+        display: flex
+    }
+
+    .navcta {
+        display: none
+    }
+
+    .menu {
+        display: flex
+    }
+
+    /* Hero stacks: text first, image beneath */
+    .hero {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        min-height: 700px;
+        padding: 210px 4% 24px;
+        background: #fcf8fe
+    }
+
+    .hero::before,
+    .image-overlay {
+        display: none
+    }
+
+    .hero-copy {
+        margin: 0;
+        padding: 28px 22px;
+        max-width: none;
+        border-radius: 20px
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12.5vw, 60px);
+        margin: 22px 0 18px
+    }
+
+    .hero p {
+        font-size: 15.5px
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px
+    }
+
+    .actions .btn {
+        justify-content: space-between;
+        padding: 17px 20px
+    }
+
+    .actions .textlink {
+        align-self: flex-start
+    }
+
+    .hero-img {
+        object-position: center
+    }
+
+    .section {
+        padding: 60px 6%
+    }
+
+    h2 {
+        font-size: clamp(34px, 9.8vw, 46px);
+        margin-bottom: 16px
+    }
+
+    .section-label {
+        margin-bottom: 16px
+    }
+
+    .intro,
+    .area,
+    .booking {
+        grid-template-columns: 1fr;
+        gap: 28px
+    }
+
+    .intro {
+        gap: 0
+    }
+
+    .intro-right {
+        padding-top: 0
+    }
+
+    .intro-right p,
+    .section-top p,
+    .area p,
+    .booking p,
+    .svc-intro p,
+    .contact p {
+        font-size: 16px;
+        line-height: 1.75
+    }
+
+    .section-top {
+        display: block;
+        margin-bottom: 26px
+    }
+
+    .section-top p {
+        max-width: none
+    }
+
+    .svc-intro .btn {
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .svc-list li {
+        grid-template-columns: 30px 1fr 40px;
+        gap: 12px;
+        padding: 24px 0
+    }
+
+    .svc-list h3 {
+        font-size: 23px
+    }
+
+    .svc-list li>a {
+        width: 40px;
+        height: 40px
+    }
+
+    .statement {
+        padding: 64px 6%
+    }
+
+    .statement h2 {
+        font-size: clamp(34px, 10.5vw, 52px);
+        margin: 20px auto 26px
+    }
+
+    .price-list>div {
+        padding: 18px 0;
+        font-size: 16px;
+        align-items: flex-start
+    }
+
+    .price-list strong {
+        font-size: 24px
+    }
+
+    .area img {
+        height: 260px
+    }
+
+    .booking form {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 22px 18px
+    }
+
+    .booking .wide {
+        grid-column: auto
+    }
+
+    .booking input,
+    .booking select,
+    .booking textarea {
+        font-size: 16px;
+        padding: 14px;
+        min-height: 50px
+    }
+
+    .booking input[type=date] {
+        -webkit-appearance: none;
+        appearance: none;
+        display: block;
+        text-align: left
+    }
+
+    .booking form button {
+        justify-self: stretch;
+        width: 100%;
+        justify-content: space-between;
+        padding: 17px 20px
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 60px 6%;
+        gap: 24px
+    }
+
+    .contact-links {
+        min-width: 0;
+        font-size: 20px
+    }
+
+    .articles {
+        grid-template-columns: 1fr
+    }
+
+    .jcard img {
+        height: 200px
+    }
+
+    footer {
+        padding: 44px 6%
+    }
+}
+
+@media(max-width:400px) {
+    .brand {
+        font-size: 11px
+    }
+}
+
+/* Body Function: full-width image hero with text overlay */
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #201927;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+}
+
+.hero::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(12, 9, 17, .79) 0%, rgba(12, 9, 17, .55) 55%, rgba(12, 9, 17, .35) 100%);
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 90px 7%;
+    max-width: 800px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+.hero h1 {
+    color: #fff;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .18);
+}
+
+.hero h1 em {
+    color: #cd00fd;
+    font-weight: 500;
+}
+
+.hero .eyebrow {
+    color: #f2eaf5;
+}
+
+.hero p {
+    color: #f3edf5;
+}
+
+.hero .textlink {
+    color: #fff;
+}
+
+.hero .image-overlay {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .hero {
+        min-height: 760px;
+        min-height: 100svh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .hero-img {
+        object-position: center;
+    }
+
+    .hero::before {
+        display: block;
+        background: linear-gradient(180deg, rgba(12, 9, 17, .42) 0%, rgba(12, 9, 17, .62) 42%, rgba(12, 9, 17, .82) 100%);
+    }
+
+    .hero-copy {
+        margin: 0;
+        padding: 70px 7% 55px;
+        max-width: 100%;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 11vw, 60px);
+    }
+
+    .hero p {
+        font-size: 15.5px;
+    }
+
+    .hero .actions {
+        align-items: flex-start;
+    }
+
+    .hero .actions .btn {
+        width: 100%;
+    }
+}
+
+/* Section 02: Dionne profile */
+.profile-section {
+    background: #fcf9fe;
+}
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(36px, 6vw, 100px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.profile-photo-wrap {
+    position: relative;
+    min-width: 0;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 20px;
+    background: #f1e6f8;
+}
+
+.profile-photo-caption {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, .94);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 22px;
+    line-height: 1.3;
+    box-shadow: 0 8px 25px rgba(43, 37, 48, .08);
+}
+
+.profile-photo-caption span {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.profile-content {
+    min-width: 0;
+}
+
+.profile-content h2 {
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.85;
+    margin: 0 0 16px;
+}
+
+.profile-content .profile-lead {
+    color: var(--ink);
+    font-size: 19px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.profile-qualifications {
+    border-top: 1px solid var(--line);
+    margin-top: 28px;
+    padding-top: 24px;
+}
+
+.profile-qualifications h3 {
+    font-size: 23px;
+    margin: 0 0 14px;
+}
+
+.profile-qualifications ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-qualifications li {
+    padding: 9px 0 9px 22px;
+    position: relative;
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.profile-qualifications li::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--purple);
+}
+
+.profile-button {
+    margin-top: 28px;
+}
+
+@media (max-width: 900px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .profile-photo-wrap {
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .profile-layout {
+        gap: 30px;
+    }
+
+    .profile-photo {
+        aspect-ratio: 4 / 4.5;
+        border-radius: 15px;
+    }
+
+    .profile-photo-caption {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 13px 16px;
+        font-size: 19px;
+    }
+
+    .profile-content p {
+        font-size: 15.5px;
+        line-height: 1.75;
+    }
+
+    .profile-content .profile-lead {
+        font-size: 17px;
+    }
+
+    .profile-qualifications h3 {
+        font-size: 21px;
+    }
+
+    .profile-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+html,
+body,
+body *,
+button,
+input,
+select,
+textarea {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Mobile header logo */
+@media (max-width: 760px) {
+    .nav {
+        padding: 0 4%;
+        gap: 12px;
+    }
+
+    .nav .brand {
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+    }
+
+    .nav .brandmark {
+        font-size: 37px;
+        font-weight: 600;
+        flex-shrink: 0;
+    }
+
+    .nav .brand small {
+        font-size: 8px;
+        letter-spacing: 0.1em;
+        margin-top: 4px;
+    }
+
+    .nav .menu {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav .brand {
+        font-size: 12px;
+    }
+
+    .nav .brandmark {
+        font-size: 34px;
+    }
+
+    .nav .brand small {
+        font-size: 7.5px;
+    }
+}
+
+.nav .brand>span:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.nav .brand small {
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+/* Body Function logo text adjustments */
+.nav .brand>span:last-child {
+    position: relative;
+    top: 3px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nav .brand small {
+    font-size: 8px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    .nav .brand>span:last-child {
+        font-size: 13px;
+    }
+
+    .nav .brand small {
+        font-size: 8px;
+    }
+}
+
+/* Reviews carousel */
+.reviews-section {
+    background: #fff;
+    overflow: hidden;
+}
+
+.reviews-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 38px;
+}
+
+.reviews-heading h2 {
+    margin-bottom: 0;
+}
+
+.reviews-heading>p {
+    max-width: 340px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.reviews-viewport {
+    overflow: hidden;
+    border-radius: 22px;
+    touch-action: pan-y;
+}
+
+.reviews-track {
+    display: flex;
+    transition: transform 650ms cubic-bezier(.22, 1, .36, 1);
+    will-change: transform;
+}
+
+.review-card {
+    flex: 0 0 100%;
+    min-width: 0;
+    min-height: 310px;
+    background: #f9f4fc;
+    border: 1px solid #ece6f0;
+    border-radius: 22px;
+    padding: clamp(28px, 5vw, 58px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review-placeholder {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    color: #8d679d;
+}
+
+.review-stars {
+    color: #000000;
+    font-size: 21px;
+    letter-spacing: 4px;
+    margin: 20px 0 14px;
+}
+
+.review-card blockquote {
+    margin: 0 0 30px;
+    max-width: 790px;
+    color: var(--ink);
+    font-size: clamp(19px, 2.6vw, 30px);
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.review-author {
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.review-author span {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.reviews-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+    gap: 18px;
+}
+
+.reviews-dots {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.review-dot {
+    width: 9px;
+    height: 9px;
+    border: 0;
+    padding: 0;
+    border-radius: 50%;
+    background: #d8c7df;
+    cursor: pointer;
+    transition: width .25s, background .25s;
+}
+
+.review-dot.active {
+    width: 28px;
+    border-radius: 20px;
+    background: var(--purple);
+}
+
+.reviews-arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.review-arrow {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #e3d9ea;
+    background: white;
+    color: var(--ink);
+    font-size: 21px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.review-arrow:hover {
+    background: var(--purple);
+    color: white;
+    border-color: var(--purple);
+}
+
+.review-arrow:focus-visible,
+.review-dot:focus-visible {
+    outline: 3px solid #cd00fd;
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .reviews-heading {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .reviews-heading>p {
+        margin-top: 14px;
+    }
+
+    .review-card {
+        min-height: 330px;
+        padding: 28px 24px;
+    }
+
+    .review-card blockquote {
+        font-size: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reviews-track {
+        transition: none;
+    }
+}
+
+/* ==========================================================================
+   Tablet and desktop refinements.
+   Paste this at the very BOTTOM of style.css.
+   Every rule is inside a min-width: 761px query, so phones (760px and
+   below) are not affected at all.
+   ========================================================================== */
+
+/* ---- 1. Wide screens: keep content in a centred container (1320px max).
+        Below ~1530px wide these values equal the existing 7% / 5%, so
+        nothing changes on laptops and smaller. ---- */
+@media (min-width: 761px) {
+    .nav {
+        padding-inline: max(5%, calc((100% - 1400px) / 2));
+    }
+
+    .section,
+    .statement,
+    .contact,
+    footer {
+        padding-inline: max(7%, calc((100% - 1320px) / 2));
+    }
+
+    .hero-copy {
+        margin-left: max(0px, calc((100% - 1320px) / 2 - 7%));
+    }
+}
+
+/* ---- 2. Tablet navigation (761px to 1099px): the full link list does not
+        fit, so use the menu button, with a two-column dropdown. ---- */
+@media (min-width: 761px) and (max-width: 1099px) {
+    .nav {
+        gap: 16px;
+    }
+
+    .navcta {
+        margin-left: auto;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .nav nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 12px max(5%, 24px) 24px;
+        gap: 0 48px;
+        grid-template-columns: 1fr 1fr;
+        font-size: 15px;
+        box-shadow: 0 15px 25px rgba(43, 37, 48, .1);
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav nav.open {
+        display: grid;
+    }
+
+    .nav nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--line);
+    }
+}
+
+/* ---- 3. Desktop navigation (1100px and up): show the five main links.
+        FAQ and the policy pages stay available in the footer. ---- */
+@media (min-width: 1100px) {
+    .nav nav {
+        gap: clamp(22px, 2.2vw, 34px);
+    }
+
+    .nav nav a[href$=".html"] {
+        display: none;
+    }
+}
+
+/* ---- 4. Hero height follows the screen on laptops and desktops ---- */
+@media (min-width: 1051px) {
+    .hero {
+        min-height: clamp(660px, calc(100svh - 88px), 900px);
+    }
+}
+
+/* ---- 5. Tablet layouts (761px to 1050px) ---- */
+@media (min-width: 761px) and (max-width: 1050px) {
+
+    /* Booking: stack so the form has room for two columns */
+    .booking {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .booking form {
+        padding: 30px;
+    }
+
+    /* Contact: stack instead of squeezing the text */
+    .contact {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-links {
+        min-width: 0;
+    }
+
+    /* Services: sensible line length */
+    .svc-intro {
+        max-width: 620px;
+    }
+
+    .svc-list p {
+        max-width: 640px;
+    }
+
+    .area img {
+        height: 420px;
+    }
+}
+
+/* ---- 6. Profile: side by side on tablets, sticky photo on desktop ---- */
+@media (min-width: 761px) and (max-width: 900px) {
+    .profile-layout {
+        grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+        gap: 32px;
+        align-items: start;
+    }
+
+    .profile-photo-wrap {
+        max-width: none;
+        margin: 0;
+    }
+
+    .profile-photo-caption {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 14px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 901px) {
+    .profile-photo-wrap {
+        position: sticky;
+        top: 120px;
+        align-self: start;
+    }
+}
+
+/* ---- 7. Desktop pricing: two columns instead of one very wide row ---- */
+@media (min-width: 1051px) {
+    .price-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 72px;
+        border-top: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .price-list>div {
+        border-top: 1px solid var(--line);
+        border-bottom: 0;
+    }
+
+    .price-list>div:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
+    /* Reviews: keep the card at a readable width */
+    .reviews-viewport,
+    .reviews-controls {
+        max-width: 1100px;
+    }
+}
+
+/* ---- 8. Desktop footer: a proper multi-column layout ---- */
+@media (min-width: 1051px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-areas:
+            "brand pages areas"
+            "desc  pages areas"
+            "small small small";
+        column-gap: 64px;
+        row-gap: 18px;
+        align-items: start;
+    }
+
+    footer>.brand {
+        grid-area: brand;
+    }
+
+    footer>p {
+        grid-area: desc;
+        max-width: 420px;
+    }
+
+    footer>div:nth-of-type(2) {
+        grid-area: areas;
+    }
+
+    footer>.footer-pages {
+        grid-area: pages;
+    }
+
+    footer>small {
+        grid-area: small;
+        margin-top: 20px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(255, 255, 255, .12);
+    }
+}

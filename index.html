@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+        content="Body Function provides home-based physiotherapy, headache and TMD care, Clinical Pilates and rehabilitation across Bedfordshire and Milton Keynes.">
+    <title>Body Function | Physiotherapy & Rehabilitation</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .cookie-banner {
+            position: fixed;
+            z-index: 9999;
+            bottom: 18px;
+            left: 18px;
+            right: 18px;
+            max-width: 940px;
+            margin: auto;
+            background: #fff;
+            color: #2b2530;
+            border: 1px solid #e8e1ea;
+            border-radius: 16px;
+            box-shadow: 0 12px 45px #24132930;
+            padding: 22px 24px;
+            font: inherit
+        }
+
+        .cookie-banner[hidden],
+        .cookie-settings[hidden] {
+            display: none !important
+        }
+
+        .cookie-banner h2 {
+            font-size: 19px;
+            line-height: 1.3;
+            margin: 0 0 8px;
+            color: #2b2530
+        }
+
+        .cookie-banner p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 0 15px;
+            color: #4c4450
+        }
+
+        .cookie-banner a {
+            color: #71128b;
+            text-decoration: underline
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 9px;
+            flex-wrap: wrap
+        }
+
+        .cookie-actions button,
+        .cookie-settings button {
+            font: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid #cd00fd;
+            border-radius: 7px;
+            padding: 11px 15px;
+            cursor: pointer;
+            background: #fff;
+            color: #2b2530
+        }
+
+        .cookie-actions .cookie-primary,
+        .cookie-settings .cookie-primary {
+            background: #cd00fd;
+            color: #fff
+        }
+
+        .cookie-settings {
+            margin: 12px 0 16px;
+            padding: 14px;
+            background: #f9f5fa;
+            border-radius: 9px;
+            font-size: 14px
+        }
+
+        .cookie-settings label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0
+        }
+
+        .cookie-settings input {
+            accent-color: #9e00c5
+        }
+
+        .cookie-settings small {
+            display: block;
+            margin-top: 5px;
+            color: #635a66
+        }
+
+        .cookie-manage {
+            background: none;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+            color: inherit;
+            font: inherit
+        }
+
+        @media(max-width:600px) {
+            .cookie-banner {
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                padding: 17px
+            }
+
+            .cookie-actions button {
+                flex: 1 1 100%
+            }
+        }
+
+        /* Slightly enlarge and raise the hero location label. */
+        .hero .eyebrow {
+            font-size: 14px;
+            position: relative;
+            top: -4px;
+        }
+
+        /* Footer links match the descriptive text and stack vertically. */
+        footer .footer-pages {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: inherit;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #bdb4c4;
+        }
+
+        footer .footer-pages a,
+        footer .footer-pages .cookie-manage {
+            display: block;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            text-decoration: none;
+            background: none;
+            border: 0;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        footer .footer-pages a:hover,
+        footer .footer-pages .cookie-manage:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav"><a class="brand" href="#home"><span class="brandmark">b<span>f</span>.</span><span>BODY
+                FUNCTION<small>PHYSIOTHERAPY & REHABILITATION</small></span></a>
+        <nav id="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a
+                href="#journal">Journal</a><a href="#contact">Contact</a><a href="faq.html">FAQ</a><a
+                href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="terms.html">Terms
+                of Service</a></nav><a class="btn small navcta" href="#booking">Book an appointment</a><button
+            class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <div class="hero-copy">
+                <div class="eyebrow"><span></span> Personalised physiotherapy · Bedfordshire & Milton
+                    Keynes</div>
+                <h1>Move better.<br>Feel stronger.<br><em>Live fully.</em></h1>
+                <p>Expert-led physiotherapy, Clinical Pilates and rehabilitation tailored to you. Thoughtful care,
+                    practical support and a clear path towards better movement.</p>
+                <div class="actions"><a class="btn" href="#booking">Book your appointment</a><a class="textlink"
+                        href="#services">Explore our services</a></div>
+            </div>
+            <!-- Add your photo as images/hero.jpg (wide image, subject towards the right works best) -->
+            <img class="hero-img" src="hero.jpg" alt="Body Function physiotherapy session"
+                onerror="this.style.display='none'">
+            <div class="image-overlay"><span class="plus"></span>
+                <div>Movement is personal.<br><strong>So is your care.</strong></div>
+            </div>
+        </section>
+        <section id="about" class="section intro">
+            <div>
+                <div class="section-label">01 / OUR APPROACH</div>
+                <h2>Care that sees <em>the whole you.</em></h2>
+            </div>
+            <div class="intro-right">
+                <p>At Body Function, we believe good physiotherapy goes beyond treating symptoms. We take time to
+                    understand your goals, how you move and what matters most to your everyday life.</p>
+                <p>Led by Dionne Jules, our approach brings together individual assessment, evidence-informed treatment
+                    and progressive rehabilitation, delivered in the comfort of your home across our service area.</p><a
+                    class="textlink dark" href="#contact">Get to know Body Function</a>
+            </div>
+        </section>
+        <!-- Section 02: Dionne's profile -->
+        <section id="profile" class="section profile-section" aria-labelledby="profile-heading">
+            <div class="profile-layout">
+                <div class="profile-photo-wrap">
+                    <img class="profile-photo" src="images/dionne.jpg" alt="Portrait of Dionne Jules, physiotherapist"
+                        loading="lazy" width="720" height="900">
+                    <div class="profile-photo-caption">Dionne Jules <span>Physiotherapist</span></div>
+                </div>
+                <div class="profile-content">
+                    <div class="section-label">02 / MEET YOUR PHYSIOTHERAPIST</div>
+                    <h2 id="profile-heading">Meet <em>Dionne.</em></h2>
+                    <p class="profile-lead">Personalised physiotherapy, built around your movement, strength and
+                        recovery.</p>
+                    <p>Dionne graduated with a BSc (Hons) in Physiotherapy and has since gained several years of
+                        experience in both NHS and private musculoskeletal physiotherapy.</p>
+                    <p>She has worked with adults and children across a range of musculoskeletal, orthopaedic and
+                        post-operative conditions, as both an adult and children's specialist physiotherapist.</p>
+                    <p>Dionne has a particular interest in lower-limb rehabilitation, spinal pain and headaches. She
+                        enjoys helping patients improve their strength, mobility and function throughout their
+                        rehabilitation journey.</p>
+                    <p>Alongside her physiotherapy experience, Dionne has a background in personal training and Clinical
+                        Pilates, with a strong interest in exercise, movement and building strength.</p>
+                    <div class="profile-qualifications">
+                        <h3>Education &amp; qualifications</h3>
+                        <ul>
+                            <li>BSc (Hons), Physiotherapy</li>
+                            <li>FSEM Diploma in Musculoskeletal Medicine (DipMSK)</li>
+                            <li>Level 3 Clinical Pilates Instructor</li>
+                            <li>Level 3 Personal Training</li>
+                            <li>Level 3 Exercise for Health Specialist</li>
+                            <li>Level 4 Lower Back Pain Specialist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="area" class="section area">
+            <div>
+                <div class="section-label">03 / WHERE WE WORK</div>
+                <h2>Care that comes <em>to you.</em></h2>
+                <p>Body Function is planning home-based appointments throughout Bedfordshire, Central Bedfordshire and
+                    Milton Keynes, with a Cranfield base. Contact us to discuss availability in your area.</p>
+                <div class="chips"><span>Bedford</span><span>Central Bedfordshire</span><span>Milton
+                        Keynes</span><span>Cranfield</span></div><a class="textlink dark" href="#contact">Check your
+                    area</a>
+            </div><!-- Add your photo as images/area.jpg -->
+            <img src="images/area.jpg" alt="Body Function home visits across Bedfordshire and Milton Keynes"
+                onerror="this.style.display='none'">
+        </section>
+        <section id="services" class="section services">
+            <div class="svc-layout">
+                <div class="svc-intro">
+                    <div class="section-label">04 / WHAT WE DO</div>
+                    <h2>Find your way <em>forward.</em></h2>
+                    <p>Support for recovery, strength and confident movement, wherever you're starting from.</p>
+                    <a class="btn" href="#booking">Book an appointment</a>
+                </div>
+                <ul class="svc-list">
+                    <li><span class="n">01</span>
+                        <div>
+                            <h3>Physiotherapy</h3>
+                            <p>Individual assessment and care for muscle and joint pain, injuries, mobility and
+                                recovery.</p>
+                            <div class="tags"><span>Initial assessment · 50 min</span><span>Follow-up · 30
+                                    min</span></div>
+                        </div><a href="#booking" aria-label="Enquire about physiotherapy"></a>
+                    </li>
+                    <li><span class="n">02</span>
+                        <div>
+                            <h3>Headache &amp; Jaw Pain (TMD)</h3>
+                            <p>Assessment of headache-related musculoskeletal factors and temporomandibular disorders
+                                (TMD).</p>
+                        </div><a href="#booking" aria-label="Enquire about headache and jaw pain assessment"></a>
+                    </li>
+                    <li><span class="n">03</span>
+                        <div>
+                            <h3>One-to-one Clinical Pilates</h3>
+                            <p>One-to-one sessions tailored to improve movement, stability and physical confidence.</p>
+                            <div class="tags"><span>Assessment or session · 40 min</span></div>
+                        </div><a href="#booking" aria-label="Enquire about one-to-one Clinical Pilates"></a>
+                    </li>
+                    <li><span class="n">04</span>
+                        <div>
+                            <h3>Exercise Rehabilitation</h3>
+                            <p>Progressive exercise plans for ongoing musculoskeletal conditions and recovery.</p>
+                            <div class="tags"><span>Session · 40 min</span></div>
+                        </div><a href="#booking" aria-label="Enquire about exercise rehabilitation"></a>
+                    </li>
+                    <li><span class="n">05</span>
+                        <div>
+                            <h3>Home Visits</h3>
+                            <p>Appointments at your home across Bedfordshire, Central Bedfordshire and Milton Keynes.
+                                Availability and travel coverage are confirmed before booking.</p>
+                        </div><a href="#booking" aria-label="Enquire about home visits"></a>
+                    </li>
+                    <li><span class="n">06</span>
+                        <div>
+                            <h3>Clinical Mat Pilates</h3>
+                            <p>Group classes are planned, subject to venue and scheduling confirmation. A one-to-one
+                                assessment is required before joining a class.</p>
+                            <div class="tags"><span>Assessment · 40 min</span><span>Group class · 50
+                                    min</span><span>Six-class block</span></div>
+                        </div><a href="#booking" aria-label="Enquire about Clinical Mat Pilates"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="statement"><span>Better movement starts here</span>
+            <h2>Your goals. Your pace. <em>Your progress.</em></h2><a class="btn" href="#booking">Start your
+                journey</a>
+        </section>
+        <section id="pricing" class="section pricing">
+            <div class="section-label">05 / SIMPLE, TRANSPARENT PRICING</div>
+            <div class="section-top">
+                <h2>Invest in <em>your wellbeing.</em></h2>
+                <p>Clear appointment fees, with individual attention at the heart of every session.</p>
+            </div>
+            <div class="price-list">
+                <div><span>Initial physiotherapy assessment <small>50 minutes</small></span><strong>£65</strong></div>
+                <div><span>Physiotherapy follow-up <small>30 minutes</small></span><strong>£45</strong></div>
+                <div><span>One-to-one Clinical Pilates <small>40 minutes · assessment or
+                            session</small></span><strong>£50</strong></div>
+                <div><span>Exercise rehabilitation <small>40 minutes</small></span><strong>£50</strong></div>
+                <div><span>Clinical Mat Pilates assessment <small>40 minutes · required before group
+                            classes</small></span><strong>£50</strong></div>
+                <div><span>Clinical Mat Pilates group class <small>50 minutes · subject to launch
+                            confirmation</small></span><strong>£17</strong></div>
+                <div><span>Clinical Mat Pilates six-class block <small>£15 per class · subject to launch
+                            confirmation</small></span><strong>£90</strong></div>
+            </div>
+            <p class="fine">Home visits are planned at standard appointment rates during the initial launch phase.
+                Availability and travel coverage will be confirmed before booking.</p>
+        </section>
+        <section id="booking" class="section booking">
+            <div>
+                <div class="section-label">06 / BOOK AN APPOINTMENT</div>
+                <h2>Ready to make <em>a move?</em></h2>
+                <p>Select your preferred service and date, and send a booking enquiry. We'll confirm your appointment
+                    and availability personally.</p>
+                <p class="fine">This is an enquiry calendar, not a live appointment diary. No appointment is confirmed
+                    until you receive a response.</p>
+            </div>
+            <!-- The email in this action is the ONLY place the recipient is set. script.js reads it from here. -->
+            <form name="booking-enquiry" method="POST" action="https://formsubmit.co/ibrahimilyas01@gmail.com">
+                <input type="hidden" name="_subject" value="New Body Function booking enquiry">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <label>Your name<input name="name" required placeholder="Full name"></label><label>Email address<input
+                        type="email" name="email" required placeholder="you@example.com"></label><label>Phone
+                    number<input name="phone" required placeholder="Your contact number"></label><label>Service<select
+                        name="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Initial physiotherapy assessment</option>
+                        <option>Physiotherapy follow-up</option>
+                        <option>One-to-one Clinical Pilates</option>
+                        <option>Exercise rehabilitation</option>
+                        <option>Headache / TMD assessment</option>
+                        <option>Clinical Mat Pilates enquiry</option>
+                    </select></label><label>Preferred date<input name="preferred-date" type="date" id="date"
+                        required></label><label>Location / postcode<input name="location" required
+                        placeholder="Your town or postcode"></label><label class="wide">Additional booking
+                    information<textarea name="message" rows="3"
+                        placeholder="Optional non-medical booking information"></textarea></label><button class="btn"
+                    type="submit">Send booking enquiry</button><small class="wide">Please do not include detailed
+                    medical information in this form. This website form is for enquiries only, not emergency medical
+                    advice.</small>
+            </form>
+        </section>
+        <!-- Replace these five placeholders with verified, approved patient reviews before publishing. -->
+        <section id="reviews" class="section reviews-section" aria-labelledby="reviews-heading">
+            <div class="reviews-heading">
+                <div>
+                    <div class="section-label">PATIENT FEEDBACK</div>
+                    <h2 id="reviews-heading">Your experience <em>matters.</em></h2>
+                </div>
+                <p>Review carousel preview. Genuine patient feedback will appear here once available.</p>
+            </div>
+            <div class="reviews-carousel" aria-roledescription="carousel" aria-label="Patient feedback placeholders">
+                <div class="reviews-viewport" id="reviews-viewport">
+                    <div class="reviews-track" id="reviews-track">
+                        <article class="review-card" aria-label="Placeholder 1 of 5">
+                            <span class="review-placeholder">SAMPLE REVIEW 01</span>
+                            <div class="review-stars" aria-hidden="true">★★★★★</div>
+                            <blockquote>“Patient review text will appear here once a genuine testimonial has been
+                                provided and approved.”</blockquote>
+                            <div class="review-author">Patient feedback <span>Placeholder</span></div>
+                        </article>
+                        <article class="review-card" aria-label="Placeholder 2 of 5">
+                            <span class="review-placeholder">SAMPLE REVIEW 02</span>
+                            <div class="review-stars" aria-hidden="true">★★★★★</div>
+                            <blockquote>“A future review could describe the booking experience, communication or care
+                                received.”</blockquote>
+                            <div class="review-author">Patient feedback <span>Placeholder</span></div>
+                        </article>
+                        <article class="review-card" aria-label="Placeholder 3 of 5">
+                            <span class="review-placeholder">SAMPLE REVIEW 03</span>
+                            <div class="review-stars" aria-hidden="true">★★★★★</div>
+                            <blockquote>“Replace this sample wording with an authentic review, shared with the patient's
+                                permission.”</blockquote>
+                            <div class="review-author">Patient feedback <span>Placeholder</span></div>
+                        </article>
+                        <article class="review-card" aria-label="Placeholder 4 of 5">
+                            <span class="review-placeholder">SAMPLE REVIEW 04</span>
+                            <div class="review-stars" aria-hidden="true">★★★★★</div>
+                            <blockquote>“This card is reserved for a future testimonial about Body Function's
+                                physiotherapy services.”</blockquote>
+                            <div class="review-author">Patient feedback <span>Placeholder</span></div>
+                        </article>
+                        <article class="review-card" aria-label="Placeholder 5 of 5">
+                            <span class="review-placeholder">SAMPLE REVIEW 05</span>
+                            <div class="review-stars" aria-hidden="true">★★★★★</div>
+                            <blockquote>“Add a real patient's words here when a suitable, consented review becomes
+                                available.”</blockquote>
+                            <div class="review-author">Patient feedback <span>Placeholder</span></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="reviews-controls">
+                    <div class="reviews-dots" id="reviews-dots" aria-label="Choose a review"></div>
+                    <div class="reviews-arrows">
+                        <button type="button" class="review-arrow" id="review-prev"
+                            aria-label="Previous review">&#8592;</button>
+                        <button type="button" class="review-arrow" id="review-next"
+                            aria-label="Next review">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div>
+                <div class="section-label">LET'S CONNECT</div>
+                <h2>Let's get you <em>moving.</em></h2>
+                <p>Have a question or want to discuss the right service? Get in touch.</p>
+            </div>
+            <div class="contact-links"><a href="mailto:dionnejules@gmail.com">dionnejules@gmail.com</a><a
+                    href="tel:+447946234379">07946 234379</a><a href="https://wa.me/447946234379" target="_blank"
+                    rel="noopener">Message on WhatsApp</a></div>
+        </section>
+        <section id="journal" class="section journal">
+            <div class="section-top">
+                <div>
+                    <div class="section-label">07 / THE JOURNAL</div>
+                    <h2>Knowledge for <em>better movement.</em></h2>
+                </div>
+                <p>Helpful, accessible information about movement, recovery and everyday wellbeing.</p>
+            </div>
+            <div class="filters" aria-label="Filter articles"><button class="filter active"
+                    data-category="all">All</button><button class="filter"
+                    data-category="physiotherapy">Physiotherapy</button><button class="filter"
+                    data-category="headache">Headache &amp; TMD</button><button class="filter"
+                    data-category="pilates">Clinical Pilates</button><button class="filter"
+                    data-category="rehabilitation">Rehabilitation</button></div>
+            <div class="articles">
+                <article class="jcard" data-category="rehabilitation"><img
+                        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=85"
+                        alt="Exercise and strength training" loading="lazy">
+                    <div class="jbody"><span>Rehabilitation</span>
+                        <h3>Why gradual progress matters in rehabilitation</h3>
+                        <p>Recovering movement and confidence often starts with manageable steps, not doing everything
+                            at once.</p><a class="jlink" href="#contact">Ask us about this topic</a>
+                    </div>
+                </article>
+                <article class="jcard" data-category="pilates"><img
+                        src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=85"
+                        alt="Woman practising controlled exercise" loading="lazy">
+                    <div class="jbody"><span>Clinical Pilates</span>
+                        <h3>What makes Clinical Pilates different?</h3>
+                        <p>An introduction to individualised Pilates sessions and how they may support movement control
+                            and strength.</p><a class="jlink" href="#contact">Ask us about this topic</a>
+                    </div>
+                </article>
+                <article class="jcard" data-category="headache"><img
+                        src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=85"
+                        alt="Person resting peacefully outdoors" loading="lazy">
+                    <div class="jbody"><span>Headache &amp; TMD</span>
+                        <h3>Can neck problems contribute to headaches?</h3>
+                        <p>A look at why a careful assessment matters when headaches and neck symptoms occur together.
+                        </p><a class="jlink" href="#contact">Ask us about this topic</a>
+                    </div>
+                </article>
+                <article class="jcard" data-category="physiotherapy"><img
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=85"
+                        alt="Healthcare professional in a consultation" loading="lazy">
+                    <div class="jbody"><span>Physiotherapy</span>
+                        <h3>What to expect at your first physiotherapy appointment</h3>
+                        <p>Learn about the assessment process, discussing your goals and planning your next steps.</p>
+                        <a class="jlink" href="#contact">Ask us about this topic</a>
+                    </div>
+                </article>
+                <article class="jcard" data-category="headache"><img
+                        src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=85"
+                        alt="Healthcare consultation setting" loading="lazy">
+                    <div class="jbody"><span>Headache &amp; TMD</span>
+                        <h3>Jaw pain and TMD: when to seek assessment</h3>
+                        <p>Understand common jaw-related symptoms and why appropriate clinical assessment is important.
+                        </p><a class="jlink" href="#contact">Ask us about this topic</a>
+                    </div>
+                </article>
+                <article class="jcard" data-category="rehabilitation"><img
+                        src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=85"
+                        alt="Person exercising in a bright gym" loading="lazy">
+                    <div class="jbody"><span>Rehabilitation</span>
+                        <h3>Exercise and persistent lower back pain</h3>
+                        <p>Explore how tailored and progressive activity may form part of an individual rehabilitation
+                            plan.</p><a class="jlink" href="#contact">Ask us about this topic</a>
+                    </div>
+                </article>
+            </div>
+            <p class="fine">These are article previews, not published clinical guidance. Full articles should be written
+                and reviewed by the clinician before publication.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="brand"><span class="brandmark">b<span>f</span>.</span><span>BODY FUNCTION<small>PHYSIOTHERAPY &
+                    REHABILITATION</small></span></div>
+        <p>Helping you manage pain, move with confidence and improve physical function.</p>
+        <div><a href="#area">Bedfordshire</a> · <a href="#area">Central Bedfordshire</a> · <a href="#area">Milton
+                Keynes</a></div><small>© <span id="year"></span> Body Function. Website preview. Professional
+            credentials, privacy policy and booking system to be verified before launch.</small>
+        <nav class="footer-pages" aria-label="Information and policies">
+            <a href="faq.html">FAQ</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookie Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <button type="button" class="cookie-manage" data-open-cookie-settings>Cookie preferences</button>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie preferences" aria-modal="false"
+        hidden>
+        <h2>Your privacy matters</h2>
+        <p>We use essential storage to make this website work. With your permission, we may also use optional analytics
+            or marketing cookies if these services are enabled. You can accept, reject or customise your preferences.
+            Read our <a href="privacy.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>.</p>
+        <div class="cookie-settings" id="cookie-settings" hidden>
+            <label><input type="checkbox" checked disabled> Essential storage (always active)</label>
+            <label><input type="checkbox" id="cookie-analytics"> Analytics cookies</label>
+            <label><input type="checkbox" id="cookie-marketing"> Marketing cookies</label>
+            <small>Optional services must only be loaded after consent. These controls do not activate any tracking by
+                themselves.</small>
+            <button type="button" class="cookie-primary" id="cookie-save">Save preferences</button>
+        </div>
+        <div class="cookie-actions">
+            <button type="button" class="cookie-primary" id="cookie-accept">Accept all</button>
+            <button type="button" id="cookie-reject">Reject optional cookies</button>
+            <button type="button" id="cookie-customise" aria-expanded="false" aria-controls="cookie-settings">Cookie
+                settings</button>
+        </div>
+    </div>
+    <script>
+        (function () {
+            const key = 'bodyfunction_cookie_preferences_v1';
+            const banner = document.getElementById('cookie-banner');
+            const settings = document.getElementById('cookie-settings');
+            const toggle = document.getElementById('cookie-customise');
+            const analytics = document.getElementById('cookie-analytics');
+            const marketing = document.getElementById('cookie-marketing');
+            function read() { try { return JSON.parse(localStorage.getItem(key)) } catch (e) { return null } }
+            function save(a, m) {
+                const prefs = { essential: true, analytics: !!a, marketing: !!m, updatedAt: new Date().toISOString() };
+                try { localStorage.setItem(key, JSON.stringify(prefs)) } catch (e) { }
+                window.bodyFunctionCookiePreferences = prefs;
+                window.dispatchEvent(new CustomEvent('bodyfunction:cookie-consent', { detail: prefs }));
+                banner.hidden = true;
+            }
+            const existing = read();
+            if (existing && typeof existing.analytics === 'boolean' && typeof existing.marketing === 'boolean') {
+                window.bodyFunctionCookiePreferences = existing;
+                analytics.checked = existing.analytics;
+                marketing.checked = existing.marketing;
+            } else { banner.hidden = false }
+            document.getElementById('cookie-accept').addEventListener('click', () => save(true, true));
+            document.getElementById('cookie-reject').addEventListener('click', () => save(false, false));
+            document.getElementById('cookie-save').addEventListener('click', () => save(analytics.checked, marketing.checked));
+            toggle.addEventListener('click', () => { settings.hidden = !settings.hidden; toggle.setAttribute('aria-expanded', String(!settings.hidden)) });
+            document.querySelectorAll('[data-open-cookie-settings]').forEach(btn => btn.addEventListener('click', () => {
+                const current = read(); analytics.checked = !!current?.analytics; marketing.checked = !!current?.marketing;
+                settings.hidden = false; toggle.setAttribute('aria-expanded', 'true'); banner.hidden = false;
+            }));
+        })();
+    </script>
+</body>
+
+</html>

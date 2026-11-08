@@ -1,0 +1,23 @@
+{
+  "title": "Terms of Service",
+  "heading": "Using the Body Function website",
+  "intro": "Terms placeholder. This is not a completed legal agreement.",
+  "sections": [
+    {
+      "heading": "Website information",
+      "body": "[Describe the purpose and limitations of the information on this website.]"
+    },
+    {
+      "heading": "Appointments and enquiries",
+      "body": "[Explain booking requests, appointment confirmation, cancellations and payments.]"
+    },
+    {
+      "heading": "Clinical information",
+      "body": "[Explain that website content is not a substitute for individual medical advice.]"
+    },
+    {
+      "heading": "Contact and changes",
+      "body": "[Provide business contact details and explain how terms may be updated.]"
+    }
+  ]
+}

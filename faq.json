@@ -1,0 +1,27 @@
+{
+  "title": "Frequently Asked Questions",
+  "heading": "A few helpful answers",
+  "intro": "Replace these sample questions and answers with information approved by Body Function.",
+  "sections": [
+    {
+      "heading": "How do I book an appointment?",
+      "body": "[Add the booking process and when patients can expect a reply.]"
+    },
+    {
+      "heading": "Which areas do you cover?",
+      "body": "[Confirm current home-visit locations and any travel restrictions.]"
+    },
+    {
+      "heading": "What happens at my first appointment?",
+      "body": "[Describe the initial consultation and what patients should prepare.]"
+    },
+    {
+      "heading": "What should I wear?",
+      "body": "[Add guidance appropriate for the services offered.]"
+    },
+    {
+      "heading": "How can I change or cancel an appointment?",
+      "body": "[Add the cancellation and rescheduling policy.]"
+    }
+  ]
+}

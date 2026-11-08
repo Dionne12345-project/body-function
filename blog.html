@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#111015">
+    <meta name="description"
+        content="Body Function journal: accessible guides to physiotherapy, headache and jaw pain, Clinical Pilates and exercise rehabilitation.">
+    <title>Journal | Body Function Physiotherapy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-hero {
+            background: #17151b;
+            color: white;
+            padding: 110px 7% 90px
+        }
+
+        .blog-hero h1 {
+            font-size: clamp(3.6rem, 8vw, 7rem);
+            line-height: 1.04;
+            letter-spacing: -.065em;
+            margin: 20px 0
+        }
+
+        .blog-hero em {
+            color: #be03fd;
+            font-style: normal
+        }
+
+        .blog-hero p {
+            max-width: 590px;
+            color: #c8c4cd;
+            font-size: 1.12rem
+        }
+
+        .blog-wrap {
+            padding: 80px 7%;
+            background: #f8f7f8
+        }
+
+        .blog-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 36px
+        }
+
+        .filter {
+            border: 1px solid #d9d5dc;
+            background: white;
+            border-radius: 100px;
+            padding: 12px 19px;
+            cursor: pointer;
+            font: inherit
+        }
+
+        .filter.active,
+        .filter:hover {
+            background: #be03fd;
+            color: white;
+            border-color: #be03fd
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 26px
+        }
+
+        .blog-card {
+            background: white;
+            border: 1px solid #e7e3e9;
+            overflow: hidden;
+            border-radius: 12px
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 235px;
+            object-fit: cover
+        }
+
+        .blog-card-content {
+            padding: 26px
+        }
+
+        .blog-card .tag {
+            font-size: .72rem;
+            letter-spacing: .12em;
+            font-weight: 700;
+            color: #8d00bd
+        }
+
+        .blog-card h2 {
+            font-size: 1.5rem;
+            letter-spacing: -.035em;
+            line-height: 1.2;
+            margin: 13px 0
+        }
+
+        .blog-card p {
+            color: #605d64;
+            line-height: 1.7
+        }
+
+        .blog-card a {
+            color: #8000ac;
+            font-weight: 700;
+            text-decoration: none
+        }
+
+        .blog-cta {
+            background: #17151b;
+            color: white;
+            padding: 75px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px
+        }
+
+        .blog-cta h2 {
+            font-size: clamp(2rem, 4vw, 3.7rem);
+            letter-spacing: -.05em;
+            margin: 0
+        }
+
+        .blog-cta a {
+            background: #be03fd;
+            color: white;
+            padding: 18px 26px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        @media(max-width:850px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .blog-cta {
+                display: block
+            }
+
+            .blog-cta a {
+                display: inline-block;
+                margin-top: 25px
+            }
+        }
+
+        @media(max-width:580px) {
+            .blog-grid {
+                grid-template-columns: 1fr
+            }
+
+            .blog-hero {
+                padding: 80px 6%
+            }
+
+            .blog-wrap {
+                padding: 55px 6%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav"><a class="brand" href="/index.html"><span class="brandmark">b<span>f</span>.</span><span>BODY
+                FUNCTION<small>PHYSIOTHERAPY & REHABILITATION</small></span></a>
+        <nav id="navlinks"><a href="/index.html#about">About</a><a href="/index.html#services">Services</a><a
+                href="/index.html#pricing">Pricing</a><a href="/blog.html" aria-current="page">Journal</a><a
+                href="/index.html#contact">Contact</a></nav><a class="btn small navcta" href="/index.html#booking">Book
+            an appointment ↗</a><button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+    </header>
+    <main>
+        <section class="blog-hero">
+            <div class="section-label">THE BODY FUNCTION JOURNAL</div>
+            <h1>Move with<br><em>knowledge.</em></h1>
+            <p>Practical insights into physiotherapy, pain, movement and rehabilitation. Explore topics to help you
+                understand your body and make informed decisions about your care.</p>
+        </section>
+        <section class="blog-wrap">
+            <div class="blog-toolbar" aria-label="Filter articles"><button class="filter active" data-category="all">All
+                    articles</button><button class="filter" data-category="physiotherapy">Physiotherapy</button><button
+                    class="filter" data-category="headache">Headache & TMD</button><button class="filter"
+                    data-category="pilates">Clinical Pilates</button><button class="filter"
+                    data-category="rehabilitation">Rehabilitation</button></div>
+            <div class="blog-grid">
+                <article class="blog-card" data-category="rehabilitation"><img
+                        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=85"
+                        alt="Health and movement editorial photograph" loading="lazy">
+                    <div class="blog-card-content"><span class="tag">REHABILITATION · ARTICLE PREVIEW</span>
+                        <h2>Why gradual progress matters in rehabilitation</h2>
+                        <p>Recovering movement and confidence often starts with manageable steps, not doing everything
+                            at once.</p><a href="/index.html#contact">Ask us about this topic ↗</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-category="pilates"><img
+                        src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=85"
+                        alt="Health and movement editorial photograph" loading="lazy">
+                    <div class="blog-card-content"><span class="tag">CLINICAL PILATES · ARTICLE PREVIEW</span>
+                        <h2>What makes Clinical Pilates different?</h2>
+                        <p>An introduction to individualised Pilates sessions and how they may support movement control
+                            and strength.</p><a href="/index.html#contact">Ask us about this topic ↗</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-category="headache"><img
+                        src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85"
+                        alt="Health and movement editorial photograph" loading="lazy">
+                    <div class="blog-card-content"><span class="tag">HEADACHE & TMD · ARTICLE PREVIEW</span>
+                        <h2>Can neck problems contribute to headaches?</h2>
+                        <p>A look at why a careful assessment matters when headaches and neck symptoms occur together.
+                        </p><a href="/index.html#contact">Ask us about this topic ↗</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-category="physiotherapy"><img
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+                        alt="Health and movement editorial photograph" loading="lazy">
+                    <div class="blog-card-content"><span class="tag">PHYSIOTHERAPY · ARTICLE PREVIEW</span>
+                        <h2>What to expect at your first physiotherapy appointment</h2>
+                        <p>Learn about the assessment process, discussing your goals and planning your next steps.</p><a
+                            href="/index.html#contact">Ask us about this topic ↗</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-category="headache"><img
+                        src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85"
+                        alt="Health and movement editorial photograph" loading="lazy">
+                    <div class="blog-card-content"><span class="tag">HEADACHE & TMD · ARTICLE PREVIEW</span>
+                        <h2>Jaw pain and TMD: when to seek assessment</h2>
+                        <p>Understand common jaw-related symptoms and why appropriate clinical assessment is important.
+                        </p><a href="/index.html#contact">Ask us about this topic ↗</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-category="rehabilitation"><img
+                        src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=85"
+                        alt="Health and movement editorial photograph" loading="lazy">
+                    <div class="blog-card-content"><span class="tag">REHABILITATION · ARTICLE PREVIEW</span>
+                        <h2>Exercise and persistent lower back pain</h2>
+                        <p>Explore how tailored and progressive activity may form part of an individual rehabilitation
+                            plan.</p><a href="/index.html#contact">Ask us about this topic ↗</a>
+                    </div>
+                </article>
+            </div>
+            <p style="margin-top:35px;color:#68616c;font-size:.9rem">These are article previews, not published clinical
+                guidance. Full articles should be written and reviewed by the clinician before publication.</p>
+        </section>
+        <section class="blog-cta">
+            <div>
+                <div class="section-label">PERSONALISED SUPPORT</div>
+                <h2>Questions about your movement or recovery?</h2>
+            </div><a href="/index.html#booking">Enquire about an appointment ↗</a>
+        </section>
+    </main>
+    <footer>
+        <div class="brand"><span class="brandmark">b<span>f</span>.</span><span>BODY FUNCTION<small>PHYSIOTHERAPY &
+                    REHABILITATION</small></span></div>
+        <p>Helping you manage pain, move with confidence and improve physical function.</p>
+        <div><a href="/index.html">Home</a> · <a href="/index.html#contact">Contact</a></div><small>© <span
+                id="year"></span> Body Function. Website preview.</small>
+    </footer>
+    <script src="script.js"></script>
+    <script>document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('.filter').forEach(x => x.classList.remove('active')); b.classList.add('active'); document.querySelectorAll('.blog-card').forEach(c => c.hidden = b.dataset.category !== 'all' && c.dataset.category !== b.dataset.category) }));</script>
+</body>
+
+</html>
