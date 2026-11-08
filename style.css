@@ -1794,3 +1794,352 @@ textarea {
         border-top: 1px solid rgba(255, 255, 255, .12);
     }
 }
+
+/* ==========================================================================
+   Journal: Read more button and in-page article reader.
+   Paste this at the very BOTTOM of style.css (after the responsive add-on).
+   ========================================================================== */
+
+/* Cards */
+.jcard {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.jcard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(43, 37, 48, .1);
+}
+
+.jcard .jbody {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.jcard .jbody p {
+    margin-bottom: 14px;
+}
+
+.jmeta {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 14px;
+    font-size: 12.5px;
+    color: #8a838f;
+}
+
+.jread {
+    align-self: flex-start;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    padding: 0 0 6px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--purple);
+}
+
+.jread:hover {
+    color: var(--purple-d);
+}
+
+.jread:focus-visible,
+.art-close:focus-visible,
+.art-next:focus-visible {
+    outline: 3px solid #cd00fd;
+    outline-offset: 3px;
+}
+
+/* Reader */
+.art {
+    position: fixed;
+    inset: 0;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 24px;
+}
+
+.art[hidden] {
+    display: none;
+}
+
+.art-back {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 12, 26, .62);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.art-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    max-height: 100%;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .35);
+    outline: 0;
+    opacity: 0;
+    transform: translateY(24px) scale(.985);
+    transition: opacity .3s, transform .35s cubic-bezier(.22, 1, .36, 1);
+}
+
+.art.on .art-back {
+    opacity: 1;
+}
+
+.art.on .art-panel {
+    opacity: 1;
+    transform: none;
+}
+
+.art-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .94);
+    color: var(--ink);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(43, 37, 48, .18);
+    transition: background .2s, color .2s;
+}
+
+.art-close:hover {
+    background: var(--purple);
+    color: #fff;
+}
+
+.art-scroll {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.art-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+}
+
+.art-body {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: clamp(26px, 5vw, 56px) clamp(20px, 5vw, 40px) clamp(32px, 5vw, 56px);
+}
+
+.art-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+.art-meta span+span {
+    color: #8a838f;
+}
+
+.art-title {
+    font-size: clamp(28px, 4.4vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -.015em;
+    margin: 14px 0 20px;
+}
+
+.art-intro {
+    font-size: clamp(17px, 2vw, 20px);
+    line-height: 1.7;
+    color: var(--ink);
+    margin: 0 0 8px;
+}
+
+.art-body h3 {
+    font-size: clamp(21px, 2.6vw, 26px);
+    line-height: 1.25;
+    margin: 36px 0 10px;
+}
+
+.art-body p {
+    font-size: 16.5px;
+    line-height: 1.85;
+    color: #4c4450;
+    margin: 0 0 14px;
+}
+
+.art-body ul {
+    list-style: none;
+    margin: 8px 0 14px;
+    padding: 0;
+}
+
+.art-body li {
+    position: relative;
+    padding: 7px 0 7px 22px;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #4c4450;
+}
+
+.art-body li::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--purple);
+}
+
+.art-take,
+.art-note {
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 32px;
+}
+
+.art-take {
+    background: var(--tint);
+    border-left: 3px solid var(--purple);
+}
+
+.art-note {
+    background: #fbf6ef;
+    border-left: 3px solid #c58b3a;
+    margin-top: 16px;
+}
+
+.art-take strong,
+.art-note strong {
+    display: block;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+
+.art-note p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.art-take ul {
+    margin: 4px 0 0;
+}
+
+.art-body .art-disc {
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #8a838f;
+    margin-top: 22px;
+}
+
+.art-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 28px;
+    margin-top: 28px;
+}
+
+.art-cta .textlink {
+    margin-top: 0;
+}
+
+.art-next {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 40px;
+    padding: 22px 0 0;
+    background: none;
+    border: 0;
+    border-top: 1px solid var(--line);
+    cursor: pointer;
+    color: var(--ink);
+}
+
+.art-next small {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #8a838f;
+    margin-bottom: 4px;
+}
+
+.art-next span {
+    font-size: clamp(18px, 2.4vw, 22px);
+    line-height: 1.3;
+}
+
+.art-next:hover span {
+    color: var(--purple);
+}
+
+/* Phones: full screen reader */
+@media (max-width: 640px) {
+    .art {
+        padding: 0;
+    }
+
+    .art-panel {
+        height: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+
+    .art-img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .art-close {
+        top: 10px;
+        right: 10px;
+    }
+
+    .art-cta .btn {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Large desktops: a little more room */
+@media (min-width: 1400px) {
+    .art-panel {
+        max-width: 960px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .art-back,
+    .art-panel,
+    .jcard {
+        transition: none;
+    }
+}
