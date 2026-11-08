@@ -1,159 +1,33 @@
 {
-  "items": [
-    {
-      "id": "reviews_001",
-      "label": "DIV: PATIENT FEEDBACK",
-      "value": "PATIENT FEEDBACK"
-    },
-    {
-      "id": "reviews_002",
-      "label": "H2: Your experience",
-      "value": "Your experience"
-    },
-    {
-      "id": "reviews_003",
-      "label": "EM: matters.",
-      "value": "matters."
-    },
-    {
-      "id": "reviews_004",
-      "label": "P: Review carousel preview. Genuine patient feedback will appear here once available.",
-      "value": "Review carousel preview. Genuine patient feedback will appear here once available."
-    },
-    {
-      "id": "reviews_005",
-      "label": "SPAN: SAMPLE REVIEW 01",
-      "value": "SAMPLE REVIEW 01"
-    },
-    {
-      "id": "reviews_006",
-      "label": "DIV: ★★★★★",
-      "value": "★★★★★"
-    },
-    {
-      "id": "reviews_007",
-      "label": "BLOCKQUOTE: “Patient review text will appear here once a genuine testimonial has been prov",
-      "value": "“Patient review text will appear here once a genuine testimonial has been\n                                provided and approved.”"
-    },
-    {
-      "id": "reviews_008",
-      "label": "DIV: Patient feedback",
-      "value": "Patient feedback"
-    },
-    {
-      "id": "reviews_009",
-      "label": "SPAN: Placeholder",
-      "value": "Placeholder"
-    },
-    {
-      "id": "reviews_010",
-      "label": "SPAN: SAMPLE REVIEW 02",
-      "value": "SAMPLE REVIEW 02"
-    },
-    {
-      "id": "reviews_011",
-      "label": "DIV: ★★★★★",
-      "value": "★★★★★"
-    },
-    {
-      "id": "reviews_012",
-      "label": "BLOCKQUOTE: “A future review could describe the booking experience, communication or care ",
-      "value": "“A future review could describe the booking experience, communication or care\n                                received.”"
-    },
-    {
-      "id": "reviews_013",
-      "label": "DIV: Patient feedback",
-      "value": "Patient feedback"
-    },
-    {
-      "id": "reviews_014",
-      "label": "SPAN: Placeholder",
-      "value": "Placeholder"
-    },
-    {
-      "id": "reviews_015",
-      "label": "SPAN: SAMPLE REVIEW 03",
-      "value": "SAMPLE REVIEW 03"
-    },
-    {
-      "id": "reviews_016",
-      "label": "DIV: ★★★★★",
-      "value": "★★★★★"
-    },
-    {
-      "id": "reviews_017",
-      "label": "BLOCKQUOTE: “Replace this sample wording with an authentic review, shared with the patient",
-      "value": "“Replace this sample wording with an authentic review, shared with the patient's\n                                permission.”"
-    },
-    {
-      "id": "reviews_018",
-      "label": "DIV: Patient feedback",
-      "value": "Patient feedback"
-    },
-    {
-      "id": "reviews_019",
-      "label": "SPAN: Placeholder",
-      "value": "Placeholder"
-    },
-    {
-      "id": "reviews_020",
-      "label": "SPAN: SAMPLE REVIEW 04",
-      "value": "SAMPLE REVIEW 04"
-    },
-    {
-      "id": "reviews_021",
-      "label": "DIV: ★★★★★",
-      "value": "★★★★★"
-    },
-    {
-      "id": "reviews_022",
-      "label": "BLOCKQUOTE: “This card is reserved for a future testimonial about Body Function's physioth",
-      "value": "“This card is reserved for a future testimonial about Body Function's\n                                physiotherapy services.”"
-    },
-    {
-      "id": "reviews_023",
-      "label": "DIV: Patient feedback",
-      "value": "Patient feedback"
-    },
-    {
-      "id": "reviews_024",
-      "label": "SPAN: Placeholder",
-      "value": "Placeholder"
-    },
-    {
-      "id": "reviews_025",
-      "label": "SPAN: SAMPLE REVIEW 05",
-      "value": "SAMPLE REVIEW 05"
-    },
-    {
-      "id": "reviews_026",
-      "label": "DIV: ★★★★★",
-      "value": "★★★★★"
-    },
-    {
-      "id": "reviews_027",
-      "label": "BLOCKQUOTE: “Add a real patient's words here when a suitable, consented review becomes ava",
-      "value": "“Add a real patient's words here when a suitable, consented review becomes\n                                available.”"
-    },
-    {
-      "id": "reviews_028",
-      "label": "DIV: Patient feedback",
-      "value": "Patient feedback"
-    },
-    {
-      "id": "reviews_029",
-      "label": "SPAN: Placeholder",
-      "value": "Placeholder"
-    },
-    {
-      "id": "reviews_030",
-      "label": "BUTTON: ←",
-      "value": "←"
-    },
-    {
-      "id": "reviews_031",
-      "label": "BUTTON: →",
-      "value": "→"
-    }
-  ]
+  "reviews_001": "PATIENT FEEDBACK",
+  "reviews_002": "Your experience",
+  "reviews_003": "matters.",
+  "reviews_004": "Review carousel preview. Genuine patient feedback will appear here once available.",
+  "reviews_005": "SAMPLE REVIEW 01",
+  "reviews_006": "★★★★★",
+  "reviews_007": "“Patient review text will appear here once a genuine testimonial has been\n                                provided and approved.”",
+  "reviews_008": "Patient feedback",
+  "reviews_009": "Placeholder",
+  "reviews_010": "SAMPLE REVIEW 02",
+  "reviews_011": "★★★★★",
+  "reviews_012": "“A future review could describe the booking experience, communication or care\n                                received.”",
+  "reviews_013": "Patient feedback",
+  "reviews_014": "Placeholder",
+  "reviews_015": "SAMPLE REVIEW 03",
+  "reviews_016": "★★★★★",
+  "reviews_017": "“Replace this sample wording with an authentic review, shared with the patient's\n                                permission.”",
+  "reviews_018": "Patient feedback",
+  "reviews_019": "Placeholder",
+  "reviews_020": "SAMPLE REVIEW 04",
+  "reviews_021": "★★★★★",
+  "reviews_022": "“This card is reserved for a future testimonial about Body Function's\n                                physiotherapy services.”",
+  "reviews_023": "Patient feedback",
+  "reviews_024": "Placeholder",
+  "reviews_025": "SAMPLE REVIEW 05",
+  "reviews_026": "★★★★★",
+  "reviews_027": "“Add a real patient's words here when a suitable, consented review becomes\n                                available.”",
+  "reviews_028": "Patient feedback",
+  "reviews_029": "Placeholder",
+  "reviews_030": "←",
+  "reviews_031": "→"
 }

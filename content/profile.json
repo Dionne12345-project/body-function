@@ -1,94 +1,20 @@
 {
-  "items": [
-    {
-      "id": "profile_001",
-      "label": "Image: Portrait of Dionne Jules, physiotherapist",
-      "value": "images/dionne.jpg"
-    },
-    {
-      "id": "profile_002",
-      "label": "DIV: Dionne Jules",
-      "value": "Dionne Jules"
-    },
-    {
-      "id": "profile_003",
-      "label": "SPAN: Physiotherapist",
-      "value": "Physiotherapist"
-    },
-    {
-      "id": "profile_004",
-      "label": "DIV: 02 / MEET YOUR PHYSIOTHERAPIST",
-      "value": "02 / MEET YOUR PHYSIOTHERAPIST"
-    },
-    {
-      "id": "profile_005",
-      "label": "H2: Meet",
-      "value": "Meet"
-    },
-    {
-      "id": "profile_006",
-      "label": "EM: Dionne.",
-      "value": "Dionne."
-    },
-    {
-      "id": "profile_007",
-      "label": "P: Personalised physiotherapy, built around your movement, strength and recovery.",
-      "value": "Personalised physiotherapy, built around your movement, strength and\n                        recovery."
-    },
-    {
-      "id": "profile_008",
-      "label": "P: Dionne graduated with a BSc (Hons) in Physiotherapy and has since gained several years ",
-      "value": "Dionne graduated with a BSc (Hons) in Physiotherapy and has since gained several years of\n                        experience in both NHS and private musculoskeletal physiotherapy."
-    },
-    {
-      "id": "profile_009",
-      "label": "P: She has worked with adults and children across a range of musculoskeletal, orthopaedic ",
-      "value": "She has worked with adults and children across a range of musculoskeletal, orthopaedic and\n                        post-operative conditions, as both an adult and children's specialist physiotherapist."
-    },
-    {
-      "id": "profile_010",
-      "label": "P: Dionne has a particular interest in lower-limb rehabilitation, spinal pain and headache",
-      "value": "Dionne has a particular interest in lower-limb rehabilitation, spinal pain and headaches. She\n                        enjoys helping patients improve their strength, mobility and function throughout their\n                        rehabilitation journey."
-    },
-    {
-      "id": "profile_011",
-      "label": "P: Alongside her physiotherapy experience, Dionne has a background in personal training an",
-      "value": "Alongside her physiotherapy experience, Dionne has a background in personal training and Clinical\n                        Pilates, with a strong interest in exercise, movement and building strength."
-    },
-    {
-      "id": "profile_012",
-      "label": "H3: Education & qualifications",
-      "value": "Education & qualifications"
-    },
-    {
-      "id": "profile_013",
-      "label": "LI: BSc (Hons), Physiotherapy",
-      "value": "BSc (Hons), Physiotherapy"
-    },
-    {
-      "id": "profile_014",
-      "label": "LI: FSEM Diploma in Musculoskeletal Medicine (DipMSK)",
-      "value": "FSEM Diploma in Musculoskeletal Medicine (DipMSK)"
-    },
-    {
-      "id": "profile_015",
-      "label": "LI: Level 3 Clinical Pilates Instructor",
-      "value": "Level 3 Clinical Pilates Instructor"
-    },
-    {
-      "id": "profile_016",
-      "label": "LI: Level 3 Personal Training",
-      "value": "Level 3 Personal Training"
-    },
-    {
-      "id": "profile_017",
-      "label": "LI: Level 3 Exercise for Health Specialist",
-      "value": "Level 3 Exercise for Health Specialist"
-    },
-    {
-      "id": "profile_018",
-      "label": "LI: Level 4 Lower Back Pain Specialist",
-      "value": "Level 4 Lower Back Pain Specialist"
-    }
-  ]
+  "profile_001": "images/dionne.jpg",
+  "profile_002": "Dionne Jules",
+  "profile_003": "Physiotherapist",
+  "profile_004": "02 / MEET YOUR PHYSIOTHERAPIST",
+  "profile_005": "Meet",
+  "profile_006": "Dionne.",
+  "profile_007": "Personalised physiotherapy, built around your movement, strength and\n                        recovery.",
+  "profile_008": "Dionne graduated with a BSc (Hons) in Physiotherapy and has since gained several years of\n                        experience in both NHS and private musculoskeletal physiotherapy.",
+  "profile_009": "She has worked with adults and children across a range of musculoskeletal, orthopaedic and\n                        post-operative conditions, as both an adult and children's specialist physiotherapist.",
+  "profile_010": "Dionne has a particular interest in lower-limb rehabilitation, spinal pain and headaches. She\n                        enjoys helping patients improve their strength, mobility and function throughout their\n                        rehabilitation journey.",
+  "profile_011": "Alongside her physiotherapy experience, Dionne has a background in personal training and Clinical\n                        Pilates, with a strong interest in exercise, movement and building strength.",
+  "profile_012": "Education & qualifications",
+  "profile_013": "BSc (Hons), Physiotherapy",
+  "profile_014": "FSEM Diploma in Musculoskeletal Medicine (DipMSK)",
+  "profile_015": "Level 3 Clinical Pilates Instructor",
+  "profile_016": "Level 3 Personal Training",
+  "profile_017": "Level 3 Exercise for Health Specialist",
+  "profile_018": "Level 4 Lower Back Pain Specialist"
 }

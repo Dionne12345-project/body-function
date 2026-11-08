@@ -1,104 +1,22 @@
 {
-  "items": [
-    {
-      "id": "booking_001",
-      "label": "DIV: 06 / BOOK AN APPOINTMENT",
-      "value": "06 / BOOK AN APPOINTMENT"
-    },
-    {
-      "id": "booking_002",
-      "label": "H2: Ready to make",
-      "value": "Ready to make"
-    },
-    {
-      "id": "booking_003",
-      "label": "EM: a move?",
-      "value": "a move?"
-    },
-    {
-      "id": "booking_004",
-      "label": "P: Select your preferred service and date, and send a booking enquiry. We'll confirm your ",
-      "value": "Select your preferred service and date, and send a booking enquiry. We'll confirm your appointment\n                    and availability personally."
-    },
-    {
-      "id": "booking_005",
-      "label": "P: This is an enquiry calendar, not a live appointment diary. No appointment is confirmed ",
-      "value": "This is an enquiry calendar, not a live appointment diary. No appointment is confirmed\n                    until you receive a response."
-    },
-    {
-      "id": "booking_006",
-      "label": "Booking form recipient URL (FormSubmit)",
-      "value": "https://formsubmit.co/ibrahimilyas01@gmail.com"
-    },
-    {
-      "id": "booking_007",
-      "label": "LABEL: Your name",
-      "value": "Your name"
-    },
-    {
-      "id": "booking_008",
-      "label": "Form placeholder: Full name",
-      "value": "Full name"
-    },
-    {
-      "id": "booking_009",
-      "label": "LABEL: Email address",
-      "value": "Email address"
-    },
-    {
-      "id": "booking_010",
-      "label": "Form placeholder: you@example.com",
-      "value": "you@example.com"
-    },
-    {
-      "id": "booking_011",
-      "label": "LABEL: Phone number",
-      "value": "Phone\n                    number"
-    },
-    {
-      "id": "booking_012",
-      "label": "Form placeholder: Your contact number",
-      "value": "Your contact number"
-    },
-    {
-      "id": "booking_013",
-      "label": "LABEL: Service",
-      "value": "Service"
-    },
-    {
-      "id": "booking_014",
-      "label": "LABEL: Preferred date",
-      "value": "Preferred date"
-    },
-    {
-      "id": "booking_015",
-      "label": "LABEL: Location / postcode",
-      "value": "Location / postcode"
-    },
-    {
-      "id": "booking_016",
-      "label": "Form placeholder: Your town or postcode",
-      "value": "Your town or postcode"
-    },
-    {
-      "id": "booking_017",
-      "label": "LABEL: Additional booking information",
-      "value": "Additional booking\n                    information"
-    },
-    {
-      "id": "booking_018",
-      "label": "Form placeholder: Optional non-medical booking information",
-      "value": "Optional non-medical booking information"
-    },
-    {
-      "id": "booking_019",
-      "label": "BUTTON: Send booking enquiry",
-      "value": "Send booking enquiry"
-    },
-    {
-      "id": "booking_020",
-      "label": "SMALL: Please do not include detailed medical information in this form. This website form ",
-      "value": "Please do not include detailed\n                    medical information in this form. This website form is for enquiries only, not emergency medical\n                    advice."
-    }
-  ]
+  "booking_001": "06 / BOOK AN APPOINTMENT",
+  "booking_002": "Ready to make",
+  "booking_003": "a move?",
+  "booking_004": "Select your preferred service and date, and send a booking enquiry. We'll confirm your appointment\n                    and availability personally.",
+  "booking_005": "This is an enquiry calendar, not a live appointment diary. No appointment is confirmed\n                    until you receive a response.",
+  "booking_006": "https://formsubmit.co/ibrahimilyas01@gmail.com",
+  "booking_007": "Your name",
+  "booking_008": "Full name",
+  "booking_009": "Email address",
+  "booking_010": "you@example.com",
+  "booking_011": "Phone\n                    number",
+  "booking_012": "Your contact number",
+  "booking_013": "Service",
+  "booking_014": "Preferred date",
+  "booking_015": "Location / postcode",
+  "booking_016": "Your town or postcode",
+  "booking_017": "Additional booking\n                    information",
+  "booking_018": "Optional non-medical booking information",
+  "booking_019": "Send booking enquiry",
+  "booking_020": "Please do not include detailed\n                    medical information in this form. This website form is for enquiries only, not emergency medical\n                    advice."
 }

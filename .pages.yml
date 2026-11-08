@@ -7,233 +7,893 @@ content:
   type: file
   path: content/index.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: index_001
+    label: Short text · b
+    type: string
+  - name: index_002
+    label: Short text · .
+    type: string
+  - name: index_003
+    label: Short text · f
+    type: string
+  - name: index_004
+    label: Short text · BODY FUNCTION
+    type: text
+  - name: index_005
+    label: Small supporting text · PHYSIOTHERAPY & REHABILITATION
+    type: string
+  - name: index_006
+    label: Link or button text · About
+    type: string
+  - name: index_007
+    label: Link or button text · Services
+    type: string
+  - name: index_008
+    label: Link or button text · Pricing
+    type: string
+  - name: index_009
+    label: Link or button text · Journal
+    type: string
+  - name: index_010
+    label: Link or button text · Contact
+    type: string
+  - name: index_011
+    label: Link or button text · FAQ
+    type: string
+  - name: index_012
+    label: Link or button text · Privacy Policy
+    type: string
+  - name: index_013
+    label: Link or button text · Cookie Policy
+    type: string
+  - name: index_014
+    label: Link or button text · Terms of Service
+    type: text
+  - name: index_015
+    label: Link or button text · Book an appointment
+    type: string
+  - name: index_016
+    label: Short text · b
+    type: string
+  - name: index_017
+    label: Short text · .
+    type: string
+  - name: index_018
+    label: Short text · f
+    type: string
+  - name: index_019
+    label: Short text · BODY FUNCTION
+    type: string
+  - name: index_020
+    label: Small supporting text · PHYSIOTHERAPY & REHABILITATION
+    type: text
+  - name: index_021
+    label: Paragraph · Helping you manage pain, move with confiden…
+    type: string
+  - name: index_022
+    label: Section text · ·
+    type: string
+  - name: index_023
+    label: Section text · ·
+    type: string
+  - name: index_024
+    label: Link or button text · Bedfordshire
+    type: string
+  - name: index_025
+    label: Link or button text · Central Bedfordshire
+    type: string
+  - name: index_026
+    label: Link or button text · Milton Keynes
+    type: text
+  - name: index_027
+    label: Small supporting text · ©
+    type: string
+  - name: index_028
+    label: Small supporting text · Body Function. Website preview. Professiona…
+    type: text
+  - name: index_029
+    label: Link or button text · FAQ
+    type: string
+  - name: index_030
+    label: Link or button text · Privacy Policy
+    type: string
+  - name: index_031
+    label: Link or button text · Cookie Policy
+    type: string
+  - name: index_032
+    label: Link or button text · Terms of Service
+    type: string
+  - name: index_033
+    label: Button text · Cookie preferences
+    type: string
+  - name: index_034
+    label: Heading · Your privacy matters
+    type: string
+  - name: index_035
+    label: Paragraph · We use essential storage to make this websi…
+    type: text
+  - name: index_036
+    label: Paragraph · and
+    type: string
+  - name: index_037
+    label: Paragraph · .
+    type: string
+  - name: index_038
+    label: Link or button text · Privacy Policy
+    type: string
+  - name: index_039
+    label: Link or button text · Cookie Policy
+    type: string
+  - name: index_040
+    label: Form field label · Essential storage (always active)
+    type: string
+  - name: index_041
+    label: Form field label · Analytics cookies
+    type: string
+  - name: index_042
+    label: Form field label · Marketing cookies
+    type: string
+  - name: index_043
+    label: Small supporting text · Optional services must only be loaded after…
+    type: text
+  - name: index_044
+    label: Button text · Save preferences
+    type: string
+  - name: index_045
+    label: Button text · Accept all
+    type: string
+  - name: index_046
+    label: Button text · Reject optional cookies
+    type: string
+  - name: index_047
+    label: Button text · Cookie settings
+    type: text
 - name: hero
   label: Main Heading & Photo
   type: file
   path: content/hero.json
   fields:
   - name: hero_001
-    label: Location text
-    type: string
+    label: hero_001 · Personalised physiotherapy · Bedfordshire &…
+    type: text
   - name: hero_002
-    label: 'Main heading: first line'
+    label: hero_002 · Move better.
     type: string
   - name: hero_003
-    label: 'Main heading: second line'
+    label: hero_003 · Feel stronger.
     type: string
   - name: hero_004
-    label: Highlighted heading
+    label: hero_004 · Live fully.
     type: string
   - name: hero_005
-    label: Introduction paragraph
+    label: hero_005 · Expert-led physiotherapy, Clinical Pilates…
     type: text
   - name: hero_006
-    label: Booking button text
+    label: hero_006 · Book your appointment
     type: string
   - name: hero_007
-    label: Services button text
+    label: hero_007 · Explore our services
     type: string
   - name: hero_008
-    label: Homepage photo
-    type: image
+    label: hero_008 · hero.jpg
+    type: string
   - name: hero_009
-    label: Photo caption
+    label: hero_009 · Movement is personal.
     type: string
   - name: hero_010
-    label: 'Photo caption: bold text'
+    label: hero_010 · So is your care.
     type: string
 - name: about
   label: My Approach
   type: file
   path: content/about.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: about_001
+    label: Section text · 01 / OUR APPROACH
+    type: string
+  - name: about_002
+    label: Heading · Care that sees
+    type: string
+  - name: about_003
+    label: Highlighted heading text · the whole you.
+    type: string
+  - name: about_004
+    label: Paragraph · At Body Function, we believe good physiothe…
+    type: text
+  - name: about_005
+    label: Paragraph · Led by Dionne Jules, our approach brings to…
+    type: text
+  - name: about_006
+    label: Link or button text · Get to know Body Function
+    type: string
 - name: profile
   label: About Me & Qualifications
   type: file
   path: content/profile.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: profile_001
+    label: Photo or image · images/dionne.jpg
+    type: image
+  - name: profile_002
+    label: Section text · Dionne Jules
+    type: string
+  - name: profile_003
+    label: Short text · Physiotherapist
+    type: string
+  - name: profile_004
+    label: Section text · 02 / MEET YOUR PHYSIOTHERAPIST
+    type: string
+  - name: profile_005
+    label: Heading · Meet
+    type: string
+  - name: profile_006
+    label: Highlighted heading text · Dionne.
+    type: string
+  - name: profile_007
+    label: Paragraph · Personalised physiotherapy, built around yo…
+    type: text
+  - name: profile_008
+    label: Paragraph · Dionne graduated with a BSc (Hons) in Physi…
+    type: text
+  - name: profile_009
+    label: Paragraph · She has worked with adults and children acr…
+    type: text
+  - name: profile_010
+    label: Paragraph · Dionne has a particular interest in lower-l…
+    type: text
+  - name: profile_011
+    label: Paragraph · Alongside her physiotherapy experience, Dio…
+    type: text
+  - name: profile_012
+    label: Heading · Education & qualifications
+    type: string
+  - name: profile_013
+    label: Qualification · BSc (Hons), Physiotherapy
+    type: string
+  - name: profile_014
+    label: Qualification · FSEM Diploma in Musculoskeletal Medicine (D…
+    type: string
+  - name: profile_015
+    label: Qualification · Level 3 Clinical Pilates Instructor
+    type: string
+  - name: profile_016
+    label: Qualification · Level 3 Personal Training
+    type: string
+  - name: profile_017
+    label: Qualification · Level 3 Exercise for Health Specialist
+    type: string
+  - name: profile_018
+    label: Qualification · Level 4 Lower Back Pain Specialist
+    type: string
 - name: area
   label: Areas I Cover
   type: file
   path: content/area.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: area_001
+    label: Section text · 03 / WHERE WE WORK
+    type: string
+  - name: area_002
+    label: Heading · Care that comes
+    type: string
+  - name: area_003
+    label: Highlighted heading text · to you.
+    type: string
+  - name: area_004
+    label: Paragraph · Body Function is planning home-based appoin…
+    type: text
+  - name: area_005
+    label: Short text · Bedford
+    type: string
+  - name: area_006
+    label: Short text · Central Bedfordshire
+    type: string
+  - name: area_007
+    label: Short text · Milton Keynes
+    type: text
+  - name: area_008
+    label: Short text · Cranfield
+    type: string
+  - name: area_009
+    label: Link or button text · Check your area
+    type: text
+  - name: area_010
+    label: Photo or image · images/area.jpg
+    type: image
 - name: services
   label: Services
   type: file
   path: content/services.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: services_001
+    label: Section text · 04 / WHAT WE DO
+    type: string
+  - name: services_002
+    label: Heading · Find your way
+    type: string
+  - name: services_003
+    label: Highlighted heading text · forward.
+    type: string
+  - name: services_004
+    label: Paragraph · Support for recovery, strength and confiden…
+    type: string
+  - name: services_005
+    label: Link or button text · Book an appointment
+    type: string
+  - name: services_006
+    label: Short text · 01
+    type: string
+  - name: services_007
+    label: Heading · Physiotherapy
+    type: string
+  - name: services_008
+    label: Paragraph · Individual assessment and care for muscle a…
+    type: text
+  - name: services_009
+    label: Short text · Initial assessment · 50 min
+    type: string
+  - name: services_010
+    label: Short text · Follow-up · 30 min
+    type: text
+  - name: services_011
+    label: Service enquiry accessibility text · Enquire about physiotherapy
+    type: string
+  - name: services_012
+    label: Short text · 02
+    type: string
+  - name: services_013
+    label: Heading · Headache & Jaw Pain (TMD)
+    type: string
+  - name: services_014
+    label: Paragraph · Assessment of headache-related musculoskele…
+    type: text
+  - name: services_015
+    label: Service enquiry accessibility text · Enquire about headache and jaw pain assessment
+    type: string
+  - name: services_016
+    label: Short text · 03
+    type: string
+  - name: services_017
+    label: Heading · One-to-one Clinical Pilates
+    type: string
+  - name: services_018
+    label: Paragraph · One-to-one sessions tailored to improve mov…
+    type: string
+  - name: services_019
+    label: Short text · Assessment or session · 40 min
+    type: string
+  - name: services_020
+    label: Service enquiry accessibility text · Enquire about one-to-one Clinical Pilates
+    type: string
+  - name: services_021
+    label: Short text · 04
+    type: string
+  - name: services_022
+    label: Heading · Exercise Rehabilitation
+    type: string
+  - name: services_023
+    label: Paragraph · Progressive exercise plans for ongoing musc…
+    type: string
+  - name: services_024
+    label: Short text · Session · 40 min
+    type: string
+  - name: services_025
+    label: Service enquiry accessibility text · Enquire about exercise rehabilitation
+    type: string
+  - name: services_026
+    label: Short text · 05
+    type: string
+  - name: services_027
+    label: Heading · Home Visits
+    type: string
+  - name: services_028
+    label: Paragraph · Appointments at your home across Bedfordshi…
+    type: text
+  - name: services_029
+    label: Service enquiry accessibility text · Enquire about home visits
+    type: string
+  - name: services_030
+    label: Short text · 06
+    type: string
+  - name: services_031
+    label: Heading · Clinical Mat Pilates
+    type: string
+  - name: services_032
+    label: Paragraph · Group classes are planned, subject to venue…
+    type: text
+  - name: services_033
+    label: Short text · Assessment · 40 min
+    type: string
+  - name: services_034
+    label: Short text · Group class · 50 min
+    type: text
+  - name: services_035
+    label: Short text · Six-class block
+    type: string
+  - name: services_036
+    label: Service enquiry accessibility text · Enquire about Clinical Mat Pilates
+    type: string
 - name: pricing
   label: Prices
   type: file
   path: content/pricing.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: pricing_001
+    label: Section text · 05 / SIMPLE, TRANSPARENT PRICING
+    type: string
+  - name: pricing_002
+    label: Heading · Invest in
+    type: string
+  - name: pricing_003
+    label: Highlighted heading text · your wellbeing.
+    type: string
+  - name: pricing_004
+    label: Paragraph · Clear appointment fees, with individual att…
+    type: string
+  - name: pricing_005
+    label: Short text · Initial physiotherapy assessment
+    type: string
+  - name: pricing_006
+    label: Small supporting text · 50 minutes
+    type: string
+  - name: pricing_007
+    label: Bold text or price · £65
+    type: string
+  - name: pricing_008
+    label: Short text · Physiotherapy follow-up
+    type: string
+  - name: pricing_009
+    label: Small supporting text · 30 minutes
+    type: string
+  - name: pricing_010
+    label: Bold text or price · £45
+    type: string
+  - name: pricing_011
+    label: Short text · One-to-one Clinical Pilates
+    type: string
+  - name: pricing_012
+    label: Small supporting text · 40 minutes · assessment or session
+    type: text
+  - name: pricing_013
+    label: Bold text or price · £50
+    type: string
+  - name: pricing_014
+    label: Short text · Exercise rehabilitation
+    type: string
+  - name: pricing_015
+    label: Small supporting text · 40 minutes
+    type: string
+  - name: pricing_016
+    label: Bold text or price · £50
+    type: string
+  - name: pricing_017
+    label: Short text · Clinical Mat Pilates assessment
+    type: string
+  - name: pricing_018
+    label: Small supporting text · 40 minutes · required before group classes
+    type: text
+  - name: pricing_019
+    label: Bold text or price · £50
+    type: string
+  - name: pricing_020
+    label: Short text · Clinical Mat Pilates group class
+    type: string
+  - name: pricing_021
+    label: Small supporting text · 50 minutes · subject to launch confirmation
+    type: text
+  - name: pricing_022
+    label: Bold text or price · £17
+    type: string
+  - name: pricing_023
+    label: Short text · Clinical Mat Pilates six-class block
+    type: string
+  - name: pricing_024
+    label: Small supporting text · £15 per class · subject to launch confirmation
+    type: text
+  - name: pricing_025
+    label: Bold text or price · £90
+    type: string
+  - name: pricing_026
+    label: Paragraph · Home visits are planned at standard appoint…
+    type: text
 - name: booking
   label: Book an Appointment
   type: file
   path: content/booking.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: booking_001
+    label: Section text · 06 / BOOK AN APPOINTMENT
+    type: string
+  - name: booking_002
+    label: Heading · Ready to make
+    type: string
+  - name: booking_003
+    label: Highlighted heading text · a move?
+    type: string
+  - name: booking_004
+    label: Paragraph · Select your preferred service and date, and…
+    type: text
+  - name: booking_005
+    label: Paragraph · This is an enquiry calendar, not a live app…
+    type: text
+  - name: booking_006
+    label: Booking form recipient URL (FormSubmit) · https://formsubmit.co/ibrahimilyas01@gmail.com
+    type: string
+  - name: booking_007
+    label: Form field label · Your name
+    type: string
+  - name: booking_008
+    label: Form placeholder · Full name
+    type: string
+  - name: booking_009
+    label: Form field label · Email address
+    type: string
+  - name: booking_010
+    label: Form placeholder · you@example.com
+    type: string
+  - name: booking_011
+    label: Form field label · Phone number
+    type: text
+  - name: booking_012
+    label: Form placeholder · Your contact number
+    type: string
+  - name: booking_013
+    label: Form field label · Service
+    type: string
+  - name: booking_014
+    label: Form field label · Preferred date
+    type: string
+  - name: booking_015
+    label: Form field label · Location / postcode
+    type: string
+  - name: booking_016
+    label: Form placeholder · Your town or postcode
+    type: string
+  - name: booking_017
+    label: Form field label · Additional booking information
+    type: text
+  - name: booking_018
+    label: Form placeholder · Optional non-medical booking information
+    type: string
+  - name: booking_019
+    label: Button text · Send booking enquiry
+    type: string
+  - name: booking_020
+    label: Small supporting text · Please do not include detailed medical info…
+    type: text
 - name: reviews
   label: Reviews
   type: file
   path: content/reviews.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: reviews_001
+    label: Section text · PATIENT FEEDBACK
+    type: string
+  - name: reviews_002
+    label: Heading · Your experience
+    type: string
+  - name: reviews_003
+    label: Highlighted heading text · matters.
+    type: string
+  - name: reviews_004
+    label: Paragraph · Review carousel preview. Genuine patient fe…
+    type: string
+  - name: reviews_005
+    label: Short text · SAMPLE REVIEW 01
+    type: string
+  - name: reviews_006
+    label: Section text · ★★★★★
+    type: string
+  - name: reviews_007
+    label: Review text · “Patient review text will appear here once…
+    type: text
+  - name: reviews_008
+    label: Section text · Patient feedback
+    type: string
+  - name: reviews_009
+    label: Short text · Placeholder
+    type: string
+  - name: reviews_010
+    label: Short text · SAMPLE REVIEW 02
+    type: string
+  - name: reviews_011
+    label: Section text · ★★★★★
+    type: string
+  - name: reviews_012
+    label: Review text · “A future review could describe the booking…
+    type: text
+  - name: reviews_013
+    label: Section text · Patient feedback
+    type: string
+  - name: reviews_014
+    label: Short text · Placeholder
+    type: string
+  - name: reviews_015
+    label: Short text · SAMPLE REVIEW 03
+    type: string
+  - name: reviews_016
+    label: Section text · ★★★★★
+    type: string
+  - name: reviews_017
+    label: Review text · “Replace this sample wording with an authen…
+    type: text
+  - name: reviews_018
+    label: Section text · Patient feedback
+    type: string
+  - name: reviews_019
+    label: Short text · Placeholder
+    type: string
+  - name: reviews_020
+    label: Short text · SAMPLE REVIEW 04
+    type: string
+  - name: reviews_021
+    label: Section text · ★★★★★
+    type: string
+  - name: reviews_022
+    label: Review text · “This card is reserved for a future testimo…
+    type: text
+  - name: reviews_023
+    label: Section text · Patient feedback
+    type: string
+  - name: reviews_024
+    label: Short text · Placeholder
+    type: string
+  - name: reviews_025
+    label: Short text · SAMPLE REVIEW 05
+    type: string
+  - name: reviews_026
+    label: Section text · ★★★★★
+    type: string
+  - name: reviews_027
+    label: Review text · “Add a real patient's words here when a sui…
+    type: text
+  - name: reviews_028
+    label: Section text · Patient feedback
+    type: string
+  - name: reviews_029
+    label: Short text · Placeholder
+    type: string
+  - name: reviews_030
+    label: Button text · ←
+    type: string
+  - name: reviews_031
+    label: Button text · →
+    type: string
 - name: contact
   label: Contact Details
   type: file
   path: content/contact.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: contact_001
+    label: Section text · LET'S CONNECT
+    type: string
+  - name: contact_002
+    label: Heading · Let's get you
+    type: string
+  - name: contact_003
+    label: Highlighted heading text · moving.
+    type: string
+  - name: contact_004
+    label: Paragraph · Have a question or want to discuss the righ…
+    type: string
+  - name: contact_005
+    label: Link destination · mailto:dionnejules@gmail.com
+    type: string
+  - name: contact_006
+    label: Link or button text · dionnejules@gmail.com
+    type: string
+  - name: contact_007
+    label: Link destination · tel:+447946234379
+    type: string
+  - name: contact_008
+    label: Link or button text · 07946 234379
+    type: string
+  - name: contact_009
+    label: Link destination · https://wa.me/447946234379
+    type: string
+  - name: contact_010
+    label: Link or button text · Message on WhatsApp
+    type: string
 - name: blog
   label: Blog
   type: file
   path: content/blog.json
   fields:
-  - name: items
-    label: Website text and settings
-    type: object
-    list: true
-    fields:
-    - name: id
-      label: Reference code (leave unchanged)
-      type: string
-      required: true
-    - name: label
-      label: Description of this item
-      type: string
-    - name: value
-      label: Edit text or link here
-      type: text
+  - name: blog_001
+    label: Short text · b
+    type: string
+  - name: blog_002
+    label: Short text · .
+    type: string
+  - name: blog_003
+    label: Short text · f
+    type: string
+  - name: blog_004
+    label: Short text · BODY FUNCTION
+    type: text
+  - name: blog_005
+    label: Small supporting text · PHYSIOTHERAPY & REHABILITATION
+    type: string
+  - name: blog_006
+    label: Link or button text · About
+    type: string
+  - name: blog_007
+    label: Link or button text · Services
+    type: string
+  - name: blog_008
+    label: Link or button text · Pricing
+    type: string
+  - name: blog_009
+    label: Link or button text · Journal
+    type: string
+  - name: blog_010
+    label: Link or button text · Contact
+    type: string
+  - name: blog_011
+    label: Link or button text · Book an appointment ↗
+    type: text
+  - name: blog_012
+    label: Button text · ☰
+    type: string
+  - name: blog_013
+    label: Section text · THE BODY FUNCTION JOURNAL
+    type: string
+  - name: blog_014
+    label: Heading · Move with
+    type: string
+  - name: blog_015
+    label: Highlighted heading text · knowledge.
+    type: string
+  - name: blog_016
+    label: Paragraph · Practical insights into physiotherapy, pain…
+    type: text
+  - name: blog_017
+    label: Button text · All articles
+    type: text
+  - name: blog_018
+    label: Button text · Physiotherapy
+    type: string
+  - name: blog_019
+    label: Button text · Headache & TMD
+    type: string
+  - name: blog_020
+    label: Button text · Clinical Pilates
+    type: string
+  - name: blog_021
+    label: Button text · Rehabilitation
+    type: string
+  - name: blog_022
+    label: Photo or image · https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=85
+    type: string
+  - name: blog_023
+    label: Short text · REHABILITATION · ARTICLE PREVIEW
+    type: string
+  - name: blog_024
+    label: Heading · Why gradual progress matters in rehabilitation
+    type: string
+  - name: blog_025
+    label: Paragraph · Recovering movement and confidence often st…
+    type: text
+  - name: blog_026
+    label: Link or button text · Ask us about this topic ↗
+    type: string
+  - name: blog_027
+    label: Photo or image · https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=85
+    type: string
+  - name: blog_028
+    label: Short text · CLINICAL PILATES · ARTICLE PREVIEW
+    type: string
+  - name: blog_029
+    label: Heading · What makes Clinical Pilates different?
+    type: string
+  - name: blog_030
+    label: Paragraph · An introduction to individualised Pilates s…
+    type: text
+  - name: blog_031
+    label: Link or button text · Ask us about this topic ↗
+    type: string
+  - name: blog_032
+    label: Photo or image · https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85
+    type: string
+  - name: blog_033
+    label: Short text · HEADACHE & TMD · ARTICLE PREVIEW
+    type: string
+  - name: blog_034
+    label: Heading · Can neck problems contribute to headaches?
+    type: string
+  - name: blog_035
+    label: Paragraph · A look at why a careful assessment matters…
+    type: string
+  - name: blog_036
+    label: Link or button text · Ask us about this topic ↗
+    type: string
+  - name: blog_037
+    label: Photo or image · https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85
+    type: string
+  - name: blog_038
+    label: Short text · PHYSIOTHERAPY · ARTICLE PREVIEW
+    type: string
+  - name: blog_039
+    label: Heading · What to expect at your first physiotherapy…
+    type: string
+  - name: blog_040
+    label: Paragraph · Learn about the assessment process, discuss…
+    type: string
+  - name: blog_041
+    label: Link or button text · Ask us about this topic ↗
+    type: string
+  - name: blog_042
+    label: Photo or image · https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85
+    type: string
+  - name: blog_043
+    label: Short text · HEADACHE & TMD · ARTICLE PREVIEW
+    type: string
+  - name: blog_044
+    label: 'Heading · Jaw pain and TMD: when to seek assessment'
+    type: string
+  - name: blog_045
+    label: Paragraph · Understand common jaw-related symptoms and…
+    type: string
+  - name: blog_046
+    label: Link or button text · Ask us about this topic ↗
+    type: string
+  - name: blog_047
+    label: Photo or image · https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=85
+    type: string
+  - name: blog_048
+    label: Short text · REHABILITATION · ARTICLE PREVIEW
+    type: string
+  - name: blog_049
+    label: Heading · Exercise and persistent lower back pain
+    type: string
+  - name: blog_050
+    label: Paragraph · Explore how tailored and progressive activi…
+    type: text
+  - name: blog_051
+    label: Link or button text · Ask us about this topic ↗
+    type: string
+  - name: blog_052
+    label: Paragraph · These are article previews, not published c…
+    type: text
+  - name: blog_053
+    label: Section text · PERSONALISED SUPPORT
+    type: string
+  - name: blog_054
+    label: Heading · Questions about your movement or recovery?
+    type: string
+  - name: blog_055
+    label: Link or button text · Enquire about an appointment ↗
+    type: string
+  - name: blog_056
+    label: Short text · b
+    type: string
+  - name: blog_057
+    label: Short text · .
+    type: string
+  - name: blog_058
+    label: Short text · f
+    type: string
+  - name: blog_059
+    label: Short text · BODY FUNCTION
+    type: string
+  - name: blog_060
+    label: Small supporting text · PHYSIOTHERAPY & REHABILITATION
+    type: text
+  - name: blog_061
+    label: Paragraph · Helping you manage pain, move with confiden…
+    type: string
+  - name: blog_062
+    label: Section text · ·
+    type: string
+  - name: blog_063
+    label: Link or button text · Home
+    type: string
+  - name: blog_064
+    label: Link or button text · Contact
+    type: string
+  - name: blog_065
+    label: Small supporting text · ©
+    type: string
+  - name: blog_066
+    label: Small supporting text · Body Function. Website preview.
+    type: string
